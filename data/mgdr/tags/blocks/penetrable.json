@@ -1,0 +1,28 @@
+{
+    "values": [
+        "minecraft:water",
+        "minecraft:fire",
+        "minecraft:grass",
+        "minecraft:tall_grass",
+        "minecraft:sponge",
+        "minecraft:wet_sponge",
+        "#minecraft:crops",
+        "#minecraft:flowers",
+        "#minecraft:signs",
+        "#minecraft:doors",
+        "#minecraft:trapdoors",
+        "#mgdr:airs",
+        "#mgdr:grasses",
+        "#minecraft:fences",
+        "#minecraft:fence_gates",
+        "#minecraft:slabs",
+        "#minecraft:wool",
+        "minecraft:vine",
+        "minecraft:twisting_vines",
+        "minecraft:weeping_vines",
+        "minecraft:snow",
+        "minecraft:snow_block",
+        "minecraft:powder_snow",
+        "minecraft:iron_bars"
+    ]
+}

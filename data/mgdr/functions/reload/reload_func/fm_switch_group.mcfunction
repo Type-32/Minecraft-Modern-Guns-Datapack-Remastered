@@ -1,0 +1,3 @@
+function mgdr:reload/firemode_switch_burst
+function mgdr:reload/firemode_switch_auto
+function mgdr:reload/firemode_switch_single

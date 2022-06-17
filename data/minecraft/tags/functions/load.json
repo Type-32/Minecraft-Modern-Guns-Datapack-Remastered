@@ -1,0 +1,6 @@
+{
+    "values":[
+        "mgdr:load",
+        "cw_hp_control:init"
+    ]
+}

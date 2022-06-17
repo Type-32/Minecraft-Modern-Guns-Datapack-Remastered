@@ -1,0 +1,14 @@
+{
+    "values": [
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:grass",
+        "minecraft:tall_grass",
+        "minecraft:bedrock",
+        "#mgdr:airs",
+        "minecraft:snow",
+        "minecraft:snow_block",
+        "minecraft:powder_snow",
+        "minecraft:iron_bars"
+    ]
+}
