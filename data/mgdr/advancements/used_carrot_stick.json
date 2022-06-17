@@ -11,6 +11,9 @@
           }
         }
       }
+    },
+    "rewards": {
+      "function": "mgdr:test_cs_criteria"
     }
-  }
+}
   
