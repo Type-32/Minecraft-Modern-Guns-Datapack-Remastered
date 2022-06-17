@@ -116,6 +116,14 @@ scoreboard objectives add plr.mob_kills dummy
 scoreboard objectives add che.killed_plr dummy
 scoreboard objectives add che.killed_mob dummy
 
+scoreboard objectives add motion_x1 dummy
+scoreboard objectives add motion_y1 dummy
+scoreboard objectives add motion_z1 dummy
+
+scoreboard objectives add motion_x2 dummy
+scoreboard objectives add motion_y2 dummy
+scoreboard objectives add motion_z2 dummy
+
 scoreboard objectives add mgdr.pid dummy "Player ID"
 
 title @a times 0 11 0
@@ -130,5 +138,6 @@ tellraw @a[scores={notif=0}] ["",{"text": "Modern Guns Datapack> ","color": "gol
 tellraw @a[scores={notif=0}] ["",{"text": "\nModern Guns Datapack Helper> ","color": "yellow"},{"text": "First time using this Datapack? "},{"text": "[How to use the Datapack]","color": "gold","clickEvent": {"action": "run_command","value": "/function mgdr:how_to_use"}},{"text":" <------------- Click here","color": "yellow"}]
 
 forceload add 0 0 0 0
+forceload add 3000000 3000000
 setblock 0 -64 0 chest{Lock:"NonExistentLock115414"}
 setblock 0 -63 0 bedrock

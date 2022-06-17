@@ -1,5 +1,6 @@
 #Code Written by Type-32
 #This part is for initializing and running all the actionable & necassary functions
+
 function mgdr:criteria
 function mgdr:advancement_unlock
 function mgdr:reload/reload_func/reload_group
