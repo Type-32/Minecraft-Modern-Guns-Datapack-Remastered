@@ -15,6 +15,7 @@ give @s carrot_on_a_stick{Tags:["mp40"]}
 give @s carrot_on_a_stick{Tags:["stg44"]}
 give @s carrot_on_a_stick{Tags:["vsg15"]}
 give @s carrot_on_a_stick{Tags:["type2a"]}
+give @s carrot_on_a_stick{Tags:["origin12"]}
 give @s carrot_on_a_stick{Tags:["m1911"]}
 give @s carrot_on_a_stick{Tags:["m17"]}
 give @s carrot_on_a_stick{Tags:["m14"]}

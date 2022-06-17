@@ -10,10 +10,8 @@ scoreboard players add @a[tag=holdingController] fireDelay 1
 
 ## CBR-27
 execute as @a[tag=holdingCBR27,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/cbr27
-execute as @a[tag=holdingCBR27,tag=!gunDisabled,scores={fireDelay=1,cbr27.fm=2},tag=!Kilowatt] unless score @s cbr27.ammo matches ..0 at @s run function mgdr:action/cbr27_act
-execute as @a[tag=holdingCBR27,tag=!gunDisabled,scores={fireDelay=2,cbr27.fm=1..2},tag=!Kilowatt] unless score @s cbr27.ammo matches ..0 at @s run function mgdr:action/cbr27_act
-execute as @a[tag=holdingCBR27,tag=!gunDisabled,scores={fireDelay=1,cbr27.fm=2},tag=Kilowatt] unless score @s cbr27_kilo.ammo matches ..0 at @s run function mgdr:action/cbr27_act
-execute as @a[tag=holdingCBR27,tag=!gunDisabled,scores={fireDelay=2,cbr27.fm=1..2},tag=Kilowatt] unless score @s cbr27_kilo.ammo matches ..0 at @s run function mgdr:action/cbr27_act
+execute as @a[tag=holdingCBR27,tag=!gunDisabled,scores={fireDelay=1,cbr27.fm=2}] unless score @s cbr27.ammo matches ..0 at @s run function mgdr:action/cbr27_act
+execute as @a[tag=holdingCBR27,tag=!gunDisabled,scores={fireDelay=2,cbr27.fm=1..2}] unless score @s cbr27.ammo matches ..0 at @s run function mgdr:action/cbr27_act
 
 ## CBR-27-A1
 execute as @a[tag=holdingCBR27A1,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/cbr27a1
@@ -26,8 +24,7 @@ execute as @a[tag=holdingASVAL,tag=!gunDisabled,scores={fireDelay=2,asval.fm=1..
 
 ## AK
 execute as @a[tag=holdingAK,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/ak40
-execute as @a[tag=holdingAK,tag=!gunDisabled,tag=!Resonance,scores={fireDelay=2,ak.fm=1}] unless score @s ak.ammo matches ..0 at @s run function mgdr:action/ak_act
-execute as @a[tag=holdingAK,tag=!gunDisabled,tag=Resonance,scores={fireDelay=2,ak_reson.ammo=1..,ak.fm=1}] at @s run function mgdr:action/ak_act
+execute as @a[tag=holdingAK,tag=!gunDisabled,scores={fireDelay=2,ak.fm=1}] unless score @s ak.ammo matches ..0 at @s run function mgdr:action/ak_act
 
 ## SIG-716
 execute as @a[tag=holdingSIG716,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sig716
@@ -59,15 +56,12 @@ execute as @a[tag=holdingCZ117,tag=!gunDisabled,scores={fireDelay=2,cz117.fm=1}]
 
 ## Grau 5.56
 execute as @a[tag=holdingGrau556,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/grau556
-execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=1,grau.fm=2},tag=!Kilowatt] unless score @s grau.ammo matches ..0 at @s run function mgdr:action/grau556_act
-execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=2,grau.fm=1..2},tag=!Kilowatt] unless score @s grau.ammo matches ..0 at @s run function mgdr:action/grau556_act
-execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=1,grau.fm=2},tag=Kilowatt] unless score @s grau_kilo.ammo matches ..0 at @s run function mgdr:action/grau556_act
-execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=2,grau.fm=1..2},tag=Kilowatt] unless score @s grau_kilo.ammo matches ..0 at @s run function mgdr:action/grau556_act
+execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=1,grau.fm=2}] unless score @s grau.ammo matches ..0 at @s run function mgdr:action/grau556_act
+execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=2,grau.fm=1..2}] unless score @s grau.ammo matches ..0 at @s run function mgdr:action/grau556_act
 
 ## CBT-97
 execute as @a[tag=holdingCBT97,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/cbt97
-execute as @a[tag=holdingCBT97,tag=!gunDisabled,tag=!Resonance,scores={fireDelay=2,cbt97.fm=1}] unless score @s cbt97.ammo matches ..0 at @s run function mgdr:action/cbt97_act
-execute as @a[tag=holdingCBT97,tag=!gunDisabled,tag=Resonance,scores={fireDelay=2,cbt97_reson.ammo=1..,cbt97.fm=1}] at @s run function mgdr:action/cbt97_act
+execute as @a[tag=holdingCBT97,tag=!gunDisabled,scores={fireDelay=2,cbt97.fm=1}] unless score @s cbt97.ammo matches ..0 at @s run function mgdr:action/cbt97_act
 
 ## Origin-12
 execute as @a[tag=holdingOrigin12,scores={usedCarrotPol=1..,fireDelay=6..,origin12.ammo=1..},tag=!gunDisabled] at @s run function mgdr:action/origin12_act
