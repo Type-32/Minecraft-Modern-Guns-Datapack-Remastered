@@ -3,9 +3,12 @@
 scoreboard objectives add usedCarrotPol minecraft.used:minecraft.carrot_on_a_stick
 scoreboard players add @a usedCarrotPol 0
 scoreboard objectives add fireDelay dummy
+scoreboard objectives add flashDelay dummy
 scoreboard players add @a[tag=holdingGun] fireDelay 1
+scoreboard players add @a[tag=holdingGun] flashDelay 1
 scoreboard players add @a[tag=holdingController] fireDelay 1
 
+execute as @a[tag=holdingGun,scores={usedCarrotPol=1..,flashDelay=1..},tag=!gunDisabled] at @s run function mgdr:muzzle_flash_light_add
 
 ## CBR-27
 execute as @a[tag=holdingCBR27,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/cbr27
@@ -143,6 +146,6 @@ execute as @a[tag=holdingFireball,scores={usedCarrotPol=1..}] at @s run function
 
 ##Auto Reload
 #function mgdr:command/func/auto_reload_action
-
+execute as @a[tag=holdingGun,scores={flashDelay=1},tag=!gunDisabled] at @s run function mgdr:muzzle_flash_light_remove
 ## Reset scoreboard
 scoreboard players set @a usedCarrotPol 0
