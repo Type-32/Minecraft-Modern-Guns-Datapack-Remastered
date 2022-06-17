@@ -1,31 +1,25 @@
 function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
-execute if entity @a[scores={flashDelay=1..}] at @s run function mgdr:muzzle_flash_light_add
+execute at @s run function mgdr:muzzle_flash_light_add
 
-function mgdr:action/eject_bullet_shell
+#function mgdr:action/eject_bullet_shell
 tag @s add firing
 tag @s add firingMarkerDetect
-execute as @s[tag=!Resonance] anchored eyes run function mgdr:rays/ak
-execute as @s[tag=Resonance] anchored eyes run function mgdr:rays/ak_resonance
+execute anchored eyes run function mgdr:rays/ak
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
 execute as @s[predicate=!mgdr:is_sneaking,tag=!Resonance] anchored eyes positioned ^ ^ ^1 run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 3 0 .15 0 force @s[scores={tgl_particle=0}]
-execute as @s[tag=!Resonance] anchored eyes positioned ^ ^ ^1 run particle flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
+execute anchored eyes positioned ^ ^ ^1 run particle flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 #execute as @s[predicate=!mgdr:is_sneaking,tag=!Resonance] anchored eyes positioned ^ ^ ^1 run particle flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 
-execute as @s[predicate=!mgdr:is_sneaking,tag=Resonance] anchored eyes positioned ^ ^ ^1 run particle soul_fire_flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 
-execute as @s[tag=!Resonance] run playsound mgdr:ak.fire voice @a[distance=..45] ~ ~ ~ 10
-execute as @s[tag=Resonance] run playsound mgdr:ak.resonance.fire voice @a[distance=..14] ~ ~ ~ 10
+execute run playsound mgdr:ak.fire voice @a[distance=..45] ~ ~ ~ 10
 
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=!Resonance,tag=!haveGrip] ~ ~ ~ ~ ~-5
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=!Resonance,tag=haveGrip] ~ ~ ~ ~ ~-4.2
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=Resonance] ~ ~ ~ ~ ~-4
+execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-2.8
+execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-2
 
-execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative,tag=!Resonance] ak.ammo 1
-execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative,tag=Resonance] ak_reson.ammo 1
+execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] ak.ammo 1
 #tag @s[scores={fireDelay=6..}] remove firingGun
 scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
 execute if score @s ak.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
-execute if score @s ak_reson.ammo matches ..0 at @s run playsound mgdr:common.empty player @s

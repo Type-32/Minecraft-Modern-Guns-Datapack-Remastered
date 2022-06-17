@@ -1,6 +1,6 @@
 function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
-execute if entity @a[scores={flashDelay=1..}] at @s run function mgdr:muzzle_flash_light_add
+execute at @s run function mgdr:muzzle_flash_light_add
 
 #
 tag @s add firing
