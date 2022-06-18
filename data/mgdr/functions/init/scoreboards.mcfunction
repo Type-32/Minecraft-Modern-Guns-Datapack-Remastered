@@ -112,6 +112,8 @@ scoreboard players add @a plr.mob_kills 0
 scoreboard players add @a che.killed_plr 0
 scoreboard players add @a che.killed_mob 0
 
+scoreboard players add @a togglesafe 0
+
 scoreboard players add @a mgdr.pid 0
 
 scoreboard players add @a notif 0
