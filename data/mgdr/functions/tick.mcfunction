@@ -24,6 +24,7 @@ function mgdr:clot_func/hitmarkers
 function mgdr:clot_func/title_actions
 function mgdr:clot_func/throwables_result
 execute as @a[tag=holdingGun] run function mgdr:dynammo_get
+execute as @a[tag=holdingGun] run function mgdr:dynfiremode_get
 
 execute as @a[tag=holdingGun] store result score @s xmx.ammo run data get entity @s SelectedItem.tag.AmmoXMX
 execute as @a[tag=holdingASVAL,tag=holdingGun] if score @s asval.ammo > @s xmx.ammo run scoreboard players operation @s asval.ammo = @s xmx.ammo

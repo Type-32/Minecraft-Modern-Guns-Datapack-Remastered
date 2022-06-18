@@ -87,6 +87,7 @@ scoreboard players add @a laser.ammo 0
 
 scoreboard players add @a xmx.ammo 0
 scoreboard players add @a dyn.ammo 0
+scoreboard players add @a dyn.fm 0
 scoreboard players add @a vestDamage 0
 scoreboard players add @a playerHealth 0
 scoreboard players add @a[scores={redHit=..10}] redHit 1
