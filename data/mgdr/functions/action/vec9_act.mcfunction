@@ -12,7 +12,7 @@ tag @s remove firingMarkerDetect
 execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 6 0 0.18 0 force @s[scores={tgl_particle=0}]
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
-execute as @s run playsound mgdr:vec9.fire voice @a[distance=..20] ~ ~ ~ 10
+execute as @s run playsound mgdr:vec9.fire voice @a[distance=..20] ~ ~ ~ 1000
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2
 scoreboard players set @s[scores={fireDelay=4..}] fireDelay 0
 #scoreboard players set @s[] fireDelay 0

@@ -14,8 +14,8 @@ execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if bl
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 
-execute run playsound mgdr:cbt97.fire voice @a[distance=..50] ~ ~ ~ 10
-execute run playsound mgdr:cbt97.resonance.fire voice @a[distance=..14] ~ ~ ~ 10
+execute run playsound mgdr:cbt97.fire voice @a[distance=..50] ~ ~ ~ 1000
+execute run playsound mgdr:cbt97.resonance.fire voice @a[distance=..14] ~ ~ ~ 1000
 
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-3.5
 

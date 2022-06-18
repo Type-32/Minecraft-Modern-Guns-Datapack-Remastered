@@ -1,3 +1,5 @@
+scoreboard players set @s showhud 0
+
 execute if entity @s[scores={cbt97.reload=1..5}] run stopsound @s voice mgdr:cbt97.reload
 execute if entity @s[scores={cbt97.reload=1..5}] run scoreboard players set @s cbt97.reload 10
 

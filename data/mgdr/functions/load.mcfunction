@@ -126,6 +126,7 @@ scoreboard objectives add motion_x2 dummy
 scoreboard objectives add motion_y2 dummy
 scoreboard objectives add motion_z2 dummy
 
+scoreboard objectives add showhud dummy
 scoreboard objectives add togglesafe dummy
 
 scoreboard objectives add mgdr.pid dummy "Player ID"

@@ -1,3 +1,5 @@
+
+
 execute if entity @s[tag=!holdingCBT97,scores={cbt97.reload=..5}] run stopsound @s voice mgdr:cbt97.reload
 execute if entity @s[tag=!holdingCBT97,scores={cbt97.reload=..5}] run scoreboard players set @s cbt97.reload 10
 

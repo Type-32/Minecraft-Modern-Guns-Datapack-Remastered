@@ -4,7 +4,7 @@ execute if entity @s[scores={mp5.reload=0}] at @s run function mgdr:reload/reloa
 
 execute if entity @s[scores={mp5.reload=4}] at @s run scoreboard players operation @s mp5.ammo = @s xmx.ammo
 
-execute if entity @s[scores={mp5.reload=..4}] at @s run title @s actionbar ["",{"translate":"mgdr.translate.ammo.reloading","color":"red"}]
+execute if entity @s[scores={mp5.reload=..4}] at @s run title @s actionbar ["",{"text":"\uEff8\uEff9","color": "red"}]
 execute if entity @s[scores={mp5.reload=5}] at @s run title @s[tag=NonExistentTag] actionbar ["",{"translate":"mgdr.translate.ammo.loaded","color":"gold"}]
 execute if entity @s[scores={mp5.reload=4},tag=!switchedMag] if score @s 009.fullMag matches 1.. run function mgdr:reload/action/009mm_switch
 #execute if entity @s[scores={mp5.reload=4}] run tag @s add switchedMag

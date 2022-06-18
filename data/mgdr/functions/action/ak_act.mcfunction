@@ -15,7 +15,7 @@ execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ 
 #execute as @s[predicate=!mgdr:is_sneaking,tag=!Resonance] anchored eyes positioned ^ ^ ^1 run particle flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 
 
-playsound mgdr:ak.fire voice @a[distance=..45] ~ ~ ~ 10
+playsound mgdr:ak.fire voice @a[distance=..45] ~ ~ ~ 100000
 
 execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-2.8
 execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-2

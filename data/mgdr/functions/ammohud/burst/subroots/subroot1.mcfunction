@@ -1,4 +1,4 @@
-execute if score @s dyn.ammo matches 0 run title @s actionbar ["",{"text":"\uEff8\uEff9","color": "red"},{"text":"\uEfe0","color":"aqua"}]
+execute if score @s dyn.ammo matches 0 run title @s actionbar ["",{"text":"\uEff8\uEaa0","color": "red"},{"text":"\uEfe0","color":"aqua"}]
 execute if score @s dyn.ammo matches 1 run title @s actionbar ["",{"text":"\uEff8\uEaa1"},{"text":"\uEfe0","color":"aqua"}]
 execute if score @s dyn.ammo matches 2 run title @s actionbar ["",{"text":"\uEff8\uEaa2"},{"text":"\uEfe0","color":"aqua"}]
 execute if score @s dyn.ammo matches 3 run title @s actionbar ["",{"text":"\uEff8\uEaa3"},{"text":"\uEfe0","color":"aqua"}]

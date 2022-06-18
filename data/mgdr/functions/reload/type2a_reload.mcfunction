@@ -2,7 +2,7 @@ execute if entity @s[scores={009.fullMag=..0}] if score @s type2a.reload matches
 execute if entity @s[scores={009.fullMag=..0}] run scoreboard players set @s type2a.reload 10
 execute if entity @s[scores={type2a.reload=0}] at @s run function mgdr:reload/reload_init/init_func
 execute if entity @s[scores={type2a.reload=4}] at @s run scoreboard players operation @s type2a.ammo = @s xmx.ammo
-execute if entity @s[scores={type2a.reload=..4}] at @s run title @s actionbar ["",{"translate":"mgdr.translate.ammo.reloading","color":"red"}]
+execute if entity @s[scores={type2a.reload=..4}] at @s run title @s actionbar ["",{"text":"\uEff8\uEff9","color": "red"}]
 execute if entity @s[scores={type2a.reload=5}] at @s run title @s[tag=NonExistentTag] actionbar ["",{"translate":"mgdr.translate.ammo.loaded","color":"gold"}]
 execute if entity @s[scores={type2a.reload=4},tag=!switchedMag] if score @s 009.fullMag matches 1.. run function mgdr:reload/action/009mm_switch
 #execute if entity @s[scores={type2a.reload=4}] run tag @s add switchedMag

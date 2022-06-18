@@ -115,6 +115,7 @@ scoreboard players add @a che.killed_plr 0
 scoreboard players add @a che.killed_mob 0
 
 scoreboard players add @a togglesafe 0
+scoreboard players add @a showhud 0
 
 scoreboard players add @a mgdr.pid 0
 
