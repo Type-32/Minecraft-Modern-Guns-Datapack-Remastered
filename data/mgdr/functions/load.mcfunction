@@ -40,6 +40,7 @@ scoreboard objectives add laser.ammo dummy
 scoreboard objectives add vsg15.xp dummy
 
 scoreboard objectives add xmx.ammo dummy
+scoreboard objectives add dyn.ammo dummy
 scoreboard objectives add vestDamage dummy
 scoreboard objectives add playerHealth health
 scoreboard objectives add redHit dummy
