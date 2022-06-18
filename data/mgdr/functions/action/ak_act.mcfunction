@@ -10,7 +10,7 @@ tag @s remove firing
 tag @s remove firingMarkerDetect
 
 execute as @s[predicate=!mgdr:is_sneaking,tag=!Resonance] anchored eyes positioned ^ ^ ^1 run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 3 0 .15 0 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 run particle flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
+execute anchored eyes positioned ^ ^ ^1 run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 #execute as @s[predicate=!mgdr:is_sneaking,tag=!Resonance] anchored eyes positioned ^ ^ ^1 run particle flame ^-.3 ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 
 

@@ -11,7 +11,7 @@ tag @s remove firing
 tag @s remove firingMarkerDetect
 
 
-execute as @s[predicate=!mgdr:is_sneaking,tag=!Kilowatt] anchored eyes positioned ^ ^ ^1 run particle campfire_cosy_smoke ^-.3 ^-.15 ^1.1 0 2 0 .07 0 force @s[scores={tgl_particle=0}]
+execute as @s[predicate=!mgdr:is_sneaking,tag=!Kilowatt] anchored eyes positioned ^ ^ ^1 if block ~ ~1 ~ air run particle campfire_cosy_smoke ^-.3 ^-.15 ^1.1 0 2 0 .07 0 force @s[scores={tgl_particle=0}]
 execute as @s[predicate=!mgdr:is_sneaking,tag=Kilowatt] anchored eyes positioned ^ ^ ^1 run particle dust 1 1 0 1.8 ^-.26 ^-.125 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
 
 execute as @s[tag=!Kilowatt] run playsound mgdr:grau556.fire voice @a[distance=..38] ~ ~ ~ 10

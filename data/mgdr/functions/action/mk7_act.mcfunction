@@ -7,7 +7,7 @@ execute anchored eyes run function mgdr:rays/mk7
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
-execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 run particle campfire_cosy_smoke ^-.3 ^-.15 ^.7 0 0 0 .07 1 force @s[scores={tgl_particle=0}]
+execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if block ~ ~1 ~ air run particle campfire_cosy_smoke ^-.3 ^-.15 ^.7 0 0 0 .07 1 force @s[scores={tgl_particle=0}]
 execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 run particle small_flame ^-.3 ^-.15 ^.7 0 0 0 0 1 force @s[scores={tgl_particle=0}]
 
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2.95
