@@ -14,6 +14,7 @@ tag @a[predicate=mgdr:is_sprinting] add gunDisabled
 tag @a[predicate=!mgdr:is_sprinting,tag=!reloadGun] remove gunDisabled
 
 function mgdr:det_tags/guntag
+function mgdr:det_tags/equipmenttag
 function mgdr:det_tags/variant
 function mgdr:det_tags/func_items
 function mgdr:det_tags/attachments

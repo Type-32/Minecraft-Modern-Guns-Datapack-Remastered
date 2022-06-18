@@ -1,0 +1,1 @@
+effect give @a[tag=wearingNODS] night_vision 1 255 true
