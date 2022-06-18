@@ -55,9 +55,13 @@ tag @a[nbt=!{SelectedItem:{tag:{Tags:["drive_wheel"]}}}] remove holdingDriveStic
 
 #tag @a[nbt={SelectedItem:{tag:{Tags:["throwables"]}}}] add holdingProj
 #tag @a[nbt=!{SelectedItem:{tag:{Tags:["throwables"]}}}] remove holdingProj
+tag @a[nbt={SelectedItem:{tag:{Tags:["equipment"]}}}] add holdingEquipment
+tag @a[nbt=!{SelectedItem:{tag:{Tags:["equipment"]}}}] remove holdingEquipment
 tag @a[nbt={SelectedItem:{tag:{Tags:["grenade"]}}}] add holdingGrenade
 tag @a[nbt=!{SelectedItem:{tag:{Tags:["grenade"]}}}] remove holdingGrenade
 tag @a[nbt={SelectedItem:{tag:{Tags:["flashbang"]}}}] add holdingFlashbang
 tag @a[nbt=!{SelectedItem:{tag:{Tags:["flashbang"]}}}] remove holdingFlashbang
+tag @a[nbt={SelectedItem:{tag:{Tags:["NODS"]}}}] add holdingNODS
+tag @a[nbt=!{SelectedItem:{tag:{Tags:["NODS"]}}}] remove holdingNODS
 #tag @a[nbt={SelectedItem:{tag:{Tags:["airstrike_marker"]}}}] add holdingAirstrikeMarker
 #tag @a[nbt=!{SelectedItem:{tag:{Tags:["airstrike_marker"]}}}] remove holdingAirstrikeMarker

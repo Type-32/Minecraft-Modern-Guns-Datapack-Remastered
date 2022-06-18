@@ -15,5 +15,5 @@ playsound mgdr:origin12.fire voice @a[distance=..45] ~ ~ ~ 10
 
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2.85
 
-execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] asval.ammo 1
+execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] origin12.ammo 1
 scoreboard players set @s fireDelay 0

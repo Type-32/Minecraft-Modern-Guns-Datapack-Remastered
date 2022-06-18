@@ -136,6 +136,9 @@ execute as @a[tag=holdingGun,tag=!gunDisabled] at @s run function mgdr:func/use_
 ##Using Fireball
 execute as @a[tag=holdingFireball,scores={usedCarrotPol=1..}] at @s run function mgdr:action/fireball_test
 
+##Equip Night Vision Goggles
+execute as @a[tag=holdingNODS,scores={usedCarrotPol=1..}] at @s run function mgdr:action/equip_nods
+
 ##Auto Reload
 #function mgdr:command/func/auto_reload_action
 execute as @a[tag=holdingGun,scores={flashDelay=1},tag=!gunDisabled] at @s run function mgdr:muzzle_flash_light_remove
