@@ -1,4 +1,4 @@
-particle dust 1 1 1 0.12 ~ ~ ~ 0 0 0 0.01 1 force
+execute if block ~ ~ ~ water run particle bubble_pop ~ ~ ~ 0 0 0 0.01 1 force @a
 particle dust 1 0 0 1 ~ ~ ~ 0 0 0 0.01 1 force @s[scores={proj_trace=1..},tag=admin]
 execute as @e[dx=0,type=#mgdr:special_entities] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] positioned ~0.5 ~0.5 ~0.5 run function mgdr:damage/special/specification
 execute as @e[dx=0,type=!#mgdr:unharmable_entities] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] positioned ~0.5 ~0.5 ~0.5 run function mgdr:damage/ak_dmg

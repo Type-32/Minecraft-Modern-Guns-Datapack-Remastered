@@ -5,7 +5,7 @@ execute at @s run function mgdr:muzzle_flash_light_add
 #
 tag @s add firing
 tag @s add firingMarkerDetect
-execute as @s[tag=!Kilowatt] anchored eyes run function mgdr:rays/cbr27
+execute anchored eyes run function mgdr:rays/cbr27
 tag @s remove firing
 tag @s remove firingMarkerDetect
 #
