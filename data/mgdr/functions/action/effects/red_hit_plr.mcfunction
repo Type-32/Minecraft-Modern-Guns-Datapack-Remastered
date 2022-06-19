@@ -10,4 +10,4 @@ execute if score @s plr.redHit matches 6 run title @s title {"text":"\uEfd6","co
 execute if score @s plr.redHit matches 7 run title @s title {"text":"\uEfd7","color":"red"}
 execute if score @s plr.redHit matches 8 run title @s title {"text":"\uEfd8","color":"red"}
 execute if score @s plr.redHit matches 9 run title @s title {"text":"\uEfd9","color":"red"}
-execute if score @s plr.redHit matches 10 run title @s title ""
+execute if score @s plr.redHit matches 10 run title @s title " "

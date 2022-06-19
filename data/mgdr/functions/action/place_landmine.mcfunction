@@ -1,2 +1,3 @@
-summon armor_stand ~ ~-2 ~ {Invulnerable:1b,Invisible:1b,Tags:["landmine_placement"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1,tag:{CustomModelData:202006}}],DisabledSlots:1000000}
-item replace entity @s[gamemode=!creative] weapon.mainhand with air
+execute unless block ~ ~-0.1 ~ air run summon armor_stand ~ ~-1.9 ~ {PortalCooldown:100,Invulnerable:1b,Invisible:1b,NoGravity:1b,Tags:["landmine_placement"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1,tag:{CustomModelData:202006}}],DisabledSlots:1000000}
+execute unless block ~ ~-0.1 ~ air run item replace entity @s[gamemode=!creative] weapon.mainhand with air
+execute if block ~ ~-0.1 ~ air run tellraw @s {"translate": "mgdr.translate.deploy.error","italic": false,"color": "red"}
