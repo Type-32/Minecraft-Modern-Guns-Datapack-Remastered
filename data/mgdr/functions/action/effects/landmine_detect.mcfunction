@@ -1,0 +1,1 @@
+execute positioned ~ ~2 ~ if entity @e[distance=..1.5] run function mgdr:func/grenade_explode_action

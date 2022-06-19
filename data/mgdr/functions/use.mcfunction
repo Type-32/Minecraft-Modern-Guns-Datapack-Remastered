@@ -130,6 +130,9 @@ execute as @a[tag=holdingGrenade,scores={usedCarrotPol=1..}] at @s run function 
 ##Using Flashbang
 execute as @a[tag=holdingFlashbang,scores={usedCarrotPol=1..}] at @s run function mgdr:action/throw_flashbang
 
+##Using Landmine
+execute as @a[tag=holdingLandmine,scores={usedCarrotPol=1..}] at @s run function mgdr:action/place_landmine
+
 ##Using Lasers
 execute as @a[tag=holdingGun,tag=!gunDisabled] at @s run function mgdr:func/use_laser
 
