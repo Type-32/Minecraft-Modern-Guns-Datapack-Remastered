@@ -1,1 +1,2 @@
 summon armor_stand ~ ~-2 ~ {Invulnerable:1b,Invisible:1b,Tags:["landmine_placement"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1,tag:{CustomModelData:202006}}],DisabledSlots:1000000}
+item replace entity @s[gamemode=!creative] weapon.mainhand with air
