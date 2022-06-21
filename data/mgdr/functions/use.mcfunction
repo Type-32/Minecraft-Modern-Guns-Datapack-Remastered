@@ -147,5 +147,6 @@ execute as @a[tag=holdingNODS,scores={usedCarrotPol=1..}] at @s run function mgd
 execute as @a[tag=holdingGun,scores={flashDelay=1},tag=!gunDisabled] at @s run function mgdr:muzzle_flash_light_remove
 
 execute as @e[tag=shellInit,tag=bullet_shell,type=item] at @s rotated as @p run function mgdr:action/apply_shell_motion
+execute as @a[tag=holdingGun,predicate=mgdr:is_sneaking,scores={aimSec=..1,aiming_fire=0}] run function mgdr:action/effects/aim_down_sights
 ## Reset scoreboard
 scoreboard players set @a usedCarrotPol 0
