@@ -13,6 +13,7 @@
         "#minecraft:trapdoors",
         "#mgdr:airs",
         "#mgdr:grasses",
+        "minecraft:chain",
         "#minecraft:fences",
         "#minecraft:fence_gates",
         "#minecraft:slabs",
@@ -42,6 +43,7 @@
         "minecraft:light_blue_carpet",
         "minecraft:light_gray_carpet",
         "minecraft:cave_vines",
+        "minecraft:cave_vines_plant",
         "minecraft:sculk_vein",
         "minecraft:iron_bars"
     ]

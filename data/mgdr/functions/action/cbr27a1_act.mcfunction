@@ -1,6 +1,6 @@
 function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
-execute at @s run function mgdr:muzzle_flash_light_add
+function mgdr:muzzle_flash_light_add
 
 #
 tag @s add firing
