@@ -14,4 +14,4 @@ scoreboard players set @s[scores={grau.fm=1},tag=holdingGrau556] grau.fm 2
 scoreboard players set @s[scores={vsg15.fm=1},tag=holdingVSG15] vsg15.fm 2
 scoreboard players set @s[scores={vsg6t.fm=1},tag=holdingVSG6T] vsg6t.fm 2
 scoreboard players set @s[scores={augpara.fm=1},tag=holdingAUGPara] augpara.fm 0
-execute at @s run playsound mgdr:common.fireselect voice @s ~ ~10000000 ~ 10000000
+execute at @s run playsound mgdr:others.fireselect voice @s ~ ~10000000 ~ 10000000

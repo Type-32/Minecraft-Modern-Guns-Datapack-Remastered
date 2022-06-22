@@ -59,7 +59,7 @@ execute as @a[tag=holdingCBT97,tag=!gunDisabled,scores={fireDelay=2,cbt97.fm=1}]
 
 ## Origin-12
 execute as @a[tag=holdingOrigin12,scores={usedCarrotPol=1..,fireDelay=6..,origin12.ammo=1..},tag=!gunDisabled] at @s run function mgdr:action/origin12_act
-execute as @a[tag=holdingOrigin12,scores={usedCarrotPol=1..,fireDelay=6..,origin12.ammo=..0},tag=!gunDisabled] at @s run playsound mgdr:common.empty player @s
+execute as @a[tag=holdingOrigin12,scores={usedCarrotPol=1..,fireDelay=6..,origin12.ammo=..0},tag=!gunDisabled] at @s run playsound mgdr:others.empty player @s
 
 ## M-14
 execute as @a[tag=holdingM14,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m14

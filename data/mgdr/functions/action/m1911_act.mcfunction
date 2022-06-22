@@ -15,4 +15,4 @@ execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ 
 execute as @s run playsound mgdr:m1911.fire voice @a[distance=..30] ~ ~ ~ 1000
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] m1911.ammo 1
-execute if score @s m1911.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
+execute if score @s m1911.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

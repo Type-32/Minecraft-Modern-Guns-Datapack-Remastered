@@ -23,4 +23,4 @@ execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] ak.ammo 1
 #tag @s[scores={fireDelay=6..}] remove firingGun
 scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
-execute if score @s ak.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
+execute if score @s ak.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

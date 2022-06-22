@@ -41,4 +41,4 @@ scoreboard players set @s[scores={vec9.fm=1..},tag=holdingVec9] vec9.fm 0
 scoreboard players set @s[scores={vsg15.fm=1..},tag=holdingVSG15] vsg15.fm 0
 scoreboard players set @s[scores={vsg6t.fm=1..},tag=holdingVSG6T] vsg6t.fm 0
 scoreboard players set @s[scores={plane.fm=1..},tag=holdingController] plane.fm 0
-execute at @s run playsound mgdr:common.fireselect voice @s ~ ~10000000 ~ 10000000
+execute at @s run playsound mgdr:others.fireselect voice @s ~ ~10000000 ~ 10000000

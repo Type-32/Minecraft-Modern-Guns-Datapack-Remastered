@@ -16,4 +16,4 @@ execute as @s run playsound mgdr:cz117.fire voice @a[distance=..30] ~ ~ ~ 1000
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2.2
 scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] cz117.ammo 1
-execute if score @s cz117.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
+execute if score @s cz117.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

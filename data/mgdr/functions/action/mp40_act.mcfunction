@@ -19,4 +19,4 @@ execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-3
 
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] mp40.ammo 1
 scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
-execute if score @s mp40.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
+execute if score @s mp40.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

@@ -21,5 +21,5 @@ execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] sig75t.ammo 1
 scoreboard players set @s[scores={fireDelay=3..,sig75t.fm=0..1}] fireDelay 0
 scoreboard players set @s[scores={fireDelay=5..,sig75t.fm=2}] fireDelay 0
-execute if score @s sig75t.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
-execute if score @s ak_reson.ammo matches ..0 at @s run playsound mgdr:common.empty player @s
+execute if score @s sig75t.ammo matches ..0 at @s run playsound mgdr:others.empty player @s
+execute if score @s ak_reson.ammo matches ..0 at @s run playsound mgdr:others.empty player @s
