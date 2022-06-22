@@ -1,0 +1,20 @@
+{
+    "values": [
+        "minecraft:glowstone",
+        "minecraft:sea_lantern",
+        "minecraft:torch",
+        "minecraft:wall_torch",
+        "minecraft:shroomlight",
+        "minecraft:lantern",
+        "minecraft:redstone_wire",
+        "minecraft:redstone_torch",
+        "minecraft:sculk_sensor",
+        "minecraft:sculk_catalyst",
+        "minecraft:candle",
+        "minecraft:large_amethyst_bud",
+        "minecraft:small_amethyst_bud",
+        "minecraft:medium_amethyst_bud",
+        "minecraft:amethyst_cluster",
+        "minecraft:soul_lantern"
+    ]
+}

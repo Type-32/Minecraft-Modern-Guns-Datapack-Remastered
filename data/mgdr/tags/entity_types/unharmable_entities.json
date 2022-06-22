@@ -3,8 +3,11 @@
         "minecraft:player",
         "minecraft:area_effect_cloud",
         "minecraft:arrow",
+        "minecraft:spectral_arrow",
         "minecraft:minecart",
         "minecraft:tnt_minecart",
+        "minecraft:furnace_minecart",
+        "minecraft:potion",
         "minecraft:tnt",
         "minecraft:leash_knot",
         "minecraft:spectral_arrow",
@@ -17,6 +20,9 @@
         "minecraft:ender_dragon",
         "minecraft:dragon_fireball",
         "minecraft:fireball",
+        "minecraft:experience_orb",
+        "minecraft:experience_bottle",
+        "minecraft:snowball",
         "minecraft:chest_minecart"
     ]
 }

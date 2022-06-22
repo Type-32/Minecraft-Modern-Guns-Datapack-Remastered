@@ -16,9 +16,7 @@ execute as @a[tag=holdingCBR27,tag=!gunDisabled] at @s run function mgdr:use/cbr
 #execute as @a[tag=holdingCBR27A1,tag=!gunDisabled,scores={fireDelay=2,cbr27a1.fm=1}] unless score @s cbr27a1.ammo matches ..0 at @s run function mgdr:action/cbr27a1_act
 
 ## AS-VAL
-execute as @a[tag=holdingASVAL,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/asval
-execute as @a[tag=holdingASVAL,tag=!gunDisabled,scores={fireDelay=1,asval.fm=2}] unless score @s asval.ammo matches ..0 at @s run function mgdr:action/asval_act
-execute as @a[tag=holdingASVAL,tag=!gunDisabled,scores={fireDelay=2,asval.fm=1..2}] unless score @s asval.ammo matches ..0 at @s run function mgdr:action/asval_act
+execute as @a[tag=holdingASVAL,tag=!gunDisabled] at @s run function mgdr:use/asval
 
 ## AK
 execute as @a[tag=holdingAK,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/ak40
@@ -76,28 +74,28 @@ execute as @a[tag=holdingM17,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s 
 execute as @a[tag=holdingCBS5,scores={usedCarrotPol=1..}] at @s run function mgdr:use/sub/cbs5
 
 ## MP-40
-execute as @a[tag=holdingMP40,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp40
-execute as @a[tag=holdingMP40,tag=!gunDisabled,scores={mp40.ammo=1..,fireDelay=2,mp40.fm=1}] at @s run function mgdr:action/mp40_act
+#execute as @a[tag=holdingMP40,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp40
+#execute as @a[tag=holdingMP40,tag=!gunDisabled,scores={mp40.ammo=1..,fireDelay=2,mp40.fm=1}] at @s run function mgdr:action/mp40_act
 
 ## STG-44
-execute as @a[tag=holdingSTG44,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/stg44
-execute as @a[tag=holdingSTG44,tag=!gunDisabled,scores={stg44.ammo=1..,fireDelay=2,stg44.fm=1}] at @s run function mgdr:action/stg44_act
+#execute as @a[tag=holdingSTG44,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/stg44
+#execute as @a[tag=holdingSTG44,tag=!gunDisabled,scores={stg44.ammo=1..,fireDelay=2,stg44.fm=1}] at @s run function mgdr:action/stg44_act
 
 ## Type-2A
-execute as @a[tag=holdingType2A,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/type2a
+#execute as @a[tag=holdingType2A,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/type2a
 #execute as @a[tag=holdingType2A,tag=!gunDisabled,scores={fireDelay=1,type2a.fm=1}] unless score @s type2a.ammo matches ..0 at @s run function mgdr:action/type2a_act
-execute as @a[tag=holdingType2A,tag=!gunDisabled,scores={fireDelay=2,type2a.fm=1}] unless score @s type2a.ammo matches ..0 at @s run function mgdr:action/type2a_act
+#execute as @a[tag=holdingType2A,tag=!gunDisabled,scores={fireDelay=2,type2a.fm=1}] unless score @s type2a.ammo matches ..0 at @s run function mgdr:action/type2a_act
 #execute as @a[tag=holdingType2A,tag=!gunDisabled,scores={fireDelay=3,type2a.fm=1}] unless score @s type2a.ammo matches ..0 at @s run function mgdr:action/type2a_act
 
 ## Volkssturmgewehr 1-5
-execute as @a[tag=holdingVSG15,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/vsg15
-execute as @a[tag=holdingVSG15,tag=!gunDisabled,scores={fireDelay=1,vsg15.fm=2}] unless score @s vsg15.ammo matches ..0 at @s run function mgdr:action/vsg15_act
-execute as @a[tag=holdingVSG15,tag=!gunDisabled,scores={fireDelay=2,vsg15.fm=1..2}] unless score @s vsg15.ammo matches ..0 at @s run function mgdr:action/vsg15_act
+#execute as @a[tag=holdingVSG15,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/vsg15
+#execute as @a[tag=holdingVSG15,tag=!gunDisabled,scores={fireDelay=1,vsg15.fm=2}] unless score @s vsg15.ammo matches ..0 at @s run function mgdr:action/vsg15_act
+#execute as @a[tag=holdingVSG15,tag=!gunDisabled,scores={fireDelay=2,vsg15.fm=1..2}] unless score @s vsg15.ammo matches ..0 at @s run function mgdr:action/vsg15_act
 
 ## Volkssturmgewehr 6T
-execute as @a[tag=holdingVSG6T,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/vsg6t
-execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=1,vsg6t.fm=2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
-execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=2,vsg6t.fm=1..2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
+#execute as @a[tag=holdingVSG6T,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/vsg6t
+#execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=1,vsg6t.fm=2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
+#execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=2,vsg6t.fm=1..2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
 
 ## Vec-9 Fennec
 execute as @a[tag=holdingVec9,scores={fireDelay=4..,usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/vec9
