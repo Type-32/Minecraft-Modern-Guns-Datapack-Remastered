@@ -1,9 +1,0 @@
-#execute if block ~-1 ~ ~
-#execute if block ~-1 ~ ~1
-#execute if block ~-1 ~ ~-1
-#execute if block ~ ~ ~-1
-#execute if block ~ ~ ~
-#execute if block ~ ~ ~1
-#execute if block ~1 ~ ~-1
-#execute if block ~1 ~ ~
-#execute if block ~1 ~ ~1

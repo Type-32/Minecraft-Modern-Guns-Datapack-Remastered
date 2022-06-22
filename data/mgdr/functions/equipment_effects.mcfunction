@@ -1,4 +1,4 @@
-schedule function mgdr:equipment_effects 2t replace
+schedule function mgdr:equipment_effects 1s replace
 effect give @a[tag=wearingNODS] night_vision 15 255 true
 
 effect clear @a[tag=!wearingNODS,scores={togglesafe=1..}] night_vision
