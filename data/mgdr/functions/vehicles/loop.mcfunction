@@ -1,0 +1,1 @@
+execute as @e[tag=planeSeater,type=minecart] at @s run function mgdr:vehicles/plane_loop

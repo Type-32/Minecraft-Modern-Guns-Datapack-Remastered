@@ -24,6 +24,7 @@ function mgdr:clot_func/hitmarkers
 function mgdr:clot_func/title_actions
 function mgdr:clot_func/throwables_result
 function mgdr:clot_func/deployable_result
+function mgdr:vehicles/loop
 
 
 execute as @a[tag=holdingGun] run function mgdr:dynammo_get
