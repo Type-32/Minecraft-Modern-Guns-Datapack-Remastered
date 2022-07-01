@@ -114,6 +114,9 @@ execute as @a[tag=holdingAUGPara,tag=!gunDisabled,scores={fireDelay=2,augpara.fm
 #execute as @a[tag=holdingController,scores={fireDelay=2,plane.mode=0},x_rotation=-90..80] at @s run function mgdr:use/sub/controller_func
 #execute as @a[tag=holdingController,scores={usedCarrotPol=1..},x_rotation=80.1..90] at @s run scoreboard players add @s plane.mode 1
 
+## Plane
+execute as @a[tag=holdingPlaneSpawner,scores={usedCarrotPol=1..}] at @s run function mgdr:action/spawn_plane
+
 ## Car Gear Change
 #execute as @a[tag=holdingDriveStick,scores={usedCarrotPol=1..},x_rotation=-90..69.9] at @s run scoreboard players add @s[scores={car.gear=..2}] car.gear 1
 #execute as @a[tag=holdingDriveStick,scores={usedCarrotPol=1..},x_rotation=70..90] at @s run scoreboard players remove @s[scores={car.gear=1..}] car.gear 1
@@ -138,9 +141,11 @@ execute as @a[tag=holdingNODS,scores={usedCarrotPol=1..}] at @s run function mgd
 
 ##Auto Reload
 #function mgdr:command/func/auto_reload_action
+
+##Muzzle Flash Light Removal
 execute as @a[tag=holdingGun,scores={flashDelay=1},tag=!gunDisabled] at @s run function mgdr:muzzle_flash_light_remove
 
-execute as @e[tag=shellInit,tag=bullet_shell,type=item] at @s rotated as @p run function mgdr:action/apply_shell_motion
+#execute as @e[tag=shellInit,tag=bullet_shell,type=item] at @s rotated as @p run function mgdr:action/apply_shell_motion
 execute as @a[tag=holdingGun,predicate=mgdr:is_sneaking,scores={aimSec=..1,aiming_fire=0}] run function mgdr:action/effects/aim_down_sights
 ## Reset scoreboard
 scoreboard players set @a usedCarrotPol 0

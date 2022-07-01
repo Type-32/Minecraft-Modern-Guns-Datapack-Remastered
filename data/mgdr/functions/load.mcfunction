@@ -1,6 +1,6 @@
 #Code Written by Type-32
 #This part is for starting up everything and initializing the datapack when the datapack has been loaded for the first time in a world.
-tellraw @a ["",{"text": "Modern Guns Datapack> ","color": "gold"},{"text":"Modern Guns Datapack by Type-32 Loaded!","color": "aqua"}]
+tellraw @a ["",{"text": "MGDR","color": "dark_gray","bold": true},{"text": ">> "},{"text":"Modern Guns Datapack Remastered Loaded! Author: ","color": "gray"},{"text": "Type-32 Official","bold": true,"underlined": true,"clickEvent": {"action": "open_url","value": "type-32.github.org"},"color": "blue"}]
 scoreboard objectives add reloadSec dummy
 scoreboard objectives add aimSec dummy
 scoreboard objectives add fireSec dummy

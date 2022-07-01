@@ -18,6 +18,7 @@ function mgdr:det_tags/equipmenttag
 function mgdr:det_tags/variant
 function mgdr:det_tags/func_items
 function mgdr:det_tags/attachments
+function mgdr:det_tags/vehicles
 
 #tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] add attachmentKit
 #tag @a[nbt=!{Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] remove attachmentKit
