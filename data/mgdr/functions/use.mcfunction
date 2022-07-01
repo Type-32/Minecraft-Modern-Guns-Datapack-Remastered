@@ -71,7 +71,7 @@ execute as @a[tag=holdingM1911,scores={usedCarrotPol=1..},tag=!gunDisabled] at @
 execute as @a[tag=holdingM17,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m17
 
 ## CBS-5
-execute as @a[tag=holdingCBS5,scores={usedCarrotPol=1..}] at @s run function mgdr:use/sub/cbs5
+execute as @a[tag=holdingCBS5] at @s run function mgdr:use/cbs5
 
 ## MP-40
 #execute as @a[tag=holdingMP40,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp40

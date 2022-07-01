@@ -1,0 +1,1 @@
+execute if entity @s[scores={usedCarrotPol=1..}] run function mgdr:use/sub/cbs5
