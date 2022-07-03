@@ -5,4 +5,5 @@ scoreboard players set @s[tag=CombatMasterVest] hp_dmg 6
 
 particle minecraft:block minecraft:redstone_block ~ ~ ~ .25 .3 .25 3 2 force
 scoreboard players set @a[tag=firingMarkerDetect,tag=holdingSIG716] whiteHit 0
+function mgdr:damage/player/universal_figure
 playsound minecraft:ui.button.click voice @a[tag=firingMarkerDetect,tag=holdingSIG716] ~ ~1000 ~ 1000000000 2

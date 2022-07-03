@@ -98,10 +98,7 @@ execute as @a[tag=holdingCBS5] at @s run function mgdr:use/cbs5
 #execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=2,vsg6t.fm=1..2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
 
 ## Vec-9 Fennec
-execute as @a[tag=holdingVec9,scores={fireDelay=4..,usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/vec9
-execute as @a[tag=holdingVec9,tag=!gunDisabled,scores={fireDelay=1,vec9.fm=1}] unless score @s vec9.ammo matches ..0 at @s run function mgdr:action/vec9_act
-execute as @a[tag=holdingVec9,tag=!gunDisabled,scores={fireDelay=2,vec9.fm=1}] unless score @s vec9.ammo matches ..0 at @s run function mgdr:action/vec9_act
-execute as @a[tag=holdingVec9,tag=!gunDisabled,scores={fireDelay=3,vec9.fm=1}] unless score @s vec9.ammo matches ..0 at @s run function mgdr:action/vec9_act
+execute as @a[tag=holdingVec9,tag=!gunDisabled] at @s run function mgdr:use/vec9
 
 ## AUG Para
 execute as @a[tag=holdingAUGPara,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/augpara

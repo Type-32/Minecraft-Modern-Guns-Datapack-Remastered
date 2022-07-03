@@ -1,7 +1,6 @@
 #Code Written by Type-32
 #This part is for initializing and running all the actionable & necassary functions
 
-function mgdr:criteria
 function mgdr:advancement_unlock
 function mgdr:reload/reload_func/reload_group
 #function mgdr:reload/reload_func/loop
@@ -25,8 +24,10 @@ function mgdr:clot_func/title_actions
 function mgdr:clot_func/throwables_result
 function mgdr:clot_func/deployable_result
 function mgdr:vehicles/loop
+function mgdr:criteria
 
-
+scoreboard players set @a[tag=Reloading] showhud 1
+scoreboard players set @a[tag=!Reloading] showhud 0
 execute as @a[tag=holdingGun] run function mgdr:dynammo_get
 execute as @a[tag=holdingGun] run function mgdr:dynfiremode_get
 execute as @a[tag=holdingGun] run function mgdr:dynindicator_get
