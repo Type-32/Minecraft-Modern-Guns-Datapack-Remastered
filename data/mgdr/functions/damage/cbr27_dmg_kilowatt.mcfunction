@@ -7,4 +7,6 @@ execute if score @s mgdr.health matches 1.. run scoreboard players set @a[tag=fi
 execute if score @s mgdr.health matches ..0 run scoreboard players set @a[tag=firingMarkerDetect,tag=holdingCBR27] redHit 0
 execute if score @s mgdr.health matches 1.. store result entity @s Health float 1 run scoreboard players get @s mgdr.health
 execute if score @s mgdr.health matches ..0 run kill @s
+execute if score @s mgdr.health matches 1.. run data modify entity @s AngryAt set from entity @p[tag=firingMarkerDetect,tag=holdingCBS5] UUID
+
 particle minecraft:block minecraft:yellow_wool ~ ~ ~ .15 .15 .15 1 20 force

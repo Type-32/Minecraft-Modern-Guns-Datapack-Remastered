@@ -7,4 +7,6 @@ execute if score @s mgdr.health matches 1.. run scoreboard players set @a[tag=fi
 execute if score @s mgdr.health matches ..0 run scoreboard players set @a[tag=firingMarkerDetect,tag=holdingAUGPara] redHit 0
 execute if score @s mgdr.health matches 1.. store result entity @s Health float 1 run scoreboard players get @s mgdr.health
 execute if score @s mgdr.health matches ..0 run kill @s
+function mgdr:damage/regional/anger_affection/main
+
 particle minecraft:block minecraft:red_concrete_powder ~ ~ ~ .15 .15 .15 1 25 force

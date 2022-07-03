@@ -1,7 +1,7 @@
 scoreboard players set .dist shoot_dist 10000
-scoreboard players set @s[tag=!WitherenVest,tag=!CombatMasterVest] hp_dmg 20
-scoreboard players set @s[tag=WitherenVest] hp_dmg 19
-scoreboard players set @s[tag=CombatMasterVest] hp_dmg 18
+scoreboard players set @s[tag=!WitherenVest,tag=!CombatMasterVest] hp_dmg 30
+scoreboard players set @s[tag=WitherenVest] hp_dmg 28
+scoreboard players set @s[tag=CombatMasterVest] hp_dmg 25
 
 particle minecraft:block minecraft:redstone_block ~ ~ ~ .25 .3 .25 3 70 force
 scoreboard players set @a[tag=firingMarkerDetect,tag=holdingCBS5] whiteHit 0

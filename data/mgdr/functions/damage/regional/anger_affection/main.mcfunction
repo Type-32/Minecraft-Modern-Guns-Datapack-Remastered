@@ -1,0 +1,3 @@
+data modify entity @s[type=!#mgdr:regional_affected_angered_entities] AngryAt set from entity @p[tag=firingMarkerDetect,gamemode=!creative] UUID
+execute if entity @s[type=#mgdr:regional_affected_angered_entities] run function mgdr:damage/regional/anger_affection/entity/regionals
+data merge entity @s {ActiveEffects:[{Id: 6b, Duration: 1, ShowParticles: 0b, Amplifier:30b},{Id: 7b, Duration: 1, ShowParticles: 0b, Amplifier:30b}]}

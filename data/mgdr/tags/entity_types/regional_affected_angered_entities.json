@@ -1,0 +1,11 @@
+{
+    "values":[
+        "minecraft:villager",
+        "minecraft:iron_golem",
+        "minecraft:wolf",
+        "minecraft:zombified_piglin",
+        "minecraft:skeleton",
+        "minecraft:polar_bear",
+        "minecraft:bee"
+    ]
+}
