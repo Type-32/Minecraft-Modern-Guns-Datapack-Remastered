@@ -120,6 +120,7 @@ scoreboard objectives add plr.mob_kills dummy
 scoreboard objectives add che.killed_plr dummy
 scoreboard objectives add che.killed_mob dummy
 scoreboard objectives add mgdr.plr_death deathCount
+scoreboard objectives add mgdr.eliminated dummy
 
 scoreboard objectives add motion_x1 dummy
 scoreboard objectives add motion_y1 dummy

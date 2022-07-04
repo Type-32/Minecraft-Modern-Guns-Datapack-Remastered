@@ -119,6 +119,7 @@ scoreboard players add @a che.killed_mob 0
 scoreboard players add @a togglesafe 0
 scoreboard players add @a showhud 0
 scoreboard players add @a mgdr.plr_death 0
+scoreboard players add @a mgdr.eliminated 0
 
 scoreboard players add @a mgdr.pid 0
 
