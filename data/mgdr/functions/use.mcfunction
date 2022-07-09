@@ -1,3 +1,4 @@
+#schedule function mgdr:use 1t replace
 #Code Written by Type-32
 #This part is for detecting if the player has right clicked while holding a specific gun
 scoreboard objectives add usedCarrotPol minecraft.used:minecraft.carrot_on_a_stick

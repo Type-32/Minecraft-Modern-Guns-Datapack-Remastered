@@ -13,7 +13,6 @@ function mgdr:equip_attachment
 function mgdr:action/effects/aiming_sfx
 #function mgdr:recipe
 #function mgdr:attachments
-function mgdr:command/loop
 
 function mgdr:init/scoreboards
 

@@ -142,6 +142,7 @@ function mgdr:action/effects/red_hit
 function mgdr:command/init
 function mgdr:recipe
 function mgdr:equipment_effects
+function mgdr:command/loop
 
 tellraw @a[scores={notif=0}] ["",{"text": "Modern Guns Datapack> ","color": "gold"},{"text":"The Modern Guns Datapack has been successfully loaded!"}]
 tellraw @a[scores={notif=0}] ["",{"text": "Modern Guns Datapack> ","color": "gold"},{"text":"Modern Guns Datapack & Modern Guns Resource Pack "},{"text": "made by Type-32","color": "blue","bold": true}]
