@@ -1,2 +1,2 @@
-tp @s ~ ~ ~ ~ ~-2.6
-#tp @s[tag=haveGrip] ~ ~ ~ ~ ~0.4
+tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-2.6
+tp @s[tag=haveGrip] ~ ~ ~ ~ ~0.6
