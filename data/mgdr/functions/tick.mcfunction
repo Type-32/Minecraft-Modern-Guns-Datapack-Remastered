@@ -26,8 +26,8 @@ function mgdr:clot_func/deployable_result
 function mgdr:vehicles/loop
 function mgdr:criteria
 
-scoreboard players set @a[tag=Reloading] showhud 1
-scoreboard players set @a[tag=!Reloading] showhud 0
+scoreboard players set @a[tag=reloadGun] showhud 1
+scoreboard players set @a[tag=!reloadGun] showhud 0
 execute as @a[tag=holdingGun] run function mgdr:dynammo_get
 execute as @a[tag=holdingGun] run function mgdr:dynfiremode_get
 execute as @a[tag=holdingGun] run function mgdr:dynindicator_get
