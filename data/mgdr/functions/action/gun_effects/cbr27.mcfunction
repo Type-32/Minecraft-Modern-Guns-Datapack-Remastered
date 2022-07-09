@@ -10,4 +10,4 @@ playsound mgdr:cbr27.sup_fire block @a[distance=..16,tag=haveSupressor] ~ ~ ~ 5
 playsound mgdr:cbr27.sup_fire.mech block @a[distance=..5,tag=haveSupressor] ~ ~ ~ 5
 
 playsound mgdr:cbr27.fire.dry block @a[distance=..10,scores={cbr27.ammo=..5}] ~ ~ ~ 100
-playsound mgdr:others.empty voice @s[distance=..10,scores={cbr27.ammo=..1}] ~ ~100 ~ 100
+playsound mgdr:others.empty voice @s[distance=..3,scores={cbr27.ammo=..1}] ~ ~1000 ~ 100000

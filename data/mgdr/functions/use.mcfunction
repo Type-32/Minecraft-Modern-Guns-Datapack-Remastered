@@ -12,54 +12,40 @@ scoreboard players add @a[tag=holdingController] fireDelay 1
 execute as @a[tag=holdingCBR27,tag=!gunDisabled] at @s run function mgdr:use/cbr27
 
 ## CBR-27-A1
-execute as @a[tag=holdingCBR27A1,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/cbr27a1
-execute as @a[tag=holdingCBR27A1,tag=!gunDisabled,scores={fireDelay=2,cbr27a1.fm=1}] unless score @s cbr27a1.ammo matches ..0 at @s run function mgdr:action/cbr27a1_act
+execute as @a[tag=holdingCBR27A1,tag=!gunDisabled] at @s run function mgdr:use/cbr27a1
 
 ## AS-VAL
 execute as @a[tag=holdingASVAL,tag=!gunDisabled] at @s run function mgdr:use/asval
 
 ## AK
-execute as @a[tag=holdingAK,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/ak40
-execute as @a[tag=holdingAK,tag=!gunDisabled,scores={fireDelay=2,ak.fm=1}] unless score @s ak.ammo matches ..0 at @s run function mgdr:action/ak_act
+execute as @a[tag=holdingAK,tag=!gunDisabled] at @s run function mgdr:use/ak40
 
 ## SIG-716
-execute as @a[tag=holdingSIG716,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/sig716
-execute as @a[tag=holdingSIG716,tag=!gunDisabled,scores={fireDelay=1,sig716.fm=2}] unless score @s sig716.ammo matches ..0 at @s run function mgdr:action/sig716_act
-execute as @a[tag=holdingSIG716,tag=!gunDisabled,scores={fireDelay=2,sig716.fm=1..2}] unless score @s sig716.ammo matches ..0 at @s run function mgdr:action/sig716_act
+execute as @a[tag=holdingSIG716,tag=!gunDisabled] at @s run function mgdr:use/sig716
 
 ## SIG-75-T
-execute as @a[tag=holdingSIG75T,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/sig75t
-execute as @a[tag=holdingSIG75T,tag=!gunDisabled,scores={fireDelay=1,sig75t.fm=2}] unless score @s sig75t.ammo matches ..0 at @s run function mgdr:action/sig75t_act
-execute as @a[tag=holdingSIG75T,tag=!gunDisabled,scores={fireDelay=2,sig75t.fm=1..2}] unless score @s sig75t.ammo matches ..0 at @s run function mgdr:action/sig75t_act
+execute as @a[tag=holdingSIG75T,tag=!gunDisabled] at @s run function mgdr:use/sig75t
 
 ## MP-7
-execute as @a[tag=holdingMP7,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp7
-execute as @a[tag=holdingMP7,tag=!gunDisabled,scores={fireDelay=2,mp7.fm=1}] unless score @s mp7.ammo matches ..0 at @s run function mgdr:action/mp7_act
+execute as @a[tag=holdingMP7,tag=!gunDisabled] at @s run function mgdr:use/mp7
 
 ## MP-5
-execute as @a[tag=holdingMP5,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp5
-execute as @a[tag=holdingMP5,tag=!gunDisabled,scores={fireDelay=2,mp5.fm=1}] unless score @s mp5.ammo matches ..0 at @s run function mgdr:action/mp5_act
+execute as @a[tag=holdingMP5,tag=!gunDisabled] at @s run function mgdr:use/mp5
 
 ## MP-5-T
-execute as @a[tag=holdingMP5T,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp5t
-execute as @a[tag=holdingMP5T,tag=!gunDisabled,scores={fireDelay=2,mp5t.fm=1}] unless score @s mp5t.ammo matches ..0 at @s run function mgdr:action/mp5t_act
+execute as @a[tag=holdingMP5T,tag=!gunDisabled] at @s run function mgdr:use/mp5t
 
 ## CZ-117
-execute as @a[tag=holdingCZ117,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/cz117
-execute as @a[tag=holdingCZ117,tag=!gunDisabled,scores={fireDelay=2,cz117.fm=1}] unless score @s cz117.ammo matches ..0 at @s run function mgdr:action/cz117_act
+execute as @a[tag=holdingCZ117,tag=!gunDisabled] at @s run function mgdr:use/cz117
 
 ## Grau 5.56
-execute as @a[tag=holdingGrau556,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/grau556
-execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=1,grau.fm=2}] unless score @s grau.ammo matches ..0 at @s run function mgdr:action/grau556_act
-execute as @a[tag=holdingGrau556,tag=!gunDisabled,scores={fireDelay=2,grau.fm=1..2}] unless score @s grau.ammo matches ..0 at @s run function mgdr:action/grau556_act
+execute as @a[tag=holdingGrau556,tag=!gunDisabled] at @s run function mgdr:use/grau556
 
 ## CBT-97
-execute as @a[tag=holdingCBT97,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/cbt97
-execute as @a[tag=holdingCBT97,tag=!gunDisabled,scores={fireDelay=2,cbt97.fm=1}] unless score @s cbt97.ammo matches ..0 at @s run function mgdr:action/cbt97_act
+execute as @a[tag=holdingCBT97,tag=!gunDisabled] at @s run function mgdr:use/cbt97
 
 ## Origin-12
-execute as @a[tag=holdingOrigin12,scores={usedCarrotPol=1..,fireDelay=6..,origin12.ammo=1..},tag=!gunDisabled] at @s run function mgdr:action/origin12_act
-execute as @a[tag=holdingOrigin12,scores={usedCarrotPol=1..,fireDelay=6..,origin12.ammo=..0},tag=!gunDisabled] at @s run playsound mgdr:others.empty player @s
+execute as @a[tag=holdingOrigin12,tag=!gunDisabled] at @s run function mgdr:use/origin12
 
 ## M-14
 execute as @a[tag=holdingM14,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m14
@@ -72,6 +58,39 @@ execute as @a[tag=holdingM17,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s 
 
 ## CBS-5
 execute as @a[tag=holdingCBS5] at @s run function mgdr:use/cbs5
+
+## Vec-9 Fennec
+execute as @a[tag=holdingVec9,tag=!gunDisabled] at @s run function mgdr:use/vec9
+
+## AUG Para
+execute as @a[tag=holdingAUGPara,tag=!gunDisabled] at @s run function mgdr:use/augpara
+
+## Plane
+execute as @a[tag=holdingPlaneSpawner,scores={usedCarrotPol=1..}] at @s run function mgdr:action/spawn_plane
+
+
+
+##Using Grenade
+execute as @a[tag=holdingGrenade,scores={usedCarrotPol=1..}] at @s run function mgdr:action/throw_grenade
+
+##Using Flashbang
+execute as @a[tag=holdingFlashbang,scores={usedCarrotPol=1..}] at @s run function mgdr:action/throw_flashbang
+
+##Using Landmine
+execute as @a[tag=holdingLandmine,scores={usedCarrotPol=1..}] at @s run function mgdr:action/place_landmine
+
+##Using Lasers
+execute as @a[tag=holdingGun,tag=!gunDisabled] at @s run function mgdr:func/use_laser
+
+##Using Fireball
+execute as @a[tag=holdingFireball,scores={usedCarrotPol=1..}] at @s run function mgdr:action/fireball_test
+
+##Equip Night Vision Goggles
+execute as @a[tag=holdingNODS,scores={usedCarrotPol=1..}] at @s run function mgdr:action/equip_nods
+
+##Muzzle Flash Light Removal
+execute as @a[tag=holdingGun,scores={flashDelay=1}] at @s run function mgdr:muzzle_flash_light_remove
+execute as @a[tag=holdingGun,predicate=mgdr:is_sneaking,scores={aimSec=..1,aiming_fire=0}] run function mgdr:action/effects/aim_down_sights
 
 ## MP-40
 #execute as @a[tag=holdingMP40,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/mp40
@@ -97,50 +116,21 @@ execute as @a[tag=holdingCBS5] at @s run function mgdr:use/cbs5
 #execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=1,vsg6t.fm=2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
 #execute as @a[tag=holdingVSG6T,tag=!gunDisabled,scores={fireDelay=2,vsg6t.fm=1..2}] unless score @s vsg6t.ammo matches ..0 at @s run function mgdr:action/vsg6t_act
 
-## Vec-9 Fennec
-execute as @a[tag=holdingVec9,tag=!gunDisabled] at @s run function mgdr:use/vec9
-
-## AUG Para
-execute as @a[tag=holdingAUGPara,tag=!gunDisabled] at @s run function mgdr:use/augpara
-
 ## Plane-MG
 #execute as @a[tag=holdingController,scores={usedCarrotPol=1..,plane.mode=1},x_rotation=-90..80] at @s run function mgdr:action/controller_bomb_act
 #execute as @a[tag=holdingController,scores={usedCarrotPol=1..,plane.mode=0},x_rotation=-90..80] at @s run function mgdr:use/sub/controller_func
 #execute as @a[tag=holdingController,scores={fireDelay=2,plane.mode=0},x_rotation=-90..80] at @s run function mgdr:use/sub/controller_func
 #execute as @a[tag=holdingController,scores={usedCarrotPol=1..},x_rotation=80.1..90] at @s run scoreboard players add @s plane.mode 1
 
-## Plane
-execute as @a[tag=holdingPlaneSpawner,scores={usedCarrotPol=1..}] at @s run function mgdr:action/spawn_plane
 
 ## Car Gear Change
 #execute as @a[tag=holdingDriveStick,scores={usedCarrotPol=1..},x_rotation=-90..69.9] at @s run scoreboard players add @s[scores={car.gear=..2}] car.gear 1
 #execute as @a[tag=holdingDriveStick,scores={usedCarrotPol=1..},x_rotation=70..90] at @s run scoreboard players remove @s[scores={car.gear=1..}] car.gear 1
 
-##Using Grenade
-execute as @a[tag=holdingGrenade,scores={usedCarrotPol=1..}] at @s run function mgdr:action/throw_grenade
-
-##Using Flashbang
-execute as @a[tag=holdingFlashbang,scores={usedCarrotPol=1..}] at @s run function mgdr:action/throw_flashbang
-
-##Using Landmine
-execute as @a[tag=holdingLandmine,scores={usedCarrotPol=1..}] at @s run function mgdr:action/place_landmine
-
-##Using Lasers
-execute as @a[tag=holdingGun,tag=!gunDisabled] at @s run function mgdr:func/use_laser
-
-##Using Fireball
-execute as @a[tag=holdingFireball,scores={usedCarrotPol=1..}] at @s run function mgdr:action/fireball_test
-
-##Equip Night Vision Goggles
-execute as @a[tag=holdingNODS,scores={usedCarrotPol=1..}] at @s run function mgdr:action/equip_nods
-
 ##Auto Reload
 #function mgdr:command/func/auto_reload_action
 
-##Muzzle Flash Light Removal
-execute as @a[tag=holdingGun,scores={flashDelay=1},tag=!gunDisabled] at @s run function mgdr:muzzle_flash_light_remove
-
 #execute as @e[tag=shellInit,tag=bullet_shell,type=item] at @s rotated as @p run function mgdr:action/apply_shell_motion
-execute as @a[tag=holdingGun,predicate=mgdr:is_sneaking,scores={aimSec=..1,aiming_fire=0}] run function mgdr:action/effects/aim_down_sights
 ## Reset scoreboard
+
 scoreboard players set @a usedCarrotPol 0
