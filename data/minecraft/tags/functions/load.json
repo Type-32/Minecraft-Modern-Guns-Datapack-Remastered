@@ -1,6 +1,7 @@
 {
     "values":[
         "mgdr:load",
-        "cw_hp_control:init"
+        "cw_hp_control:init",
+        "mgdr_arcade:load"
     ]
 }
