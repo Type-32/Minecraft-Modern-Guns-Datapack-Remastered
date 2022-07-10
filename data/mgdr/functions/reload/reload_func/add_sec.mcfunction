@@ -21,3 +21,4 @@ scoreboard players add @s vec9.reload 1
 scoreboard players add @s vsg15.reload 1
 scoreboard players add @s vsg6t.reload 1
 scoreboard players add @s augpara.reload 1
+scoreboard players add @s origin12.reload 1

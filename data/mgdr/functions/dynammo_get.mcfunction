@@ -21,3 +21,4 @@ execute if entity @s[tag=holdingVec9] run scoreboard players operation @s dyn.am
 execute if entity @s[tag=holdingVSG15] run scoreboard players operation @s dyn.ammo = @s vsg15.ammo
 execute if entity @s[tag=holdingVSG6T] run scoreboard players operation @s dyn.ammo = @s vsg6t.ammo
 execute if entity @s[tag=holdingAUGPara] run scoreboard players operation @s dyn.ammo = @s augpara.ammo
+execute if entity @s[tag=holdingOrigin12] run scoreboard players operation @s dyn.ammo = @s origin12.ammo

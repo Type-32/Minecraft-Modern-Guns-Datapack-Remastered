@@ -24,6 +24,7 @@ scoreboard players add @a vsg15.reload 0
 scoreboard players add @a vsg6t.reload 0
 scoreboard players add @a vec9.reload 0
 scoreboard players add @a augpara.reload 0
+scoreboard players add @a origin12.reload 0
 
 scoreboard players add @a ak.fm 0
 scoreboard players add @a mp40.fm 0

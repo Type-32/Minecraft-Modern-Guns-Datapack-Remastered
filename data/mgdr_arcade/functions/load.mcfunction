@@ -32,5 +32,5 @@ bossbar set mgdr_arcade:alliegiance_points color red
 bossbar set mgdr_arcade:coalition_points color blue
 bossbar set mgdr_arcade:alliegiance_points style notched_10
 bossbar set mgdr_arcade:coalition_points style notched_10
-bossbar set mgdr_arcade:alliegiance_points max 100
-bossbar set mgdr_arcade:coalition_points max 100
+bossbar set mgdr_arcade:alliegiance_points max 50
+bossbar set mgdr_arcade:coalition_points max 50

@@ -21,3 +21,4 @@ playsound mgdr:type2a.reload voice @s[tag=!playedReload,tag=Type2A] ~ ~10000000 
 playsound mgdr:vec9.reload voice @s[tag=!playedReload,tag=holdingVec9] ~ ~10000000 ~ 10000000
 playsound mgdr:vsg6t.reload voice @s[tag=!playedReload,tag=holdingVSG6T] ~ ~10000000 ~ 10000000
 playsound mgdr:vsg15.reload voice @s[tag=!playedReload,tag=holdingVSG15] ~ ~10000000 ~ 10000000
+playsound mgdr:origin12.reload voice @s[tag=!playedReload,tag=holdingOrigin12] ~ ~10000000 ~ 10000000

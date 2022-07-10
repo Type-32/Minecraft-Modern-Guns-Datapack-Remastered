@@ -35,6 +35,7 @@ scoreboard objectives add vsg15.ammo dummy
 scoreboard objectives add vsg6t.ammo dummy
 scoreboard objectives add vec9.ammo dummy
 scoreboard objectives add augpara.ammo dummy
+scoreboard objectives add origin12.ammo dummy
 scoreboard objectives add laser.ammo dummy
 
 scoreboard objectives add vsg15.xp dummy

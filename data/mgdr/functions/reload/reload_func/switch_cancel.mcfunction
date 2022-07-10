@@ -67,3 +67,6 @@ execute if entity @s[tag=!holdingVSG6T,scores={vsg6t.reload=..5}] run scoreboard
 
 execute if entity @s[tag=!holdingAUGPara,scores={augpara.reload=..6}] run stopsound @s voice mgdr:augpara.reload
 execute if entity @s[tag=!holdingAUGPara,scores={augpara.reload=..6}] run scoreboard players set @s augpara.reload 10
+
+execute if entity @s[tag=!holdingOrigin12,scores={origin12.reload=..5}] run stopsound @s voice mgdr:origin12.reload
+execute if entity @s[tag=!holdingOrigin12,scores={origin12.reload=..5}] run scoreboard players set @s origin12.reload 10

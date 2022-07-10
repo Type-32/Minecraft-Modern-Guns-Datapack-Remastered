@@ -21,3 +21,4 @@ execute as @a[tag=holdingVec9] run function mgdr:reload/vec9_reload
 execute as @a[tag=holdingVSG15] run function mgdr:reload/vsg15_reload
 execute as @a[tag=holdingVSG6T] run function mgdr:reload/vsg6t_reload
 execute as @a[tag=holdingAUGPara] run function mgdr:reload/augpara_reload
+execute as @a[tag=holdingOrigin12] run function mgdr:reload/origin12_reload
