@@ -47,4 +47,4 @@ bossbar set mgdr_arcade:coalition_points style notched_10
 bossbar set mgdr_arcade:match_time style notched_12
 bossbar set mgdr_arcade:alliegiance_points max 50
 bossbar set mgdr_arcade:coalition_points max 50
-bossbar set mgdr_arcade:match_time max 6000
+bossbar set mgdr_arcade:match_time max 9600

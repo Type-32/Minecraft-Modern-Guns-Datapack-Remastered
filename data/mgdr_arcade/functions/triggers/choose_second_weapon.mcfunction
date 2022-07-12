@@ -32,5 +32,6 @@ tellraw @s[scores={chooseWeapon2=14}] ["",{"translate": "mgdr_arcade.message.loa
 tellraw @s[scores={chooseWeapon2=15}] ["",{"translate": "mgdr_arcade.message.loadout.you_have_chosen","color": "yellow"},{"translate": "M-17 ","color": "green"},{"translate": "mgdr_arcade.message.loadout.as_your_second_weapon","color": "yellow"}]
 tellraw @s[scores={chooseWeapon2=16}] ["",{"translate": "mgdr_arcade.message.loadout.you_have_chosen","color": "yellow"},{"translate": "M-1911 ","color": "green"},{"translate": "mgdr_arcade.message.loadout.as_your_second_weapon","color": "yellow"}]
 
+playsound minecraft:ui.button.click player @s ~ ~ ~ 10000000 2
 scoreboard players operation @s weaponChoice2 = @s chooseWeapon2
 scoreboard players set @s chooseWeapon2 0

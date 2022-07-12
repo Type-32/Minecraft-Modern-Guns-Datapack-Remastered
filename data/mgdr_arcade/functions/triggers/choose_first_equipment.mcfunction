@@ -8,5 +8,6 @@ tellraw @s[scores={chooseEquipment1=2}] ["",{"translate": "mgdr_arcade.message.l
 tellraw @s[scores={chooseEquipment1=3}] ["",{"translate": "mgdr_arcade.message.loadout.you_have_chosen","color": "yellow"},{"translate": "mgdr_arcade.message.loadout.landmine","color": "green"},{"translate": "mgdr_arcade.message.loadout.as_your_first_equipment","color": "yellow"}]
 tellraw @s[scores={chooseEquipment1=4}] ["",{"translate": "mgdr_arcade.message.loadout.you_have_chosen","color": "yellow"},{"translate": "mgdr_arcade.message.loadout.combat_master_vest","color": "green"},{"translate": "mgdr_arcade.message.loadout.as_your_first_equipment","color": "yellow"}]
 
+playsound minecraft:ui.button.click player @s ~ ~ ~ 10000000 2
 scoreboard players operation @s equipmentChoice1 = @s chooseEquipment1
 scoreboard players set @s chooseEquipment1 0
