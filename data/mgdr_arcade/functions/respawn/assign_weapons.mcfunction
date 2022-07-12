@@ -51,12 +51,12 @@ item replace entity @s[scores={weaponChoice2=16}] hotbar.1 with carrot_on_a_stic
 item replace entity @s[scores={equipmentChoice1=1}] hotbar.2 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
 item replace entity @s[scores={equipmentChoice1=2}] hotbar.2 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
 item replace entity @s[scores={equipmentChoice1=3}] hotbar.2 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
-item replace entity @s[scores={equipmentChoice1=4}] hotbar.2 with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
+item replace entity @s[scores={equipmentChoice1=4}] armor.chest with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
 
 item replace entity @s[scores={equipmentChoice2=1}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
 item replace entity @s[scores={equipmentChoice2=2}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
 item replace entity @s[scores={equipmentChoice2=3}] hotbar.3 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
-item replace entity @s[scores={equipmentChoice2=4}] hotbar.3 with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
+item replace entity @s[scores={equipmentChoice2=4}] armor.chest with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
 
 give @s clock{CustomModelData:212103,Tags:["full","9mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.009mm_mag","italic":false}'}} 64
 give @s clock{CustomModelData:212105,Tags:["full","4.5mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.045mm_mag","italic":false}'}} 64

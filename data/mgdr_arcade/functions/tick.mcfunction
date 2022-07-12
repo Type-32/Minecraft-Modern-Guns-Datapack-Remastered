@@ -13,6 +13,7 @@ scoreboard players add @a equipmentChoice1 0
 scoreboard players add @a equipmentChoice2 0
 scoreboard players add @a playerkills 0
 scoreboard players add @a tempHighScore 0
+scoreboard players add @a hitTime 0
 
 scoreboard players enable @a weaponLoadout
 scoreboard players enable @a equipmentLoadout
@@ -34,3 +35,5 @@ execute as @a[scores={chooseWeapon1=1..}] at @s run function mgdr_arcade:trigger
 execute as @a[scores={chooseWeapon2=1..}] at @s run function mgdr_arcade:triggers/choose_second_weapon
 execute as @a[scores={chooseEquipment1=1..}] at @s run function mgdr_arcade:triggers/choose_first_equipment
 execute as @a[scores={chooseEquipment2=1..}] at @s run function mgdr_arcade:triggers/choose_second_equipment
+
+execute if score #playerRule.autoHeal arcadeRule matches 1 run function mgdr_arcade:player_autoheal

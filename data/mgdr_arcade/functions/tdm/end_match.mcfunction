@@ -12,7 +12,8 @@ execute if score .alliegiancePoints arcadeRule = .coalitionPoints arcadeRule unl
 tellraw @a ["",{"text": "Match Ended! Match Scores: ","color": "green"},{"score":{"name": ".alliegiancePoints","objective": "arcadeRule"},"color": "red","bold": true},{"text": "-","color": "green"},{"score":{"name": ".coalitionPoints","objective": "arcadeRule"},"color": "blue","bold": true}]
 tp @a @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1]
 effect clear @a
-effect give @a regeneration 1 255 true
+effect give @a regeneration 1 1 true
+effect give @a saturation 1 255 true
 bossbar set mgdr_arcade:alliegiance_points visible false
 bossbar set mgdr_arcade:coalition_points visible false
 bossbar set mgdr_arcade:match_time visible false

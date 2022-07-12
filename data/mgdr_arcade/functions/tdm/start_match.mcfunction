@@ -17,4 +17,7 @@ bossbar set mgdr_arcade:coalition_points visible true
 bossbar set mgdr_arcade:match_time visible true
 execute at @e[type=armor_stand,tag=ArcadeAsset,tag=DeathSpawnPoint,limit=1] run spawnpoint @a
 execute as @a[team=!] at @s run function mgdr_arcade:tdm/spawn_players
-scoreboard players set .matchTime arcadeRule 3600
+scoreboard players set .matchTime arcadeRule 9600
+function mgdr_arcade:schedules/match_time_schedule
+effect give @a regeneration 1 1 true
+effect give @a saturation 1 255 true

@@ -7,6 +7,8 @@ scoreboard players add .coalitionPoints arcadeRule 0
 scoreboard players add .alliegiancePoints arcadeRule 0
 scoreboard players add .matchTime arcadeRule 0
 scoreboard players add #highestScore arcadeRule 0
+scoreboard players add #playerRule.autoHeal arcadeRule 0
+execute if score #playerRule.autoHeal arcadeRule matches 1 run scoreboard players set #playerRule.autoHeal arcadeRule 1
 scoreboard players set .2 arcadeRule 2
 team add alliegiance {"text":"Alliegiance","color": "red"}
 team add coalition {"text":"Coalition","color": "blue"}
@@ -27,6 +29,7 @@ scoreboard objectives add equipmentChoice1 dummy
 scoreboard objectives add equipmentChoice2 dummy
 scoreboard objectives add playerkills dummy
 scoreboard objectives add tempHighScore dummy
+scoreboard objectives add hitTime dummy
 gamerule doImmediateRespawn true
 function mgdr_arcade:schedules/match_time_schedule
 
