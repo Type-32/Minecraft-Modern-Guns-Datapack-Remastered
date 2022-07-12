@@ -11,7 +11,10 @@ scoreboard players operation .expectedCoalitionPlayers arcadeRule -= .expectedAl
 execute as @a[team=] run function mgdr_arcade:assign_random_teams
 bossbar set mgdr_arcade:alliegiance_points players @a
 bossbar set mgdr_arcade:coalition_points players @a
+bossbar set mgdr_arcade:match_time players @a
 bossbar set mgdr_arcade:alliegiance_points visible true
 bossbar set mgdr_arcade:coalition_points visible true
+bossbar set mgdr_arcade:match_time visible true
 execute at @e[type=armor_stand,tag=ArcadeAsset,tag=DeathSpawnPoint,limit=1] run spawnpoint @a
-execute as @a[team=!] at @s run function mgdr_arcade:spawn_players
+execute as @a[team=!] at @s run function mgdr_arcade:tdm/spawn_players
+scoreboard players set .matchTime arcadeRule 3600
