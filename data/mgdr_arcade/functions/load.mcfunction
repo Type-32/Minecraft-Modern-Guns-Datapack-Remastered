@@ -8,6 +8,7 @@ scoreboard players add .alliegiancePoints arcadeRule 0
 scoreboard players add .matchTime arcadeRule 0
 scoreboard players add #highestScore arcadeRule 0
 scoreboard players add #playerRule.autoHeal arcadeRule 0
+scoreboard players add #player.lastFiredUID gamerule 0
 execute if score #playerRule.autoHeal arcadeRule matches 1 run scoreboard players set #playerRule.autoHeal arcadeRule 1
 scoreboard players set .2 arcadeRule 2
 team add alliegiance {"text":"Alliegiance","color": "red"}

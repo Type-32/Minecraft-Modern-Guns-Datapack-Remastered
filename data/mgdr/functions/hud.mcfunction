@@ -22,4 +22,5 @@
 #execute as @a[scores={vec9.reload=5..},tag=holdingVec9] at @s run function mgdr:hud/num/vec9
 #execute as @a[scores={augpara.reload=5..},tag=holdingAUGPara] at @s run function mgdr:hud/num/augpara
 #execute as @a[tag=holdingDriveStick] at @s run function mgdr:hud/car
-execute as @a[tag=holdingGun,scores={showhud=0}] run function mgdr:ammohud/master_node
+execute as @a[tag=holdingGun,scores={showhud=0,new_ui=1..}] run function mgdr:ammohud/master_node
+execute as @a[tag=holdingGun,scores={new_ui=0}] run function mgdr:old_hud

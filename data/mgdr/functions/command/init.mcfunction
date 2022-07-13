@@ -5,4 +5,5 @@ scoreboard objectives add expFt trigger "Experimental Features"
 scoreboard objectives add aiming_fire trigger "Toggle Aiming Fire"
 scoreboard objectives add tgl_particle trigger "Particle Switch"
 scoreboard objectives add proj_trace trigger "Projectile Tracer Path"
+scoreboard objectives add new_ui trigger "New UI"
 scoreboard players add datapackItemFunc gamerule 0

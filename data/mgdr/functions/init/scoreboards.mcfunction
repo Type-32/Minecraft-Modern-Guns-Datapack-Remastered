@@ -123,6 +123,7 @@ scoreboard players add @a mgdr.plr_death 0
 scoreboard players add @a mgdr.eliminated 0
 
 scoreboard players add @a mgdr.pid 0
+scoreboard players add @a mgdr.playerUID 0
 
 scoreboard players add @a notif 0
 scoreboard players add @a expFt 0

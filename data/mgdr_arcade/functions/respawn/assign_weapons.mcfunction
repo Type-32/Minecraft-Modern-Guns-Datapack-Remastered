@@ -48,15 +48,34 @@ item replace entity @s[scores={weaponChoice2=14}] hotbar.1 with carrot_on_a_stic
 item replace entity @s[scores={weaponChoice2=15}] hotbar.1 with carrot_on_a_stick{Tags:["m17"]}
 item replace entity @s[scores={weaponChoice2=16}] hotbar.1 with carrot_on_a_stick{Tags:["m1911"]}
 
-item replace entity @s[scores={equipmentChoice1=1}] hotbar.2 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
-item replace entity @s[scores={equipmentChoice1=2}] hotbar.2 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
-item replace entity @s[scores={equipmentChoice1=3}] hotbar.2 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
+item replace entity @s hotbar.2 with iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:8}]}
+
+item replace entity @s[scores={equipmentChoice1=1}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
+item replace entity @s[scores={equipmentChoice1=2}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
+item replace entity @s[scores={equipmentChoice1=3}] hotbar.3 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
 item replace entity @s[scores={equipmentChoice1=4}] armor.chest with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
 
-item replace entity @s[scores={equipmentChoice2=1}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
-item replace entity @s[scores={equipmentChoice2=2}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
-item replace entity @s[scores={equipmentChoice2=3}] hotbar.3 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
+item replace entity @s[scores={equipmentChoice2=1}] hotbar.4 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
+item replace entity @s[scores={equipmentChoice2=2}] hotbar.4 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
+item replace entity @s[scores={equipmentChoice2=3}] hotbar.4 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
 item replace entity @s[scores={equipmentChoice2=4}] armor.chest with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
+
+scoreboard players set @s ak.ammo 30
+scoreboard players set @s asval.ammo 20
+scoreboard players set @s cbr27.ammo 30
+scoreboard players set @s cbr27a1.ammo 40
+scoreboard players set @s cbt97.ammo 40
+scoreboard players set @s grau.ammo 30
+scoreboard players set @s sig716.ammo 30
+scoreboard players set @s cz117.ammo 35
+scoreboard players set @s augpara.ammo 30
+scoreboard players set @s vec9.ammo 40
+scoreboard players set @s mp7.ammo 30
+scoreboard players set @s mp5.ammo 30
+scoreboard players set @s m14.ammo 10
+scoreboard players set @s cbs5.ammo 6
+scoreboard players set @s m17.ammo 15
+scoreboard players set @s m1911.ammo 8
 
 give @s clock{CustomModelData:212103,Tags:["full","9mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.009mm_mag","italic":false}'}} 64
 give @s clock{CustomModelData:212105,Tags:["full","4.5mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.045mm_mag","italic":false}'}} 64

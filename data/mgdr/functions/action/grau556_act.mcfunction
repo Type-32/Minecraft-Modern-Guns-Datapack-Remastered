@@ -6,8 +6,10 @@ function mgdr:muzzle_flash_light_add
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/grau556
+scoreboard players operation #player.lastFiredUID gamerule = @s mgdr.pid
 tag @s remove firing
 tag @s remove firingMarkerDetect
+
 
 
 execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 6 0 0.18 0 force @s[scores={tgl_particle=0}]

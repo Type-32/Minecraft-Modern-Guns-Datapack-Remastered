@@ -4,3 +4,4 @@ function mgdr:command/settings
 function mgdr:command/tgl_particle
 function mgdr:command/aiming_fire
 function mgdr:command/proj_trace
+function mgdr:command/new_ui
