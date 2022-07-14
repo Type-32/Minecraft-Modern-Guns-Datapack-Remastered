@@ -9,6 +9,7 @@ scoreboard players operation .expectedCoalitionPlayers arcadeRule = .totalPlayer
 scoreboard players operation .expectedAlliegiancePlayers arcadeRule /= .2 arcadeRule
 scoreboard players operation .expectedCoalitionPlayers arcadeRule -= .expectedAlliegiancePlayers arcadeRule
 execute as @a[team=] run function mgdr_arcade:assign_random_teams
+tag @a[team=!] add voluntary
 bossbar set mgdr_arcade:alliegiance_points players @a
 bossbar set mgdr_arcade:coalition_points players @a
 bossbar set mgdr_arcade:match_time players @a

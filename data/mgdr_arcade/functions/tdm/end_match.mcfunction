@@ -21,3 +21,4 @@ scoreboard players set .coalitionPoints arcadeRule 0
 scoreboard players set .alliegiancePoints arcadeRule 0
 execute at @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1] run spawnpoint @a
 scoreboard players set .matchTime arcadeRule 0
+tag @a remove voluntary

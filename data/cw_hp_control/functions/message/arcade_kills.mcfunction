@@ -20,3 +20,4 @@ execute if score .gamemode arcadeRule matches 0 run tellraw @a[tag=hasKilledPlay
 execute if score .gamemode arcadeRule matches 0 run tellraw @a[tag=hasKilledPlayer,limit=1,team=coalition] ["",{"text": "Player Kill!    ","color": "gold"},{"text": "+1 Point","color": "blue"}]
 execute if score .gamemode arcadeRule matches 1 run tellraw @a[tag=hasKilledPlayer,limit=1] ["",{"text": "Player Kill!    ","color": "gold"},{"text": "+1 Point","color": "yellow"}]
 execute if score .gamemode arcadeRule matches 1 run scoreboard players add @a[tag=hasKilledPlayer,limit=1] playerkills 1
+scoreboard players set @a[tag=hasKilledPlayer,limit=1] plr.redHit 0

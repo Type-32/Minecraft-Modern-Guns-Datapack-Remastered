@@ -93,6 +93,7 @@ scoreboard players add @a dyn.indicator 0
 scoreboard players add @a dyn.load 0
 scoreboard players add @a vestDamage 0
 scoreboard players add @a playerHealth 0
+scoreboard players add @a[scores={plr.redHit=..10}] plr.redHit 1
 scoreboard players add @a[scores={redHit=..10}] redHit 1
 scoreboard players add @a[scores={whiteHit=..10}] whiteHit 1
 

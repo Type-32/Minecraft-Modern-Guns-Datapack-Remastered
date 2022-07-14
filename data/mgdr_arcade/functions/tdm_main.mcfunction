@@ -1,5 +1,11 @@
 execute as @a[scores={arcade.plr_deaths=1..}] at @s if score .matchStarted arcadeRule matches 1.. run function mgdr_arcade:tdm/death
 scoreboard players remove @a[scores={deathTimer=1..}] deathTimer 1
+execute as @a[scores={deathTimer=1..}] run title @s title ""
+execute as @a[scores={deathTimer=100}] run title @s subtitle {"text":"You Will Respawn in 5 seconds...","color": "yellow"}
+execute as @a[scores={deathTimer=80}] run title @s subtitle {"text":"You Will Respawn in 4 seconds...","color": "yellow"}
+execute as @a[scores={deathTimer=60}] run title @s subtitle {"text":"You Will Respawn in 3 seconds...","color": "yellow"}
+execute as @a[scores={deathTimer=40}] run title @s subtitle {"text":"You Will Respawn in 2 seconds...","color": "yellow"}
+execute as @a[scores={deathTimer=20}] run title @s subtitle {"text":"You Will Respawn in 1 second...","color": "yellow"}
 execute as @a[scores={deathTimer=0},tag=DeadPlayer] at @s if score .matchStarted arcadeRule matches 1.. run function mgdr_arcade:tdm/respawn_player
 execute if score .matchStarted arcadeRule matches 1.. if score .alliegiancePoints arcadeRule matches 50.. unless score .coalitionPoints arcadeRule matches 50.. run function mgdr_arcade:tdm/end_match
 execute if score .matchStarted arcadeRule matches 1.. unless score .alliegiancePoints arcadeRule matches 50.. if score .coalitionPoints arcadeRule matches 50.. run function mgdr_arcade:tdm/end_match
@@ -9,5 +15,5 @@ execute if score .matchStarted arcadeRule matches 1.. unless score .alliegianceP
 execute store result bossbar mgdr_arcade:alliegiance_points value run scoreboard players get .alliegiancePoints arcadeRule
 execute store result bossbar mgdr_arcade:coalition_points value run scoreboard players get .coalitionPoints arcadeRule
 
-execute if score .matchStarted arcadeRule matches 1.. if score .alliegiancePlayers arcadeRule > .expectedAlliegiancePlayers arcadeRule if entity @a[team=] run function mgdr_arcade:teams/after_assign_alliegiance_dfs
-execute if score .matchStarted arcadeRule matches 1.. if score .coalitionPlayers arcadeRule > .expectedCoalitionPlayers arcadeRule if entity @a[team=] run function mgdr_arcade:teams/after_assign_coalition_dfs
+execute if score .matchStarted arcadeRule matches 1.. if score .alliegiancePlayers arcadeRule > .expectedAlliegiancePlayers arcadeRule run function mgdr_arcade:teams/after_assign_alliegiance_dfs
+execute if score .matchStarted arcadeRule matches 1.. if score .coalitionPlayers arcadeRule > .expectedCoalitionPlayers arcadeRule run function mgdr_arcade:teams/after_assign_coalition_dfs

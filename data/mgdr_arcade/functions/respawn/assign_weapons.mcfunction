@@ -28,27 +28,14 @@ item replace entity @s[scores={weaponChoice1=11}] hotbar.0 with carrot_on_a_stic
 item replace entity @s[scores={weaponChoice1=12}] hotbar.0 with carrot_on_a_stick{Tags:["vec9"]}
 item replace entity @s[scores={weaponChoice1=13}] hotbar.0 with carrot_on_a_stick{Tags:["m14"]}
 item replace entity @s[scores={weaponChoice1=14}] hotbar.0 with carrot_on_a_stick{Tags:["cbs5"]}
-item replace entity @s[scores={weaponChoice1=15}] hotbar.0 with carrot_on_a_stick{Tags:["m17"]}
-item replace entity @s[scores={weaponChoice1=16}] hotbar.0 with carrot_on_a_stick{Tags:["m1911"]}
 
-item replace entity @s[scores={weaponChoice2=1}] hotbar.1 with carrot_on_a_stick{Tags:["cbr27"]}
-item replace entity @s[scores={weaponChoice2=2}] hotbar.1 with carrot_on_a_stick{Tags:["cbr27a1"]}
-item replace entity @s[scores={weaponChoice2=3}] hotbar.1 with carrot_on_a_stick{Tags:["ak"]}
-item replace entity @s[scores={weaponChoice2=4}] hotbar.1 with carrot_on_a_stick{Tags:["asval"]}
-item replace entity @s[scores={weaponChoice2=5}] hotbar.1 with carrot_on_a_stick{Tags:["augpara"]}
-item replace entity @s[scores={weaponChoice2=6}] hotbar.1 with carrot_on_a_stick{Tags:["cbt97"]}
-item replace entity @s[scores={weaponChoice2=7}] hotbar.1 with carrot_on_a_stick{Tags:["grau556"]}
-item replace entity @s[scores={weaponChoice2=8}] hotbar.1 with carrot_on_a_stick{Tags:["sig716"]}
-item replace entity @s[scores={weaponChoice2=9}] hotbar.1 with carrot_on_a_stick{Tags:["cz117"]}
-item replace entity @s[scores={weaponChoice2=10}] hotbar.1 with carrot_on_a_stick{Tags:["mp7"]}
-item replace entity @s[scores={weaponChoice2=11}] hotbar.1 with carrot_on_a_stick{Tags:["mp5"]}
-item replace entity @s[scores={weaponChoice2=12}] hotbar.1 with carrot_on_a_stick{Tags:["vec9"]}
-item replace entity @s[scores={weaponChoice2=13}] hotbar.1 with carrot_on_a_stick{Tags:["m14"]}
-item replace entity @s[scores={weaponChoice2=14}] hotbar.1 with carrot_on_a_stick{Tags:["cbs5"]}
-item replace entity @s[scores={weaponChoice2=15}] hotbar.1 with carrot_on_a_stick{Tags:["m17"]}
-item replace entity @s[scores={weaponChoice2=16}] hotbar.1 with carrot_on_a_stick{Tags:["m1911"]}
-
-item replace entity @s hotbar.2 with minecraft:carrot_on_a_stick{Tags:["combat_master_knife"],CustomModelData:202009,display:{Name:'{"translate":"mgdr.item.combat_master_knife","italic":false,"color":"yellow"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:14,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-122614,28756,125136,-57512]}]}
+item replace entity @s[scores={weaponChoice2=1}] hotbar.1 with carrot_on_a_stick{Tags:["cbr27a1"]}
+item replace entity @s[scores={weaponChoice2=2}] hotbar.1 with carrot_on_a_stick{Tags:["cz117"]}
+item replace entity @s[scores={weaponChoice2=3}] hotbar.1 with carrot_on_a_stick{Tags:["mp7"]}
+item replace entity @s[scores={weaponChoice2=4}] hotbar.1 with carrot_on_a_stick{Tags:["mp5"]}
+item replace entity @s[scores={weaponChoice2=5}] hotbar.1 with carrot_on_a_stick{Tags:["m17"]}
+item replace entity @s[scores={weaponChoice2=6}] hotbar.1 with carrot_on_a_stick{Tags:["m1911"]}
+item replace entity @s[scores={weaponChoice2=7}] hotbar.1 with minecraft:carrot_on_a_stick{Tags:["combat_master_knife"],CustomModelData:202009,display:{Name:'{"translate":"mgdr.item.combat_master_knife","italic":false,"color":"yellow"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:14,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-122614,28756,125136,-57512]}]}
 
 give @s[scores={equipmentChoice1=1}] minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
 give @s[scores={equipmentChoice1=2}] minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
@@ -76,7 +63,7 @@ scoreboard players set @s sig716.ammo 30
 scoreboard players set @s cz117.ammo 35
 scoreboard players set @s augpara.ammo 30
 scoreboard players set @s vec9.ammo 40
-scoreboard players set @s mp7.ammo 30
+scoreboard players set @s mp7.ammo 40
 scoreboard players set @s mp5.ammo 30
 scoreboard players set @s m14.ammo 10
 scoreboard players set @s cbs5.ammo 6

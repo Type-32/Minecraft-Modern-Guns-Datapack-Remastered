@@ -48,6 +48,7 @@ scoreboard objectives add dyn.load dummy
 scoreboard objectives add vestDamage dummy
 scoreboard objectives add playerHealth health
 scoreboard objectives add redHit dummy
+scoreboard objectives add plr.redHit dummy
 scoreboard objectives add whiteHit dummy
 
 scoreboard objectives add 762.fullMag dummy
