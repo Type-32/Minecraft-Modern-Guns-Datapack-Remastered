@@ -9,6 +9,6 @@ tag @s remove firing
 tag @s remove firingMarkerDetect
 
 
-playsound mgdr:others.fly_knife voice @a[distance=..20] ~ ~ ~ 1000
+playsound minecraft:item.trident.throw voice @a[distance=..20] ~ ~ ~ 1000 2
 #scoreboard players set @s[scores={fireDelay=4..}] fireDelay 0
 item replace entity @s[gamemode=!creative] weapon.mainhand with air

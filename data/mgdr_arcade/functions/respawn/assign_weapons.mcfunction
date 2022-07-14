@@ -48,17 +48,23 @@ item replace entity @s[scores={weaponChoice2=14}] hotbar.1 with carrot_on_a_stic
 item replace entity @s[scores={weaponChoice2=15}] hotbar.1 with carrot_on_a_stick{Tags:["m17"]}
 item replace entity @s[scores={weaponChoice2=16}] hotbar.1 with carrot_on_a_stick{Tags:["m1911"]}
 
-item replace entity @s hotbar.2 with iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:8}]}
+item replace entity @s hotbar.2 with minecraft:carrot_on_a_stick{Tags:["combat_master_knife"],CustomModelData:202009,display:{Name:'{"translate":"mgdr.item.combat_master_knife","italic":false,"color":"yellow"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:14,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-122614,28756,125136,-57512]}]}
 
-item replace entity @s[scores={equipmentChoice1=1}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
-item replace entity @s[scores={equipmentChoice1=2}] hotbar.3 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
-item replace entity @s[scores={equipmentChoice1=3}] hotbar.3 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
+give @s[scores={equipmentChoice1=1}] minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
+give @s[scores={equipmentChoice1=2}] minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
+give @s[scores={equipmentChoice1=2}] minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
+give @s[scores={equipmentChoice1=3}] carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
 item replace entity @s[scores={equipmentChoice1=4}] armor.chest with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
+give @s[scores={equipmentChoice1=5}] minecraft:carrot_on_a_stick{Tags:["stim_shot"],CustomModelData:202010,display:{Name:'{"translate":"mgdr.item.stim_shot","italic":false,"color":"yellow"}'}}
+give @s[scores={equipmentChoice1=5}] minecraft:carrot_on_a_stick{Tags:["stim_shot"],CustomModelData:202010,display:{Name:'{"translate":"mgdr.item.stim_shot","italic":false,"color":"yellow"}'}}
 
-item replace entity @s[scores={equipmentChoice2=1}] hotbar.4 with minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
-item replace entity @s[scores={equipmentChoice2=2}] hotbar.4 with minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
-item replace entity @s[scores={equipmentChoice2=3}] hotbar.4 with carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
+give @s[scores={equipmentChoice2=1}] minecraft:carrot_on_a_stick{Tags:["grenade","throwable"],CustomModelData:202001,display:{Name:'{"translate":"mgdr.item.throwables.grenade","italic":false}'}}
+give @s[scores={equipmentChoice2=2}] minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
+give @s[scores={equipmentChoice2=2}] minecraft:carrot_on_a_stick{Tags:["flashbang","throwable"],CustomModelData:202002,display:{Name:'{"translate":"mgdr.item.throwables.flashbang","italic":false}'}}
+give @s[scores={equipmentChoice2=3}] carrot_on_a_stick{CustomModelData:202006,display:{Name:'{"translate":"mgdr.item.deployables.landmine","color": "yellow","italic": false}'},Tags:["landmine"]}
 item replace entity @s[scores={equipmentChoice2=4}] armor.chest with iron_chestplate{Tags:["combat_master_vest"],display:{Name:'{"text":"Combat Master Vest","color": "yellow","italic": false}'}}
+give @s[scores={equipmentChoice2=5}] minecraft:carrot_on_a_stick{Tags:["stim_shot"],CustomModelData:202010,display:{Name:'{"translate":"mgdr.item.stim_shot","italic":false,"color":"yellow"}'}}
+give @s[scores={equipmentChoice2=5}] minecraft:carrot_on_a_stick{Tags:["stim_shot"],CustomModelData:202010,display:{Name:'{"translate":"mgdr.item.stim_shot","italic":false,"color":"yellow"}'}}
 
 scoreboard players set @s ak.ammo 30
 scoreboard players set @s asval.ammo 20
@@ -74,10 +80,11 @@ scoreboard players set @s mp7.ammo 30
 scoreboard players set @s mp5.ammo 30
 scoreboard players set @s m14.ammo 10
 scoreboard players set @s cbs5.ammo 6
+scoreboard players set @s cbs5.load 0
 scoreboard players set @s m17.ammo 15
 scoreboard players set @s m1911.ammo 8
 
-give @s clock{CustomModelData:212103,Tags:["full","9mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.009mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212105,Tags:["full","4.5mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.045mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212102,Tags:["full","5.56mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.556mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212101,Tags:["full","7.62mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.762mm_mag","italic":false}'}} 64
+item replace entity @s inventory.0 with clock{CustomModelData:212103,Tags:["full","9mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.009mm_mag","italic":false}'}} 64
+item replace entity @s inventory.1 with clock{CustomModelData:212105,Tags:["full","4.5mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.045mm_mag","italic":false}'}} 64
+item replace entity @s inventory.2 with clock{CustomModelData:212102,Tags:["full","5.56mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.556mm_mag","italic":false}'}} 64
+item replace entity @s inventory.3 with clock{CustomModelData:212101,Tags:["full","7.62mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.762mm_mag","italic":false}'}} 64
