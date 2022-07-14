@@ -9,5 +9,5 @@ execute if score .matchStarted arcadeRule matches 1.. unless score .alliegianceP
 execute store result bossbar mgdr_arcade:alliegiance_points value run scoreboard players get .alliegiancePoints arcadeRule
 execute store result bossbar mgdr_arcade:coalition_points value run scoreboard players get .coalitionPoints arcadeRule
 
-execute if score .matchStarted arcadeRule matches 1.. if score .alliegiancePlayers arcadeRule > .expectedAlliegiancePlayers arcadeRule run function mgdr_arcade:teams/after_assign_alliegiance_dfs
-execute if score .matchStarted arcadeRule matches 1.. if score .coalitionPlayers arcadeRule > .expectedCoalitionPlayers arcadeRule run function mgdr_arcade:teams/after_assign_coalition_dfs
+execute if score .matchStarted arcadeRule matches 1.. if score .alliegiancePlayers arcadeRule > .expectedAlliegiancePlayers arcadeRule if entity @a[team=] run function mgdr_arcade:teams/after_assign_alliegiance_dfs
+execute if score .matchStarted arcadeRule matches 1.. if score .coalitionPlayers arcadeRule > .expectedCoalitionPlayers arcadeRule if entity @a[team=] run function mgdr_arcade:teams/after_assign_coalition_dfs

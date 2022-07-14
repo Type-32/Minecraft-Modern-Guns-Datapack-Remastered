@@ -71,6 +71,9 @@ execute as @a[tag=holdingPlaneSpawner,scores={usedCarrotPol=1..}] at @s run func
 
 
 
+##Using Combat Master Knife
+execute as @a[tag=holdingCBMKnife,scores={usedCarrotPol=1..}] at @s run function mgdr:action/combat_master_knife
+
 ##Using Grenade
 execute as @a[tag=holdingGrenade,scores={usedCarrotPol=1..}] at @s run function mgdr:action/throw_grenade
 

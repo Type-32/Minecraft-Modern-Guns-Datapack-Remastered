@@ -14,6 +14,7 @@
 #CBS5 14
 #M17 15
 #M1911 16
+#Combat Master Knife 17
 execute if score @s chooseWeapon1 matches 17.. run tellraw @s ["",{"translate": "mgdr_arcade.message.loadout.weapon_text","color": "red"},{"text": "#","color": "gold"},{"color": "gold","score":{"name": "@s","objective": "chooseWeapon1"}},{"translate": "mgdr_arcade.message.loadout.weapon_doesnt_exist","color": "red"},{"text": "/trigger chooseWeapon1 set ","color": "gold"},{"translate": "mgdr_arcade.message.loadout.weapon_number","color": "green"}]
 tellraw @s[scores={chooseWeapon1=1}] ["",{"translate": "mgdr_arcade.message.loadout.you_have_chosen","color": "yellow"},{"translate": "CBR-27 ","color": "green"},{"translate": "mgdr_arcade.message.loadout.as_your_first_weapon","color": "yellow"}]
 tellraw @s[scores={chooseWeapon1=2}] ["",{"translate": "mgdr_arcade.message.loadout.you_have_chosen","color": "yellow"},{"translate": "CBR-27-A1 ","color": "green"},{"translate": "mgdr_arcade.message.loadout.as_your_first_weapon","color": "yellow"}]

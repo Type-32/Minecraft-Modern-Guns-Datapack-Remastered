@@ -136,6 +136,9 @@ scoreboard objectives add togglesafe dummy
 
 scoreboard objectives add mgdr.pid dummy "Player ID"
 
+scoreboard players add /player.lastFiredUID gamerule 0
+scoreboard players add /player.lastFiredWeaponUID gamerule 0
+
 title @a times 0 11 0
 function mgdr:reload/reload_func/reloadsec
 function mgdr:action/effects/white_hit

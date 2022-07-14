@@ -2,7 +2,7 @@ gamerule showDeathMessages false
 kill @s
 gamerule showDeathMessages true
 tag @s add tempNoFireCheck
-execute as @a if score #player.lastFiredUID gamerule = @s mgdr.pid run scoreboard players set @s[tag=holdingGun] che.killed_plr 1
+execute as @a if score /player.lastFiredUID gamerule = @s mgdr.pid run scoreboard players set @s[tag=holdingGun] che.killed_plr 1
 tag @s remove tempNoFireCheck
 tag @a[scores={che.killed_plr=1..}] add hasKilledPlayer
 function cw_hp_control:message/normal_kills

@@ -61,5 +61,7 @@ tag @a[nbt={SelectedItem:{tag:{Tags:["flashbang"]}}}] add holdingFlashbang
 tag @a[nbt=!{SelectedItem:{tag:{Tags:["flashbang"]}}}] remove holdingFlashbang
 tag @a[nbt={SelectedItem:{tag:{Tags:["landmine"]}}}] add holdingLandmine
 tag @a[nbt=!{SelectedItem:{tag:{Tags:["landmine"]}}}] remove holdingLandmine
+tag @a[nbt={SelectedItem:{tag:{Tags:["combat_master_knife"]}}}] add holdingCBMKnife
+tag @a[nbt=!{SelectedItem:{tag:{Tags:["combat_master_knife"]}}}] remove holdingCBMKnife
 #tag @a[nbt={SelectedItem:{tag:{Tags:["airstrike_marker"]}}}] add holdingAirstrikeMarker
 #tag @a[nbt=!{SelectedItem:{tag:{Tags:["airstrike_marker"]}}}] remove holdingAirstrikeMarker

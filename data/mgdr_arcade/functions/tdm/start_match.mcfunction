@@ -21,3 +21,5 @@ scoreboard players set .matchTime arcadeRule 9600
 function mgdr_arcade:schedules/match_time_schedule
 effect give @a regeneration 1 1 true
 effect give @a saturation 1 255 true
+title @a title {"text": "Team Death Match","color": "gold"}
+title @a subtitle {"text": "Kill Your Opponents to gain Points for your Team!","color": "yellow"}

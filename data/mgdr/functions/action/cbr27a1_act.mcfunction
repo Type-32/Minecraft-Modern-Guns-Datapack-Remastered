@@ -6,7 +6,8 @@ function mgdr:muzzle_flash_light_add
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/cbr27a1
-scoreboard players operation #player.lastFiredUID gamerule = @s mgdr.pid
+scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
+scoreboard players set /player.lastFiredWeaponUID gamerule 2
 tag @s remove firing
 tag @s remove firingMarkerDetect
 

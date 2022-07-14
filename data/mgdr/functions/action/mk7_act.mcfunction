@@ -4,7 +4,7 @@ scoreboard players set @s usedCarrotPol 0
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/mk7
-scoreboard players operation #player.lastFiredUID gamerule = @s mgdr.pid
+scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
 tag @s remove firing
 tag @s remove firingMarkerDetect
 

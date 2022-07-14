@@ -12,3 +12,5 @@ scoreboard players set .matchTime arcadeRule 9600
 function mgdr_arcade:schedules/match_time_schedule
 effect give @a regeneration 1 1 true
 effect give @a saturation 1 255 true
+title @a title {"text": "Free For All","color": "gold"}
+title @a subtitle {"text": "Kill every player to gain Points!","color": "yellow"}
