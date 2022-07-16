@@ -1,6 +1,7 @@
 {
     "values": [
         "minecraft:water",
+        "minecraft:end_rod",
         "minecraft:fire",
         "minecraft:grass",
         "minecraft:tall_grass",

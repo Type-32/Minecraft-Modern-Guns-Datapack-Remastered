@@ -4,7 +4,9 @@
 scoreboard objectives add usedCarrotPol minecraft.used:minecraft.carrot_on_a_stick
 scoreboard players add @a usedCarrotPol 0
 scoreboard objectives add fireDelay dummy
+scoreboard objectives add fireDisplace dummy
 scoreboard objectives add flashDelay dummy
+scoreboard players add @a fireDisplace 0
 scoreboard players add @a[tag=holdingGun] fireDelay 1
 scoreboard players add @a[tag=holdingGun] flashDelay 1
 scoreboard players add @a[tag=holdingController] fireDelay 1

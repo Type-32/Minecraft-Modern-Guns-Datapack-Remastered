@@ -2,6 +2,12 @@ function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
 
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
+
+
 
 tag @s add firing
 tag @s add firingMarkerDetect

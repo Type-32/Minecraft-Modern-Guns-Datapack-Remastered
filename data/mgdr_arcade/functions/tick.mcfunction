@@ -16,6 +16,8 @@ scoreboard players add @a tempHighScore 0
 scoreboard players add @a hitTime 0
 scoreboard players add @a vote_tdm 0
 scoreboard players add @a vote_ffa 0
+scoreboard players add @a vote_cto 0
+scoreboard players add @a playerLeftGame 0
 
 scoreboard players enable @a weaponLoadout
 scoreboard players enable @a equipmentLoadout
@@ -30,8 +32,10 @@ execute store result score .totalPlayers arcadeRule if entity @a
 
 execute if score .gamemode arcadeRule matches 0 run function mgdr_arcade:tdm_main
 execute if score .gamemode arcadeRule matches 1 run function mgdr_arcade:ffa_main
+execute if score .gamemode arcadeRule matches 2 run function mgdr_arcade:cto_main
 execute if score .voteStarted arcadeRule matches 1 run function mgdr_arcade:vote_loop_func
 execute if score .matchStarted arcadeRule matches 0 if score .preparationTime arcadeRule matches 1.. run function mgdr_arcade:schedules/prep_time
+execute if score .matchStarted arcadeRule matches 1 if score .preparationTime arcadeRule matches 0 run function mgdr_arcade:match/in_match_loop
 
 execute as @a[scores={weaponLoadout=1..}] at @s run function mgdr_arcade:triggers/weapon_loadout
 execute as @a[scores={equipmentLoadout=1..}] at @s run function mgdr_arcade:triggers/equipment_loadout
@@ -41,5 +45,6 @@ execute as @a[scores={chooseEquipment1=1..}] at @s run function mgdr_arcade:trig
 execute as @a[scores={chooseEquipment2=1..}] at @s run function mgdr_arcade:triggers/choose_second_equipment
 execute as @a[scores={vote_tdm=1..}] at @s run function mgdr_arcade:triggers/vote/vote_to_tdm
 execute as @a[scores={vote_ffa=1..}] at @s run function mgdr_arcade:triggers/vote/vote_to_ffa
+execute as @a[scores={vote_cto=1..}] at @s run function mgdr_arcade:triggers/vote/vote_to_cto
 
 execute if score #playerRule.autoHeal arcadeRule matches 1 run function mgdr_arcade:player_autoheal

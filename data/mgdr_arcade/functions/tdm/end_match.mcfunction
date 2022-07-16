@@ -9,8 +9,10 @@ execute if score .alliegiancePoints arcadeRule matches 50.. unless score .coalit
 execute if score .alliegiancePoints arcadeRule > .coalitionPoints arcadeRule unless score .alliegiancePoints arcadeRule matches 50.. unless score .coalitionPoints arcadeRule matches 50.. run tellraw @a ["",{"text": "Team ","color": "green"},{"text": "Alliegiance ","color": "red"},{"text": "has won the match!","color": "green"}]
 execute if score .alliegiancePoints arcadeRule < .coalitionPoints arcadeRule unless score .alliegiancePoints arcadeRule matches 50.. unless score .coalitionPoints arcadeRule matches 50.. run tellraw @a ["",{"text": "Team ","color": "green"},{"text": "Coalition ","color": "blue"},{"text": "has won the match!","color": "green"}]
 execute if score .alliegiancePoints arcadeRule = .coalitionPoints arcadeRule unless score .alliegiancePoints arcadeRule matches 50.. unless score .coalitionPoints arcadeRule matches 50.. run tellraw @a ["",{"text": "It's a Draw!","color": "green"}]
-tellraw @a ["",{"text": "Match Ended! Match Scores: ","color": "green"},{"score":{"name": ".alliegiancePoints","objective": "arcadeRule"},"color": "red","bold": true},{"text": "-","color": "green"},{"score":{"name": ".coalitionPoints","objective": "arcadeRule"},"color": "blue","bold": true}]
-tp @a @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1]
+execute if score .alliegiancePlayers arcadeRule matches 0 run tellraw @a ["",{"text": "Team ","color": "green"},{"text": "Alliegiance ","color": "red"},{"text": "has forfeited the match!","color": "green"}]
+execute if score .coalitionPlayers arcadeRule matches 0 run tellraw @a ["",{"text": "Team ","color": "green"},{"text": "Coalition ","color": "blue"},{"text": "has forfeited the match!","color": "green"}]
+execute if score .coalitionPlayers arcadeRule matches 1.. if score .alliegiancePlayers arcadeRule matches 1.. run tellraw @a ["",{"text": "Match Ended! Match Scores: ","color": "green"},{"score":{"name": ".alliegiancePoints","objective": "arcadeRule"},"color": "red","bold": true},{"text": "-","color": "green"},{"score":{"name": ".coalitionPoints","objective": "arcadeRule"},"color": "blue","bold": true}]
+tp @a[tag=!forfeitedMatch] @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1]
 effect clear @a
 effect give @a regeneration 1 1 true
 effect give @a saturation 1 255 true
@@ -21,4 +23,5 @@ scoreboard players set .coalitionPoints arcadeRule 0
 scoreboard players set .alliegiancePoints arcadeRule 0
 execute at @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1] run spawnpoint @a
 scoreboard players set .matchTime arcadeRule 0
+tag @a remove forfeitedMatch
 tag @a remove voluntary

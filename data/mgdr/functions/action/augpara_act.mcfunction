@@ -2,10 +2,17 @@ execute if score @s aimSec matches 3.. run function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
 
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
+
+
 
 tag @s add firing
 tag @s add firingMarkerDetect
-execute anchored eyes run function mgdr:rays/augpara
+execute if entity @s[predicate=mgdr:is_sneaking] anchored eyes run function mgdr:rays/augpara
+execute if entity @s[predicate=!mgdr:is_sneaking] anchored eyes run function mgdr:action/recoil/spread/augpara
 scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
 scoreboard players set /player.lastFiredWeaponUID gamerule 5
 tag @s remove firing
@@ -16,8 +23,8 @@ execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if bl
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 playsound mgdr:augpara.fire voice @a[distance=..30] ~ ~ ~ 1000
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-3.5
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-2.8
+execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-1.6
+execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-1
 #scoreboard players set @s[scores={fireDelay=4..}] fireDelay 0
 scoreboard players set @s[scores={fireDelay=3..,augpara.fm=0}] fireDelay 0
 scoreboard players set @s[scores={fireDelay=5..,augpara.fm=1}] fireDelay 0

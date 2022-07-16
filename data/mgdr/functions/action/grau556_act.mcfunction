@@ -2,10 +2,17 @@ function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
 
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
+execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
+
+
 
 tag @s add firing
 tag @s add firingMarkerDetect
-execute anchored eyes run function mgdr:rays/grau556
+execute if entity @s[predicate=mgdr:is_sneaking] anchored eyes run function mgdr:rays/grau556
+execute if entity @s[predicate=!mgdr:is_sneaking] anchored eyes run function mgdr:action/recoil/spread/grau556
 scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
 scoreboard players set /player.lastFiredWeaponUID gamerule 7
 tag @s remove firing
@@ -19,7 +26,7 @@ execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ 
 
 playsound mgdr:grau556.fire voice @a[distance=..38] ~ ~ ~ 1000
 
-execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-3.2
+execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-1.6
 
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] grau.ammo 1
 scoreboard players set @s[scores={fireDelay=3..,grau.fm=0..1}] fireDelay 0

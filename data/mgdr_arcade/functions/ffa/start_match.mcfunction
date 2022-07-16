@@ -14,3 +14,5 @@ effect give @a regeneration 1 1 true
 effect give @a saturation 1 255 true
 title @a title {"text": "Free For All","color": "gold"}
 title @a subtitle {"text": "Kill every player to gain Points!","color": "yellow"}
+tellraw @a ["",{"text": "FFA: ","color": "gold"},{"text": "Kill every player to gain Points!","color": "yellow"}]
+playsound minecraft:block.note_block.pling player @s ~ ~10000 ~ 100000 2
