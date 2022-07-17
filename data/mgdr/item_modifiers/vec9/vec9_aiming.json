@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"mgdr.gun_item.vec9\",\"italic\":false}'},AmmoXMX:40,CustomModelData:202224,Tags:[\"vec9\",\"mgdrGun\"]}"
+    "tag": "{display:{Name:'{\"translate\":\"mgdr.gun_item.vec9\",\"italic\":false}',Lore:['[{\"translate\":\"mgdr.gun_item.lore.uses\",\"italic\":false,\"color\": \"dark_gray\"},{\"translate\":\"mgdr.gun_item.lore.045mm\",\"italic\":false,\"color\": \"gray\"},{\"translate\":\"mgdr.gun_item.lore.magazine\",\"italic\":false,\"color\": \"dark_gray\"}]']},AmmoXMX:40,CustomModelData:202224,Tags:[\"vec9\",\"mgdrGun\"]}"
   }
 ]

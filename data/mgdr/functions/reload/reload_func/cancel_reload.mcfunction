@@ -59,6 +59,9 @@ execute if entity @s[scores={cbs5.reload=1..6}] run scoreboard players set @s cb
 execute if entity @s[scores={type2a.reload=1..6}] run stopsound @s voice mgdr:type2a.reload
 execute if entity @s[scores={type2a.reload=1..6}] run scoreboard players set @s type2a.reload 10
 
+execute if entity @s[scores={origin12.reload=1..6}] run stopsound @s voice mgdr:origin12.reload
+execute if entity @s[scores={origin12.reload=1..6}] run scoreboard players set @s origin12.reload 10
+
 execute if entity @s[scores={vec9.reload=1..6}] run stopsound @s voice mgdr:vec9.reload
 execute if entity @s[scores={vec9.reload=1..6}] run scoreboard players set @s vec9.reload 10
 

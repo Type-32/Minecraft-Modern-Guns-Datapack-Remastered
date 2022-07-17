@@ -13,20 +13,15 @@ scoreboard objectives add stg44.ammo dummy
 scoreboard objectives add sig716.ammo dummy
 scoreboard objectives add sig75t.ammo dummy
 scoreboard objectives add asval.ammo dummy
-scoreboard objectives add ak_reson.ammo dummy
 scoreboard objectives add cbr27.ammo dummy
 scoreboard objectives add cbr27a1.ammo dummy
-scoreboard objectives add cbr27_kilo.ammo dummy
 scoreboard objectives add mp7.ammo dummy
 scoreboard objectives add mp5.ammo dummy
 scoreboard objectives add mp5t.ammo dummy
 scoreboard objectives add cz117.ammo dummy
 scoreboard objectives add grau.ammo dummy
-scoreboard objectives add grau_kilo.ammo dummy
 scoreboard objectives add cbt97.ammo dummy
-scoreboard objectives add cbt97_reson.ammo dummy
 scoreboard objectives add m14.ammo dummy
-scoreboard objectives add m14_hdl.ammo dummy
 scoreboard objectives add m1911.ammo dummy
 scoreboard objectives add m17.ammo dummy
 scoreboard objectives add cbs5.ammo dummy
@@ -80,6 +75,7 @@ scoreboard objectives add vsg15.reload dummy
 scoreboard objectives add vsg6t.reload dummy
 scoreboard objectives add vec9.reload dummy
 scoreboard objectives add augpara.reload dummy
+scoreboard objectives add origin12.reload dummy
 
 scoreboard objectives add ak.fm dummy
 scoreboard objectives add stg44.fm dummy

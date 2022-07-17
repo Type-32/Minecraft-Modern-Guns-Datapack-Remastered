@@ -21,7 +21,7 @@ scoreboard players set @s[scores={vec9.reload=6..}] vec9.reload 0
 scoreboard players set @s[scores={vsg15.reload=5..}] vsg15.reload 0
 scoreboard players set @s[scores={vsg6t.reload=5..}] vsg6t.reload 0
 scoreboard players set @s[scores={augpara.reload=6..}] augpara.reload 0
-scoreboard players set @s[scores={origin12.reload=5..}] augpara.reload 0
+scoreboard players set @s[scores={origin12.reload=6..}] origin12.reload 0
 #function mgdr:reload/reload_func/cancel_reload
 function mgdr:reload/reload_func/gun_switch_offhand
 #tellraw @a "Error Here!"

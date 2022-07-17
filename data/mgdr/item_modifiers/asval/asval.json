@@ -1,6 +1,6 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{display:{Name:'{\"translate\":\"mgdr.gun_item.asval\",\"italic\":false}'},AmmoXMX:20,CustomModelData:202113,Tags:[\"asval\",\"mgdrGun\"]}"
+    "tag": "{display:{Name:'{\"translate\":\"mgdr.gun_item.asval\",\"italic\":false}',Lore:['[{\"translate\":\"mgdr.gun_item.lore.uses\",\"italic\":false,\"color\": \"dark_gray\"},{\"translate\":\"mgdr.gun_item.lore.762mm\",\"italic\":false,\"color\": \"gray\"},{\"translate\":\"mgdr.gun_item.lore.magazine\",\"italic\":false,\"color\": \"dark_gray\"}]']},AmmoXMX:20,CustomModelData:202113,Tags:[\"asval\",\"mgdrGun\"]}"
   }
 ]

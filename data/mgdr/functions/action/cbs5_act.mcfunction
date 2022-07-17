@@ -24,7 +24,7 @@ execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble
 execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 playsound mgdr:cbs5.fire voice @a[distance=..70] ~ ~ ~ 1000
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-5
-execute if score noRecoil gamerule matches ..0 run tp @s[name="LiBai233"] ~ ~ ~ ~ ~-5
+#execute if score noRecoil gamerule matches ..0 run tp @s[name="LiBai233"] ~ ~ ~ ~ ~-5
 scoreboard players set @s fireDelay 0
 scoreboard players set @s cbs5.load 1
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] cbs5.ammo 1
