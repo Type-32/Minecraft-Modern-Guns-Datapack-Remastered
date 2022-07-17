@@ -18,9 +18,9 @@ scoreboard players enable @a vote_tdm
 scoreboard players enable @a vote_cto
 scoreboard players set .voteTime arcadeRule 400
 tellraw @a ["",{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","color":"dark_blue","strikethrough":true}]
-tellraw @a ["",{"text":"Vote For Gamemodes","color": "gold"}]
+tellraw @a ["",{"translate":"mgdr_arcade.gamemode.message.vote.voting_title","color": "gold"}]
 tellraw @a [""]
-tellraw @a ["",{"text":"Team Death Match","color": "green"},{"text": "   "},{"text": "[Click here to vote]","color": "yellow","clickEvent": {"action": "run_command","value": "/trigger vote_tdm"}}]
-tellraw @a ["",{"text":"Free For All","color": "green"},{"text": "   "},{"text": "[Click here to vote]","color": "yellow","clickEvent": {"action": "run_command","value": "/trigger vote_ffa"}}]
-tellraw @a ["",{"text":"Capture The Objective","color": "green"},{"text": "   "},{"text": "[Click here to vote]","color": "yellow","clickEvent": {"action": "run_command","value": "/trigger vote_cto"}}]
+tellraw @a ["",{"translate":"mgdr_arcade.gamemode.message.tdm","color": "green"},{"text": "   "},{"translate": "mgdr_arcade.gamemode.message.vote.click_to_vote","color": "yellow","clickEvent": {"action": "run_command","value": "/trigger vote_tdm"}}]
+tellraw @a ["",{"translate":"mgdr_arcade.gamemode.message.ffa","color": "green"},{"text": "   "},{"translate": "mgdr_arcade.gamemode.message.vote.click_to_vote","color": "yellow","clickEvent": {"action": "run_command","value": "/trigger vote_ffa"}}]
+tellraw @a ["",{"translate":"mgdr_arcade.gamemode.message.cto","color": "green"},{"text": "   "},{"translate": "mgdr_arcade.gamemode.message.vote.click_to_vote","color": "yellow","clickEvent": {"action": "run_command","value": "/trigger vote_cto"}}]
 tellraw @a ["",{"text":" \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020","color":"dark_blue","strikethrough":true}]

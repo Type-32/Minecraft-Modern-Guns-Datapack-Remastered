@@ -24,7 +24,7 @@ scoreboard players set .matchTime arcadeRule 9600
 function mgdr_arcade:schedules/match_time_schedule
 effect give @a regeneration 1 1 true
 effect give @a saturation 1 255 true
-title @a title {"text": "Team Death Match","color": "gold"}
-title @a subtitle {"text": "Kill Your Opponents to gain Points for your Team!","color": "yellow"}
-tellraw @a ["",{"text": "TDM: ","color": "gold"},{"text": "Kill Your Opponents to gain Points for your Team!","color": "yellow"}]
+title @a title {"translate": "mgdr_arcade.gamemode.message.tdm","color": "gold"}
+title @a subtitle {"translate": "mgdr_arcade.gamemode.message.tdm.desc","color": "yellow"}
+tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.tdm.abbv","color": "gold"},{"translate": "mgdr_arcade.gamemode.message.tdm.desc","color": "yellow"}]
 playsound minecraft:block.note_block.pling player @s ~ ~10000 ~ 100000 2

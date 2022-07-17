@@ -63,8 +63,8 @@ bossbar set mgdr_arcade:match_time color white
 bossbar set mgdr_arcade:alliegiance_points style notched_10
 bossbar set mgdr_arcade:coalition_points style notched_10
 bossbar set mgdr_arcade:match_time style notched_6
-bossbar set mgdr_arcade:alliegiance_points max 50
-bossbar set mgdr_arcade:coalition_points max 50
+execute if score .gamemode arcadeRule matches 0 run bossbar set mgdr_arcade:alliegiance_points max 50
+execute if score .gamemode arcadeRule matches 0 run bossbar set mgdr_arcade:coalition_points max 50
 bossbar set mgdr_arcade:match_time max 9600
 
 bossbar add mgdr_arcade:tdm_votes "Team Death Match Votes"

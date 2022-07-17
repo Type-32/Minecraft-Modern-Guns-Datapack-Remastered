@@ -12,7 +12,7 @@ scoreboard players set .matchTime arcadeRule 9600
 function mgdr_arcade:schedules/match_time_schedule
 effect give @a regeneration 1 1 true
 effect give @a saturation 1 255 true
-title @a title {"text": "Free For All","color": "gold"}
-title @a subtitle {"text": "Kill every player to gain Points!","color": "yellow"}
-tellraw @a ["",{"text": "FFA: ","color": "gold"},{"text": "Kill every player to gain Points!","color": "yellow"}]
+title @a title {"translate": "mgdr_arcade.gamemode.message.ffa","color": "gold"}
+title @a subtitle {"translate": "mgdr_arcade.gamemode.message.ffa.desc","color": "yellow"}
+tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.ffa.abbv","color": "gold"},{"translate": "mgdr_arcade.gamemode.message.ffa.desc","color": "yellow"}]
 playsound minecraft:block.note_block.pling player @s ~ ~10000 ~ 100000 2

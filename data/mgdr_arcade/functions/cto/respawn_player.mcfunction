@@ -3,5 +3,5 @@ execute if entity @s[team=coalition] run execute as @e[tag=Coalition,tag=CTOSpaw
 function mgdr_arcade:respawn/assign_weapons
 tag @s remove DeadPlayer
 title @s title " "
-title @s subtitle {"text":"Respawned!","color": "green"}
+title @s subtitle {"translate":"mgdr_arcade.gamemode.message.match.respawned","color": "green"}
 playsound minecraft:block.note_block.pling player @s ~ ~10000 ~ 1000000

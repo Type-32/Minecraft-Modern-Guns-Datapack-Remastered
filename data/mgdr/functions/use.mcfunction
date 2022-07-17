@@ -7,9 +7,8 @@ scoreboard objectives add fireDelay dummy
 scoreboard objectives add fireDisplace dummy
 scoreboard objectives add flashDelay dummy
 scoreboard players add @a fireDisplace 0
-scoreboard players add @a[tag=holdingGun] fireDelay 1
+scoreboard players add @a[tag=holdingGun,scores={fireDelay=..200}] fireDelay 1
 scoreboard players add @a[tag=holdingGun] flashDelay 1
-scoreboard players add @a[tag=holdingController] fireDelay 1
 
 ## CBR-27
 execute as @a[tag=holdingCBR27,tag=!gunDisabled] at @s run function mgdr:use/cbr27

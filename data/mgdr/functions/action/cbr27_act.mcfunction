@@ -2,16 +2,15 @@ execute if score @s aimSec matches 3.. run function mgdr:action/effects/ads_eff
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
 
-execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
-execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
-execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
-execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
+#execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
+#execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
+#execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
+#execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
 
 #
 tag @s add firing
 tag @s add firingMarkerDetect
-execute if entity @s[predicate=mgdr:is_sneaking] anchored eyes run function mgdr:rays/cbr27
-execute if entity @s[predicate=!mgdr:is_sneaking] anchored eyes run function mgdr:action/recoil/spread/cbr27
+execute anchored eyes run function mgdr:rays/cbr27
 scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
 scoreboard players set /player.lastFiredWeaponUID gamerule 1
 tag @s remove firing

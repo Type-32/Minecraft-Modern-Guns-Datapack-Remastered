@@ -1,4 +1,4 @@
-#tag @s remove informAlliegianceContest
+tag @s remove informAlliegianceContest
 tag @s remove informContested
 tag @s remove informCoalitionContest
 tag @s remove informCoalitionCaptured
