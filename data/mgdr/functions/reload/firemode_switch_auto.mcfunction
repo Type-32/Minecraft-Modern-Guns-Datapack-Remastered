@@ -1,4 +1,4 @@
-tag @s[scores={ak.fm=0},tag=holdingAK] remove switch_firemode
+tag @s[scores={ak.fm=0},scores={mgdr.weaponUID=1}] remove switch_firemode
 tag @s[scores={mp40.fm=0},tag=holdingMP40] remove switch_firemode
 tag @s[scores={stg44.fm=0},tag=holdingSTG44] remove switch_firemode
 tag @s[scores={sig716.fm=0},tag=holdingSIG716] remove switch_firemode
@@ -19,7 +19,7 @@ tag @s[scores={vsg6t.fm=0},tag=holdingVSG6T] remove switch_firemode
 tag @s[scores={augpara.fm=0},tag=holdingAUGPara] remove switch_firemode
 tag @s[scores={plane.fm=0},tag=holdingController] remove switch_firemode
 
-scoreboard players set @s[scores={ak.fm=0},tag=holdingAK] ak.fm 1
+scoreboard players set @s[scores={ak.fm=0},scores={mgdr.weaponUID=1}] ak.fm 1
 scoreboard players set @s[scores={mp40.fm=0},tag=holdingMP40] mp40.fm 1
 scoreboard players set @s[scores={stg44.fm=0},tag=holdingSTG44] stg44.fm 1
 scoreboard players set @s[scores={sig716.fm=0},tag=holdingSIG716] sig716.fm 1

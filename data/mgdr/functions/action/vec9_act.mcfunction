@@ -13,7 +13,7 @@ tag @s add firing
 tag @s add firingMarkerDetect
 execute if entity @s[predicate=mgdr:is_sneaking] anchored eyes run function mgdr:rays/vec9
 execute if entity @s[predicate=!mgdr:is_sneaking] anchored eyes run function mgdr:action/recoil/spread/vec9
-scoreboard players set /player.lastFiredWeaponUID gamerule 12
+scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 

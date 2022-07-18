@@ -1,4 +1,4 @@
-execute as @a[tag=holdingAK,scores={ak.ammo=..0,ak.reload=6..,auto_reload=1,usedCarrotPol=1..}] run scoreboard players set @s ak.reload 0
+execute as @a[scores={mgdr.weaponUID=1},scores={ak.ammo=..0,ak.reload=6..,auto_reload=1,usedCarrotPol=1..}] run scoreboard players set @s ak.reload 0
 execute as @a[tag=holdingMP40,scores={mp40.ammo=..0,mp40.reload=6..,auto_reload=1,usedCarrotPol=1..}] run scoreboard players set @s mp40.reload 0
 execute as @a[tag=holdingSTG44,scores={stg44.ammo=..0,stg44.reload=6..,auto_reload=1,usedCarrotPol=1..}] run scoreboard players set @s stg44.reload 0
 execute as @a[tag=holdingSIG716,scores={sig716.ammo=..0,sig716.reload=6..,auto_reload=1,usedCarrotPol=1..}] run scoreboard players set @s sig716.reload 0

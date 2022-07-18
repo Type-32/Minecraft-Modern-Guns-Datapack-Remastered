@@ -1,4 +1,4 @@
-execute as @a[tag=holdingAK] run function mgdr:reload/ak_reload
+execute as @a[scores={mgdr.weaponUID=1}] run function mgdr:reload/ak_reload
 execute as @a[tag=holdingMP40] run function mgdr:reload/mp40_reload
 execute as @a[tag=holdingSTG44] run function mgdr:reload/stg44_reload
 execute as @a[tag=holdingSIG716] run function mgdr:reload/sig716_reload

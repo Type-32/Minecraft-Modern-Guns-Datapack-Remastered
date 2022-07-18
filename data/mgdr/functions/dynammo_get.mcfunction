@@ -1,4 +1,4 @@
-execute if entity @s[tag=holdingAK] run scoreboard players operation @s dyn.ammo = @s ak.ammo
+execute if entity @s[scores={mgdr.weaponUID=1}] run scoreboard players operation @s dyn.ammo = @s ak.ammo
 execute if entity @s[tag=holdingMP40] run scoreboard players operation @s dyn.ammo = @s mp40.ammo
 execute if entity @s[tag=holdingSTG44] run scoreboard players operation @s dyn.ammo = @s stg44.ammo
 execute if entity @s[tag=holdingSIG716] run scoreboard players operation @s dyn.ammo = @s sig716.ammo

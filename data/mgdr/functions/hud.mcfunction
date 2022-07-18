@@ -1,4 +1,4 @@
-#execute as @a[scores={ak.reload=4..},tag=holdingAK] at @s run function mgdr:hud/num/ak
+#execute as @a[scores={ak.reload=4..},scores={mgdr.weaponUID=1}] at @s run function mgdr:hud/num/ak
 #execute as @a[scores={mp40.reload=5..},tag=holdingMP40] at @s run function mgdr:hud/num/mp40
 #execute as @a[scores={stg44.reload=4..},tag=holdingSTG44] at @s run function mgdr:hud/num/stg44
 #execute as @a[scores={asval.reload=4..},tag=holdingASVAL] at @s run function mgdr:hud/num/asval

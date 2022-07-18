@@ -13,7 +13,7 @@ tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/mp7
 scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
-scoreboard players set /player.lastFiredWeaponUID gamerule 10
+scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 

@@ -17,9 +17,9 @@ execute as @a[tag=holdingCBR27,scores={expFt=1..}] run function mgdr:model_core/
 
 execute as @a[tag=holdingCBR27A1] run function mgdr:model_core/cbr27a1/core
 
-execute as @a[tag=holdingAK,tag=!Resonance] run function mgdr:model_core/ak/core
-execute as @a[tag=holdingAK,tag=Resonance] run function mgdr:model_core/ak/resonance_variant
-execute as @a[tag=holdingAK,scores={expFt=1..}] run function mgdr:model_core/ak/hand/core
+execute as @a[scores={mgdr.weaponUID=1},tag=!Resonance] run function mgdr:model_core/ak/core
+execute as @a[scores={mgdr.weaponUID=1},tag=Resonance] run function mgdr:model_core/ak/resonance_variant
+execute as @a[scores={mgdr.weaponUID=1},scores={expFt=1..}] run function mgdr:model_core/ak/hand/core
 
 execute as @a[tag=holdingMP40] run function mgdr:model_core/mp40/core
 execute as @a[tag=holdingMP40,scores={expFt=1..}] run function mgdr:model_core/mp40/hand/core

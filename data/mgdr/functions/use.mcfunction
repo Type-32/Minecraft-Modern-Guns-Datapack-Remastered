@@ -20,7 +20,7 @@ execute as @a[tag=holdingCBR27A1,tag=!gunDisabled] at @s run function mgdr:use/c
 execute as @a[tag=holdingASVAL,tag=!gunDisabled] at @s run function mgdr:use/asval
 
 ## AK
-execute as @a[tag=holdingAK,tag=!gunDisabled] at @s run function mgdr:use/ak40
+execute as @a[scores={mgdr.weaponUID=1},tag=!gunDisabled] at @s run function mgdr:use/ak40
 
 ## SIG-716
 execute as @a[tag=holdingSIG716,tag=!gunDisabled] at @s run function mgdr:use/sig716

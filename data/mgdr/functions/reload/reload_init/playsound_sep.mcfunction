@@ -1,4 +1,4 @@
-playsound mgdr:ak.reload voice @s[tag=!playedReload,tag=holdingAK] ~ ~10000000 ~ 10000000
+playsound mgdr:ak.reload voice @s[tag=!playedReload,scores={mgdr.weaponUID=1}] ~ ~10000000 ~ 10000000
 playsound mgdr:asval.reload voice @s[tag=!playedReload,tag=holdingASVAL] ~ ~10000000 ~ 10000000
 playsound mgdr:augpara.reload voice @s[tag=!playedReload,tag=holdingAUGPara] ~ ~10000000 ~ 10000000
 playsound mgdr:cbr27.reload voice @s[tag=!playedReload,tag=holdingCBR27] ~ ~10000000 ~ 10000000

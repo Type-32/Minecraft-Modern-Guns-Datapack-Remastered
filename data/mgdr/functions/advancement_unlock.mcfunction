@@ -10,7 +10,7 @@ advancement grant @a[scores={plr.mob_kills=3000..}] only mgdr:3000_kill
 advancement grant @a[scores={plr.mob_kills=5000..}] only mgdr:5000_kill
 
 advancement grant @a[tag=holdingCBR27] only mgdr:get_cbr27
-advancement grant @a[tag=holdingAK] only mgdr:get_ak40
+advancement grant @a[scores={mgdr.weaponUID=1}] only mgdr:get_ak40
 advancement grant @a[tag=holdingASVAL] only mgdr:get_asval
 advancement grant @a[tag=holdingCBT97] only mgdr:get_cbt97
 advancement grant @a[tag=holdingCZ117] only mgdr:get_cz117

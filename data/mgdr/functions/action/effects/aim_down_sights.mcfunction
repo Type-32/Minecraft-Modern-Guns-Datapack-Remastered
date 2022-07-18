@@ -7,8 +7,7 @@ execute if entity @s[tag=holdingCBR27,tag=!haveRedDot,tag=!haveHolo] run functio
 
 item modify entity @s[tag=holdingCBR27A1] weapon.mainhand mgdr:cbr27a1/cbr27a1_aiming_fire
 
-item modify entity @s[tag=holdingAK,tag=!Resonance] weapon.mainhand mgdr:ak/ak_aiming_fire
-item modify entity @s[tag=holdingAK,tag=Resonance] weapon.mainhand mgdr:blueprints/resonance/ak/ak_aiming_fire
+item modify entity @s[scores={mgdr.weaponUID=1}] weapon.mainhand mgdr:ak/ak_aiming_fire
 
 item modify entity @s[tag=holdingMP40] weapon.mainhand mgdr:mp40/mp40_aiming_fire
 
@@ -31,11 +30,9 @@ item modify entity @s[tag=holdingMP5T] weapon.mainhand mgdr:mp5t/mp5t_aiming_fir
 
 item modify entity @s[tag=holdingCZ117] weapon.mainhand mgdr:cz117/cz117_aiming_fire
 
-item modify entity @s[tag=holdingCBT97,tag=!Resonance] weapon.mainhand mgdr:cbt97/cbt97_aiming_fire
-item modify entity @s[tag=holdingCBT97,tag=Resonance] weapon.mainhand mgdr:blueprints/resonance/cbt97/cbt97_aiming_fire
+item modify entity @s[tag=holdingCBT97] weapon.mainhand mgdr:cbt97/cbt97_aiming_fire
 
-item modify entity @s[tag=holdingM14,tag=!Hardline] weapon.mainhand mgdr:m14/m14_aiming_fire
-item modify entity @s[tag=holdingM14,tag=Hardline] weapon.mainhand mgdr:blueprints/hardline/m14/m14_aiming_fire
+item modify entity @s[tag=holdingM14] weapon.mainhand mgdr:m14/m14_aiming_fire
 
 item modify entity @s[tag=holdingM1911] weapon.mainhand mgdr:m1911/m1911_aiming_fire
 

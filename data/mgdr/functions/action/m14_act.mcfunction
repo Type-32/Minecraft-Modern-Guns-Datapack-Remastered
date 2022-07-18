@@ -14,7 +14,7 @@ tag @s add firingMarkerDetect
 execute if entity @s[predicate=mgdr:is_sneaking] anchored eyes run function mgdr:rays/m14
 execute if entity @s[predicate=!mgdr:is_sneaking] anchored eyes run function mgdr:action/recoil/spread/m14
 scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
-scoreboard players set /player.lastFiredWeaponUID gamerule 13
+scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
