@@ -1,2 +1,2 @@
 team leave @s
-team join alliegiance
+team join allegiance

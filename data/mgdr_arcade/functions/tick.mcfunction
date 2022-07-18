@@ -26,7 +26,7 @@ scoreboard players enable @a chooseWeapon2
 scoreboard players enable @a chooseEquipment1
 scoreboard players enable @a chooseEquipment2
 
-execute store result score .alliegiancePlayers arcadeRule if entity @a[team=alliegiance]
+execute store result score .allegiancePlayers arcadeRule if entity @a[team=allegiance]
 execute store result score .coalitionPlayers arcadeRule if entity @a[team=coalition]
 execute store result score .totalPlayers arcadeRule if entity @a
 execute store result score .FFAPlayers arcadeRule if entity @a[team=ffa_player]

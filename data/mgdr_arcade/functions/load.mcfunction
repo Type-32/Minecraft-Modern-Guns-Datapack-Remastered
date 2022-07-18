@@ -26,11 +26,11 @@ scoreboard objectives add hitTime dummy
 scoreboard players add .enableArcadeFunctions gamerule 0
 scoreboard players add .matchStarted arcadeRule 0
 scoreboard players add .gamemode arcadeRule 0
-scoreboard players add .alliegiancePlayers arcadeRule 0
+scoreboard players add .allegiancePlayers arcadeRule 0
 scoreboard players add .coalitionPlayers arcadeRule 0
 scoreboard players add .FFAPlayers arcadeRule 0
 scoreboard players add .coalitionPoints arcadeRule 0
-scoreboard players add .alliegiancePoints arcadeRule 0
+scoreboard players add .allegiancePoints arcadeRule 0
 scoreboard players add .matchTime arcadeRule 0
 scoreboard players add #highestScore arcadeRule 0
 scoreboard players add #playerRule.autoHeal arcadeRule 0
@@ -42,34 +42,34 @@ scoreboard players add .voteTime arcadeRule 0
 scoreboard players add .preparationTime arcadeRule 0
 execute if score #playerRule.autoHeal arcadeRule matches 1 run scoreboard players set #playerRule.autoHeal arcadeRule 1
 scoreboard players set .2 arcadeRule 2
-team add alliegiance {"text":"Alliegiance","color": "red"}
+team add allegiance {"text":"Allegiance","color": "red"}
 team add coalition {"text":"Coalition","color": "blue"}
 team add ffa_player {"text":"FFA Player","color": "gray"}
-team modify alliegiance color red
+team modify allegiance color red
 team modify coalition color blue
 team modify ffa_player color gray
-team modify alliegiance nametagVisibility hideForOtherTeams
+team modify allegiance nametagVisibility hideForOtherTeams
 team modify coalition nametagVisibility hideForOtherTeams
 team modify ffa_player nametagVisibility hideForOwnTeam
 gamerule doImmediateRespawn true
 function mgdr_arcade:schedules/match_time_schedule
 
-bossbar add mgdr_arcade:alliegiance_points "Alliegiance Points"
+bossbar add mgdr_arcade:allegiance_points "Allegiance Points"
 bossbar add mgdr_arcade:coalition_points "Coalition Points"
 bossbar add mgdr_arcade:match_time "Match Time"
-bossbar set mgdr_arcade:alliegiance_points players @a
+bossbar set mgdr_arcade:allegiance_points players @a
 bossbar set mgdr_arcade:coalition_points players @a
 bossbar set mgdr_arcade:match_time players @a
-execute if score .matchStarted arcadeRule matches 0 run bossbar set mgdr_arcade:alliegiance_points visible false
+execute if score .matchStarted arcadeRule matches 0 run bossbar set mgdr_arcade:allegiance_points visible false
 execute if score .matchStarted arcadeRule matches 0 run bossbar set mgdr_arcade:coalition_points visible false
 execute if score .matchStarted arcadeRule matches 0 run bossbar set mgdr_arcade:match_time visible false
-bossbar set mgdr_arcade:alliegiance_points color red
+bossbar set mgdr_arcade:allegiance_points color red
 bossbar set mgdr_arcade:coalition_points color blue
 bossbar set mgdr_arcade:match_time color white
-bossbar set mgdr_arcade:alliegiance_points style notched_10
+bossbar set mgdr_arcade:allegiance_points style notched_10
 bossbar set mgdr_arcade:coalition_points style notched_10
 bossbar set mgdr_arcade:match_time style notched_6
-execute if score .gamemode arcadeRule matches 0 run bossbar set mgdr_arcade:alliegiance_points max 50
+execute if score .gamemode arcadeRule matches 0 run bossbar set mgdr_arcade:allegiance_points max 50
 execute if score .gamemode arcadeRule matches 0 run bossbar set mgdr_arcade:coalition_points max 50
 bossbar set mgdr_arcade:match_time max 9600
 
