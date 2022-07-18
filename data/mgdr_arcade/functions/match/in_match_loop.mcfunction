@@ -1,1 +1,0 @@
-execute as @a[scores={playerLeftGame=1..}] run function mgdr_arcade:match/forfeit_match

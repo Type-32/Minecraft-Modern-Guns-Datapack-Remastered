@@ -37,6 +37,7 @@ execute if score .gamemode arcadeRule matches 2 run function mgdr_arcade:cto_mai
 execute if score .voteStarted arcadeRule matches 1 run function mgdr_arcade:vote_loop_func
 execute if score .matchStarted arcadeRule matches 0 if score .preparationTime arcadeRule matches 1.. run function mgdr_arcade:schedules/prep_time
 execute if score .matchStarted arcadeRule matches 1 if score .preparationTime arcadeRule matches 0 run function mgdr_arcade:match/in_match_loop
+execute as @a[scores={playerLeftGame=1..}] run function mgdr_arcade:match/forfeit_match
 
 execute as @a[scores={weaponLoadout=1..}] at @s run function mgdr_arcade:triggers/weapon_loadout
 execute as @a[scores={equipmentLoadout=1..}] at @s run function mgdr_arcade:triggers/equipment_loadout

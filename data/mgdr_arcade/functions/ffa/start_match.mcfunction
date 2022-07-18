@@ -2,6 +2,8 @@ scoreboard players set .matchStarted arcadeRule 1
 scoreboard players set @a playerkills 0
 tag @a remove DeadPlayer
 scoreboard players set @a arcade.plr_deaths 0
+scoreboard players set @a playerLeftGame 0
+tag @a remove forfeitedMatch
 clear @a
 team join ffa_player @a
 bossbar set mgdr_arcade:match_time players @a
