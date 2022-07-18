@@ -28,6 +28,7 @@ scoreboard players add .matchStarted arcadeRule 0
 scoreboard players add .gamemode arcadeRule 0
 scoreboard players add .alliegiancePlayers arcadeRule 0
 scoreboard players add .coalitionPlayers arcadeRule 0
+scoreboard players add .FFAPlayers arcadeRule 0
 scoreboard players add .coalitionPoints arcadeRule 0
 scoreboard players add .alliegiancePoints arcadeRule 0
 scoreboard players add .matchTime arcadeRule 0
@@ -43,8 +44,13 @@ execute if score #playerRule.autoHeal arcadeRule matches 1 run scoreboard player
 scoreboard players set .2 arcadeRule 2
 team add alliegiance {"text":"Alliegiance","color": "red"}
 team add coalition {"text":"Coalition","color": "blue"}
+team add ffa_player {"text":"FFA Player","color": "gray"}
 team modify alliegiance color red
 team modify coalition color blue
+team modify ffa_player color gray
+team modify alliegiance nametagVisibility hideForOtherTeams
+team modify coalition nametagVisibility hideForOtherTeams
+team modify ffa_player nametagVisibility hideForOwnTeam
 gamerule doImmediateRespawn true
 function mgdr_arcade:schedules/match_time_schedule
 

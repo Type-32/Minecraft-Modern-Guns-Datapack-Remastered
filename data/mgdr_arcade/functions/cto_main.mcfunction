@@ -18,3 +18,4 @@ execute store result score .alliegiancePlayers arcadeRule if entity @a[team=alli
 execute store result score .coalitionPlayers arcadeRule if entity @a[team=coalition]
 execute if score .matchStarted arcadeRule matches 1.. if score .alliegiancePlayers arcadeRule matches 0 run function mgdr_arcade:cto/end_match
 execute if score .matchStarted arcadeRule matches 1.. if score .coalitionPlayers arcadeRule matches 0 run function mgdr_arcade:cto/end_match
+execute if score .matchStarted arcadeRule matches 1 if score .totalPlayers arcadeRule matches 0 run function mgdr_arcade:cto/end_match

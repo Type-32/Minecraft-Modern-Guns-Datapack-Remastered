@@ -25,9 +25,6 @@ execute as @a[scores={mgdr.weaponUID=1},tag=!gunDisabled] at @s run function mgd
 ## SIG-716
 execute as @a[scores={mgdr.weaponUID=17},tag=!gunDisabled] at @s run function mgdr:use/sig716
 
-## SIG-75-T
-execute as @a[tag=holdingSIG75T,tag=!gunDisabled] at @s run function mgdr:use/sig75t
-
 ## MP-7
 execute as @a[scores={mgdr.weaponUID=15},tag=!gunDisabled] at @s run function mgdr:use/mp7
 
