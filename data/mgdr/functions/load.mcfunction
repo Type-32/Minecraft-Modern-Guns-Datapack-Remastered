@@ -7,6 +7,7 @@ scoreboard objectives add fireSec dummy
 scoreboard objectives add aimTickAnim dummy
 scoreboard objectives add deaimTickAnim dummy
 
+scoreboard objectives add mgdr.weaponUID dummy
 scoreboard objectives add ak.ammo dummy
 scoreboard objectives add mp40.ammo dummy
 scoreboard objectives add stg44.ammo dummy
