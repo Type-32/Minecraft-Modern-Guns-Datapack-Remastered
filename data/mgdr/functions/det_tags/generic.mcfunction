@@ -6,20 +6,18 @@ tag @a[nbt={SelectedItem:{tag:{Tags:["haveSnipeOptic"]}}}] add haveSnipeOptic
 tag @a[nbt=!{SelectedItem:{tag:{Tags:["haveSnipeOptic"]}}}] remove haveSnipeOptic
 tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["mgdrGun"]}}]}] add Reloading
 tag @a[nbt=!{Inventory:[{Slot:-106b,tag:{Tags:["mgdrGun"]}}]}] remove Reloading
-tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["hand"]}}]}] add HandShown
-tag @a[nbt=!{Inventory:[{Slot:-106b,tag:{Tags:["hand"]}}]}] remove HandShown
-tag @a[nbt={Inventory:[{Slot:-106b}]}] add hasOffhandItem
-tag @a[nbt=!{Inventory:[{Slot:-106b}]}] remove hasOffhandItem
+#tag @a[nbt={Inventory:[{Slot:-106b}]}] add hasOffhandItem
+#tag @a[nbt=!{Inventory:[{Slot:-106b}]}] remove hasOffhandItem
 tag @a[predicate=mgdr:is_sprinting] add gunDisabled
 tag @a[predicate=!mgdr:is_sprinting,tag=!reloadGun] remove gunDisabled
 
 
 function mgdr:det_tags/guntag
 function mgdr:det_tags/equipmenttag
-function mgdr:det_tags/variant
+#function mgdr:det_tags/variant
 function mgdr:det_tags/func_items
 function mgdr:det_tags/attachments
-function mgdr:det_tags/vehicles
+#function mgdr:det_tags/vehicles
 scoreboard players set @a[tag=!holdingGun] mgdr.weaponUID 0
 
 #tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] add attachmentKit

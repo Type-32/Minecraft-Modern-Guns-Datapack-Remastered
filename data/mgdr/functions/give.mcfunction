@@ -5,16 +5,11 @@ give @s carrot_on_a_stick{Tags:["cbr27a1"]}
 give @s carrot_on_a_stick{Tags:["cbt97"]}
 give @s carrot_on_a_stick{Tags:["grau556"]}
 give @s carrot_on_a_stick{Tags:["sig716"]}
-give @s carrot_on_a_stick{Tags:["sig75t"]}
 give @s carrot_on_a_stick{Tags:["cz117"]}
 give @s carrot_on_a_stick{Tags:["mp7"]}
 give @s carrot_on_a_stick{Tags:["mp5"]}
 give @s carrot_on_a_stick{Tags:["mp5t"]}
 give @s carrot_on_a_stick{Tags:["vec9"]}
-give @s carrot_on_a_stick{Tags:["mp40"]}
-give @s carrot_on_a_stick{Tags:["stg44"]}
-give @s carrot_on_a_stick{Tags:["vsg15"]}
-give @s carrot_on_a_stick{Tags:["type2a"]}
 give @s carrot_on_a_stick{Tags:["origin12"]}
 give @s carrot_on_a_stick{Tags:["m1911"]}
 give @s carrot_on_a_stick{Tags:["m17"]}

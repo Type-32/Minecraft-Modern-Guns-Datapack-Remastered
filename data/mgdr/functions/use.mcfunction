@@ -50,13 +50,13 @@ execute as @a[scores={mgdr.weaponUID=7},tag=!gunDisabled] at @s run function mgd
 execute as @a[scores={mgdr.weaponUID=16},tag=!gunDisabled] at @s run function mgdr:use/origin12
 
 ## M-14
-execute as @a[scores={mgdr.weaponUID=10},scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m14
+execute as @a[scores={mgdr.weaponUID=10,usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m14
 
 ## M-1911
-execute as @a[scores={mgdr.weaponUID=12},scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m1911
+execute as @a[scores={mgdr.weaponUID=12,usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m1911
 
 ## M-17
-execute as @a[scores={mgdr.weaponUID=11},scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m17
+execute as @a[scores={mgdr.weaponUID=11,usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m17
 
 ## CBS-5
 execute as @a[scores={mgdr.weaponUID=6}] at @s run function mgdr:use/cbs5
@@ -67,13 +67,11 @@ execute as @a[scores={mgdr.weaponUID=18},tag=!gunDisabled] at @s run function mg
 ## AUG Para
 execute as @a[scores={mgdr.weaponUID=3},tag=!gunDisabled] at @s run function mgdr:use/augpara
 
-## Plane
-execute as @a[tag=holdingPlaneSpawner,scores={usedCarrotPol=1..}] at @s run function mgdr:action/spawn_plane
-
-
-
 ##Using Combat Master Knife
-execute as @a[tag=holdingCBMKnife,scores={usedCarrotPol=1..}] at @s run function mgdr:action/combat_master_knife
+execute as @a[scores={mgdr.weaponUID=19,usedCarrotPol=1..}] at @s run function mgdr:action/combat_master_knife
+
+
+
 
 ##Using Stim Shot
 execute as @a[tag=holdingStimShot,scores={usedCarrotPol=1..}] at @s run function mgdr:action/stim_shot

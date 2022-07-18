@@ -11,49 +11,29 @@ execute as @a[tag=holdingGun,predicate=!mgdr:is_sneaking] run attribute @s gener
 #Model Cores Execution
 execute as @a[tag=holdingMK7] run function mgdr:model_core/mk7/core
 
-execute as @a[scores={mgdr.weaponUID=4},tag=!Kilowatt] run function mgdr:model_core/cbr27/core
-execute as @a[scores={mgdr.weaponUID=4},tag=Kilowatt] run function mgdr:model_core/cbr27/kilowatt_variant
-execute as @a[scores={mgdr.weaponUID=4},scores={expFt=1..}] run function mgdr:model_core/cbr27/hand/core
+execute as @a[scores={mgdr.weaponUID=4}] run function mgdr:model_core/cbr27/core
 
 execute as @a[scores={mgdr.weaponUID=5}] run function mgdr:model_core/cbr27a1/core
 
-execute as @a[scores={mgdr.weaponUID=1},tag=!Resonance] run function mgdr:model_core/ak/core
-execute as @a[scores={mgdr.weaponUID=1},tag=Resonance] run function mgdr:model_core/ak/resonance_variant
-execute as @a[scores={mgdr.weaponUID=1},scores={expFt=1..}] run function mgdr:model_core/ak/hand/core
+execute as @a[scores={mgdr.weaponUID=1}] run function mgdr:model_core/ak/core
 
-execute as @a[tag=holdingMP40] run function mgdr:model_core/mp40/core
-execute as @a[tag=holdingMP40,scores={expFt=1..}] run function mgdr:model_core/mp40/hand/core
-
-execute as @a[tag=holdingSTG44] run function mgdr:model_core/stg44/core
-execute as @a[tag=holdingSTG44,scores={expFt=1..}] run function mgdr:model_core/stg44/hand/core
-
-execute as @a[scores={mgdr.weaponUID=2},tag=!Resonance] run function mgdr:model_core/asval/core
-execute as @a[scores={mgdr.weaponUID=2},scores={expFt=1..}] run function mgdr:model_core/asval/hand/core
+execute as @a[scores={mgdr.weaponUID=2}] run function mgdr:model_core/asval/core
 
 execute as @a[scores={mgdr.weaponUID=17}] run function mgdr:model_core/sig716/core
-execute as @a[scores={mgdr.weaponUID=17},scores={expFt=1..}] run function mgdr:model_core/sig716/hand/core
-
-execute as @a[tag=holdingSIG75T] run function mgdr:model_core/sig75t/core
-execute as @a[tag=holdingSIG75T,scores={expFt=1..}] run function mgdr:model_core/sig75t/hand/core
 
 execute as @a[scores={mgdr.weaponUID=15}] run function mgdr:model_core/mp7/core
-execute as @a[scores={mgdr.weaponUID=15},scores={expFt=1..}] run function mgdr:model_core/mp7/hand/core
 
 execute as @a[scores={mgdr.weaponUID=13}] run function mgdr:model_core/mp5/core
-execute as @a[scores={mgdr.weaponUID=13},scores={expFt=1..}] run function mgdr:model_core/mp5/hand/core
 
 execute as @a[scores={mgdr.weaponUID=14}] run function mgdr:model_core/mp5t/core
-execute as @a[scores={mgdr.weaponUID=14},scores={expFt=1..}] run function mgdr:model_core/mp5t/hand/core
 
 execute as @a[scores={mgdr.weaponUID=8}] run function mgdr:model_core/cz117/core
 
 execute as @a[scores={mgdr.weaponUID=16}] run function mgdr:model_core/origin12/core
 
-execute as @a[scores={mgdr.weaponUID=10},tag=!Hardline] run function mgdr:model_core/m14/core
-execute as @a[scores={mgdr.weaponUID=10},tag=Hardline] run function mgdr:model_core/m14/hardline_variant
+execute as @a[scores={mgdr.weaponUID=10}] run function mgdr:model_core/m14/core
 
-execute as @a[scores={mgdr.weaponUID=9},tag=!Kilowatt] run function mgdr:model_core/grau556/core
-execute as @a[scores={mgdr.weaponUID=9},tag=Kilowatt] run function mgdr:model_core/grau556/kilowatt_variant
+execute as @a[scores={mgdr.weaponUID=9}] run function mgdr:model_core/grau556/core
 
 execute as @a[scores={mgdr.weaponUID=7}] run function mgdr:model_core/cbt97/core
 
