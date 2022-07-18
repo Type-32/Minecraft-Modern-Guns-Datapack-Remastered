@@ -11,61 +11,61 @@ scoreboard players add @a[tag=holdingGun,scores={fireDelay=..200}] fireDelay 1
 scoreboard players add @a[tag=holdingGun] flashDelay 1
 
 ## CBR-27
-execute as @a[tag=holdingCBR27,tag=!gunDisabled] at @s run function mgdr:use/cbr27
+execute as @a[scores={mgdr.weaponUID=4},tag=!gunDisabled] at @s run function mgdr:use/cbr27
 
 ## CBR-27-A1
-execute as @a[tag=holdingCBR27A1,tag=!gunDisabled] at @s run function mgdr:use/cbr27a1
+execute as @a[scores={mgdr.weaponUID=5},tag=!gunDisabled] at @s run function mgdr:use/cbr27a1
 
 ## AS-VAL
-execute as @a[tag=holdingASVAL,tag=!gunDisabled] at @s run function mgdr:use/asval
+execute as @a[scores={mgdr.weaponUID=2},tag=!gunDisabled] at @s run function mgdr:use/asval
 
 ## AK
 execute as @a[scores={mgdr.weaponUID=1},tag=!gunDisabled] at @s run function mgdr:use/ak40
 
 ## SIG-716
-execute as @a[tag=holdingSIG716,tag=!gunDisabled] at @s run function mgdr:use/sig716
+execute as @a[scores={mgdr.weaponUID=17},tag=!gunDisabled] at @s run function mgdr:use/sig716
 
 ## SIG-75-T
 execute as @a[tag=holdingSIG75T,tag=!gunDisabled] at @s run function mgdr:use/sig75t
 
 ## MP-7
-execute as @a[tag=holdingMP7,tag=!gunDisabled] at @s run function mgdr:use/mp7
+execute as @a[scores={mgdr.weaponUID=15},tag=!gunDisabled] at @s run function mgdr:use/mp7
 
 ## MP-5
-execute as @a[tag=holdingMP5,tag=!gunDisabled] at @s run function mgdr:use/mp5
+execute as @a[scores={mgdr.weaponUID=13},tag=!gunDisabled] at @s run function mgdr:use/mp5
 
 ## MP-5-T
-execute as @a[tag=holdingMP5T,tag=!gunDisabled] at @s run function mgdr:use/mp5t
+execute as @a[scores={mgdr.weaponUID=14},tag=!gunDisabled] at @s run function mgdr:use/mp5t
 
 ## CZ-117
-execute as @a[tag=holdingCZ117,tag=!gunDisabled] at @s run function mgdr:use/cz117
+execute as @a[scores={mgdr.weaponUID=8},tag=!gunDisabled] at @s run function mgdr:use/cz117
 
 ## Grau 5.56
-execute as @a[tag=holdingGrau556,tag=!gunDisabled] at @s run function mgdr:use/grau556
+execute as @a[scores={mgdr.weaponUID=9},tag=!gunDisabled] at @s run function mgdr:use/grau556
 
 ## CBT-97
-execute as @a[tag=holdingCBT97,tag=!gunDisabled] at @s run function mgdr:use/cbt97
+execute as @a[scores={mgdr.weaponUID=7},tag=!gunDisabled] at @s run function mgdr:use/cbt97
 
 ## Origin-12
-execute as @a[tag=holdingOrigin12,tag=!gunDisabled] at @s run function mgdr:use/origin12
+execute as @a[scores={mgdr.weaponUID=16},tag=!gunDisabled] at @s run function mgdr:use/origin12
 
 ## M-14
-execute as @a[tag=holdingM14,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m14
+execute as @a[scores={mgdr.weaponUID=10},scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m14
 
 ## M-1911
-execute as @a[tag=holdingM1911,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m1911
+execute as @a[scores={mgdr.weaponUID=12},scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m1911
 
 ## M-17
-execute as @a[tag=holdingM17,scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m17
+execute as @a[scores={mgdr.weaponUID=11},scores={usedCarrotPol=1..},tag=!gunDisabled] at @s run function mgdr:use/sub/m17
 
 ## CBS-5
-execute as @a[tag=holdingCBS5] at @s run function mgdr:use/cbs5
+execute as @a[scores={mgdr.weaponUID=6}] at @s run function mgdr:use/cbs5
 
 ## Vec-9 Fennec
-execute as @a[tag=holdingVec9,tag=!gunDisabled] at @s run function mgdr:use/vec9
+execute as @a[scores={mgdr.weaponUID=18},tag=!gunDisabled] at @s run function mgdr:use/vec9
 
 ## AUG Para
-execute as @a[tag=holdingAUGPara,tag=!gunDisabled] at @s run function mgdr:use/augpara
+execute as @a[scores={mgdr.weaponUID=3},tag=!gunDisabled] at @s run function mgdr:use/augpara
 
 ## Plane
 execute as @a[tag=holdingPlaneSpawner,scores={usedCarrotPol=1..}] at @s run function mgdr:action/spawn_plane

@@ -1,3 +1,4 @@
+scoreboard players add @a mgdr.weaponUID 0
 scoreboard players add @a reloadSec 0
 scoreboard players add @a[tag=holdingGun] aimSec 1
 scoreboard players add @a[tag=holdingGun] fireSec 1

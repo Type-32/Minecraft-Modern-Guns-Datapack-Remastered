@@ -1,10 +1,10 @@
 execute as @e[type=item,tag=!processed,nbt={Item:{tag:{Tags:["mgdrGun"]}}}] at @s run function mgdr:reload/action/process_item
 
-tag @a[tag=holdingM14] remove switch_firemode
-tag @a[tag=holdingM1911] remove switch_firemode
-tag @a[tag=holdingM17] remove switch_firemode
-tag @a[tag=holdingCBS5] remove switch_firemode
-tag @a[tag=holdingOrigin12] remove switch_firemode
+tag @a[scores={mgdr.weaponUID=10}] remove switch_firemode
+tag @a[scores={mgdr.weaponUID=12}] remove switch_firemode
+tag @a[scores={mgdr.weaponUID=11}] remove switch_firemode
+tag @a[scores={mgdr.weaponUID=6}] remove switch_firemode
+tag @a[scores={mgdr.weaponUID=16}] remove switch_firemode
 execute as @a[tag=Reloading] run function mgdr:reload/reload_func/reset_reload_delay
 #execute as @a[tag=Reloading] if score @s auto_reload matches 1 run function mgdr:reload/reload_func/reset_reload_delay
 #tag @a[tag=Reloading] remove Reloading

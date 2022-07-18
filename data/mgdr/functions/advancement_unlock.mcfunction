@@ -9,12 +9,12 @@ advancement grant @a[scores={plr.mob_kills=2000..}] only mgdr:2000_kill
 advancement grant @a[scores={plr.mob_kills=3000..}] only mgdr:3000_kill
 advancement grant @a[scores={plr.mob_kills=5000..}] only mgdr:5000_kill
 
-advancement grant @a[tag=holdingCBR27] only mgdr:get_cbr27
+advancement grant @a[scores={mgdr.weaponUID=4}] only mgdr:get_cbr27
 advancement grant @a[scores={mgdr.weaponUID=1}] only mgdr:get_ak40
-advancement grant @a[tag=holdingASVAL] only mgdr:get_asval
-advancement grant @a[tag=holdingCBT97] only mgdr:get_cbt97
-advancement grant @a[tag=holdingCZ117] only mgdr:get_cz117
-advancement grant @a[tag=holdingMP7] only mgdr:get_mp7
-advancement grant @a[tag=holdingMP5] only mgdr:get_mp5
-advancement grant @a[tag=holdingSIG716] only mgdr:get_sig716
+advancement grant @a[scores={mgdr.weaponUID=2}] only mgdr:get_asval
+advancement grant @a[scores={mgdr.weaponUID=7}] only mgdr:get_cbt97
+advancement grant @a[scores={mgdr.weaponUID=8}] only mgdr:get_cz117
+advancement grant @a[scores={mgdr.weaponUID=15}] only mgdr:get_mp7
+advancement grant @a[scores={mgdr.weaponUID=13}] only mgdr:get_mp5
+advancement grant @a[scores={mgdr.weaponUID=17}] only mgdr:get_sig716
 advancement grant @a[tag=holdingSIG75T] only mgdr:get_sig75t

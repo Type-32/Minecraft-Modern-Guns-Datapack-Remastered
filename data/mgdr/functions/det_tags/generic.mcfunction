@@ -13,7 +13,6 @@ tag @a[nbt=!{Inventory:[{Slot:-106b}]}] remove hasOffhandItem
 tag @a[predicate=mgdr:is_sprinting] add gunDisabled
 tag @a[predicate=!mgdr:is_sprinting,tag=!reloadGun] remove gunDisabled
 
-scoreboard players set @a[tag=!holdingGun] mgdr.weaponUID 0
 
 function mgdr:det_tags/guntag
 function mgdr:det_tags/equipmenttag
@@ -21,6 +20,7 @@ function mgdr:det_tags/variant
 function mgdr:det_tags/func_items
 function mgdr:det_tags/attachments
 function mgdr:det_tags/vehicles
+scoreboard players set @a[tag=!holdingGun] mgdr.weaponUID 0
 
 #tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] add attachmentKit
 #tag @a[nbt=!{Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] remove attachmentKit

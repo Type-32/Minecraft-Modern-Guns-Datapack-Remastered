@@ -37,7 +37,7 @@ execute as @a[tag=holdingGun] run function mgdr:dynload_get
 #execute as @a[tag=wearingNODS] if score @s whiteHit matches 11.. if score @s redHit matches 11.. run title @s title " "
 
 execute as @a[tag=holdingGun] store result score @s xmx.ammo run data get entity @s SelectedItem.tag.AmmoXMX
-execute as @a[tag=holdingASVAL,tag=holdingGun] if score @s asval.ammo > @s xmx.ammo run scoreboard players operation @s asval.ammo = @s xmx.ammo
+execute as @a[scores={mgdr.weaponUID=2},tag=holdingGun] if score @s asval.ammo > @s xmx.ammo run scoreboard players operation @s asval.ammo = @s xmx.ammo
 clear @a[scores={hands_in_inv=2..}] clock{Tags:["hand"]} 1
 execute as @a unless score @s mgdr.pid matches 1.. store result score @s mgdr.pid run scoreboard players add #last mgdr.pid 1
 
