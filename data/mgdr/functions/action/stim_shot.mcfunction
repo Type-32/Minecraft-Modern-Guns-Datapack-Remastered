@@ -1,3 +1,4 @@
+#effect give @s absorption 3 1 true
 effect give @s instant_health 1 2 true
 effect give @s speed 5 0 true
 effect give @s strength 5 0 true
