@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "mgdr_crafting:762mm_mag"
+        }
+      }
+    },
+    "rewards": {
+      "function": "mgdr_crafting:recipe/give/762mm_mag"
+    }
+  }
+  

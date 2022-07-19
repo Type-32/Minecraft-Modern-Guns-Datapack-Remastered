@@ -154,3 +154,5 @@ forceload add 0 0 0 0
 forceload add 3000000 3000000
 setblock 0 -64 0 chest{Lock:"NonExistentLock115414"}
 setblock 0 -63 0 bedrock
+
+function mgdr:tick

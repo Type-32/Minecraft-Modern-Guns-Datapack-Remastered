@@ -7,6 +7,7 @@ scoreboard objectives add fireDelay dummy
 scoreboard objectives add fireDisplace dummy
 scoreboard objectives add flashDelay dummy
 scoreboard players add @a fireDisplace 0
+scoreboard players add @a fireDelay 0
 scoreboard players add @a[tag=holdingGun,scores={fireDelay=..200}] fireDelay 1
 scoreboard players add @a[tag=holdingGun] flashDelay 1
 

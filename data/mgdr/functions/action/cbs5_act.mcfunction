@@ -7,22 +7,17 @@ execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace
 execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
 execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
 
-
-
 tag @s add firing
 tag @s add firingMarkerDetect
-execute if entity @s[predicate=mgdr:is_sneaking] anchored eyes run function mgdr:rays/cbs5
-execute if entity @s[predicate=!mgdr:is_sneaking] anchored eyes run function mgdr:action/recoil/spread/cbs5
+execute if predicate mgdr:is_sneaking anchored eyes run function mgdr:rays/cbs5
+execute unless predicate mgdr:is_sneaking anchored eyes run function mgdr:action/recoil/spread/cbs5
 scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
 scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
+execute anchored eyes positioned ^ ^ ^1 run function mgdr:action/gun_effects/cbs5
 
-execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 6 0 0.18 0 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
-playsound mgdr:cbs5.fire voice @a[distance=..70] ~ ~ ~ 1000
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-5
 #execute if score noRecoil gamerule matches ..0 run tp @s[name="LiBai233"] ~ ~ ~ ~ ~-5
 scoreboard players set @s fireDelay 0

@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "mgdr_crafting:combat_master_vest"
+        }
+      }
+    },
+    "rewards": {
+      "function": "mgdr_crafting:recipe/give/combat_master_vest"
+    }
+  }
+  

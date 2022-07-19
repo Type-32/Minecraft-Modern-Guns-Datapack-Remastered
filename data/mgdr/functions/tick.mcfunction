@@ -1,3 +1,4 @@
+#schedule function mgdr:tick 1t replace
 #Code Written by Type-32
 #This part is for initializing and running all the actionable & necassary functions
 

@@ -1,0 +1,2 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:smithing_table",Count:1b}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:3b},OnGround:1b},distance=..1] if entity @e[type=item,nbt={Item:{id:"minecraft:oak_log",Count:1b},OnGround:1b},distance=..1] align xyz run function mgdr_crafting:setblock_workbench
+#hahahaha
