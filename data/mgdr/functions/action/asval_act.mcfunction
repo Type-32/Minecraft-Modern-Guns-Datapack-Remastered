@@ -8,7 +8,6 @@ function mgdr:muzzle_flash_light_add
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
 
 
-
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/asval
