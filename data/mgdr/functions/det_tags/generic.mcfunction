@@ -1,37 +1,31 @@
-tag @a[nbt={SelectedItem:{tag:{Tags:["mgdrGun"]}}}] add holdingGun
-tag @a[nbt=!{SelectedItem:{tag:{Tags:["mgdrGun"]}}}] remove holdingGun
-tag @a[nbt={SelectedItem:{tag:{Tags:["haveOptic"]}}}] add haveOptic
-tag @a[nbt=!{SelectedItem:{tag:{Tags:["haveOptic"]}}}] remove haveOptic
-tag @a[nbt={SelectedItem:{tag:{Tags:["haveSnipeOptic"]}}}] add haveSnipeOptic
-tag @a[nbt=!{SelectedItem:{tag:{Tags:["haveSnipeOptic"]}}}] remove haveSnipeOptic
-tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["mgdrGun"]}}]}] add Reloading
-tag @a[nbt=!{Inventory:[{Slot:-106b,tag:{Tags:["mgdrGun"]}}]}] remove Reloading
-#tag @a[nbt={Inventory:[{Slot:-106b}]}] add hasOffhandItem
-#tag @a[nbt=!{Inventory:[{Slot:-106b}]}] remove hasOffhandItem
-tag @a[predicate=mgdr:is_sprinting] add gunDisabled
-tag @a[predicate=!mgdr:is_sprinting,tag=!reloadGun] remove gunDisabled
+function mgdr:det_tags/tag
+function mgdr:det_tags/untag
 
+#Gun/Item Tags
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["ak"]}}}] mgdr.weaponUID 1
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["asval"]}}}] mgdr.weaponUID 2
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["augpara"]}}}] mgdr.weaponUID 3
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["cbr27"]}}}] mgdr.weaponUID 4
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["cbr27a1"]}}}] mgdr.weaponUID 5
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["cbs5"]}}}] mgdr.weaponUID 6
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["cbt97"]}}}] mgdr.weaponUID 7
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["cz117"]}}}] mgdr.weaponUID 8
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["grau556"]}}}] mgdr.weaponUID 9
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["m14"]}}}] mgdr.weaponUID 10
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["m17"]}}}] mgdr.weaponUID 11
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["m1911"]}}}] mgdr.weaponUID 12
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["mp5"]}}}] mgdr.weaponUID 13
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["mp5t"]}}}] mgdr.weaponUID 14
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["mp7"]}}}] mgdr.weaponUID 15
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["origin12"]}}}] mgdr.weaponUID 16
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["sig716"]}}}] mgdr.weaponUID 17
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["vec9"]}}}] mgdr.weaponUID 18
+scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["combat_master_knife"]}}}] mgdr.weaponUID 19
 
-function mgdr:det_tags/guntag
-function mgdr:det_tags/equipmenttag
+#function mgdr:det_tags/guntag
+#function mgdr:det_tags/equipmenttag
 #function mgdr:det_tags/variant
-function mgdr:det_tags/func_items
+#function mgdr:det_tags/func_items
 function mgdr:det_tags/attachments
 #function mgdr:det_tags/vehicles
 scoreboard players set @a[tag=!holdingGun] mgdr.weaponUID 0
-
-#tag @a[nbt={Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] add attachmentKit
-#tag @a[nbt=!{Inventory:[{Slot:-106b,tag:{Tags:["attachmentKit"]}}]}] remove attachmentKit
-
-#tag @e[type=item,nbt={OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","5.56mm Mag"]}}}] add 556magGround
-#tag @e[type=item,nbt=!{OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","5.56mm Mag"]}}}] remove 556magGround
-#tag @e[type=item,nbt={OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","4.5mm Mag"]}}}] add 045magGround
-#tag @e[type=item,nbt=!{OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","4.5mm Mag"]}}}] remove 045magGround
-#tag @e[type=item,nbt={OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","7.62mm Mag"]}}}] add 762magGround
-#tag @e[type=item,nbt=!{OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","7.62mm Mag"]}}}] remove 762magGround
-#tag @e[type=item,nbt={OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","9mm Mag"]}}}] add 009magGround
-#tag @e[type=item,nbt=!{OnGround:1b,Item:{Count:1b,tag:{Tags:["empty","9mm Mag"]}}}] remove 009magGround
-#tag @e[type=item,nbt={OnGround:1b,Item:{Count:1b,tag:{Tags:["bullet_box"]}}}] add bulletBoxGround
-#tag @e[type=item,nbt=!{OnGround:1b,Item:{Count:1b,tag:{Tags:["bullet_box"]}}}] remove bulletBoxGround
-
-

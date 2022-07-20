@@ -8,7 +8,7 @@ function mgdr:reload/reload_func/reload_group
 function mgdr:reload/reload_func/tagging
 execute if score datapackItemFunc gamerule matches ..0 run function mgdr:use
 function mgdr:det_tags/generic
-function mgdr:det_tags/guntag
+#function mgdr:det_tags/guntag
 function mgdr:model_enf
 function mgdr:hud
 function mgdr:equip_attachment
