@@ -1,6 +1,7 @@
-function mgdr:action/effects/ads_eff
+scoreboard players set @s aimSec 1
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
+scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
 
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
@@ -29,4 +30,3 @@ execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ 
 execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-0.8
 
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] cbr27a1.ammo 1
-scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0

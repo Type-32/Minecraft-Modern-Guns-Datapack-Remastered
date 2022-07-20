@@ -3,4 +3,5 @@ execute if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force 
 execute if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
 
 playsound mgdr:asval.fire player @a[distance=..25] ~ ~ ~ 1000
+playsound mgdr:asval.fire.bass player @a[distance=..25] ~ ~ ~ 1000
 playsound mgdr:asval.fire.mech player @a[distance=..10] ~ ~ ~ 0.6

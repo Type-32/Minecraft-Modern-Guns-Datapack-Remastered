@@ -1,8 +1,8 @@
-scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
-scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
-function mgdr:action/effects/ads_eff
+scoreboard players set @s aimSec 1
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
+scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
+scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
 
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 0
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 1
@@ -19,13 +19,7 @@ scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weapo
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
-
-
-execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 6 0 0.18 0 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
-
-execute run playsound mgdr:cbt97.fire voice @a[distance=..50] ~ ~ ~ 1000
+execute anchored eyes positioned ^ ^ ^1 run function mgdr:action/gun_effects/cbt97
 
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-1.4
 

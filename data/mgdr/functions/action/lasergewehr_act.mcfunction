@@ -1,4 +1,4 @@
-function mgdr:action/effects/ads_eff
+scoreboard players set @s aimSec 1
 scoreboard players set .dist shoot_dist 0
 function mgdr:muzzle_flash_light_add
 
