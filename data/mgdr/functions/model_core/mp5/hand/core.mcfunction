@@ -1,3 +1,3 @@
-item modify entity @s[predicate=mgdr:is_sneaking,scores={aimSec=2..}] weapon.offhand mgdr:model_enf_hand
-item modify entity @s[predicate=mgdr:is_sprinting] weapon.offhand mgdr:mp5/hand/run
+execute if predicate mgdr:is_sneaking run item modify entity @s[scores={aimSec=2..}] weapon.offhand mgdr:model_enf_hand
+execute if predicate mgdr:is_sprinting run item modify entity @s weapon.offhand mgdr:mp5/hand/run
 item modify entity @s[predicate=!mgdr:is_sprinting,predicate=!mgdr:is_sneaking] weapon.offhand mgdr:mp5/hand/main
