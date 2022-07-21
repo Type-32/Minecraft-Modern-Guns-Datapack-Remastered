@@ -9,4 +9,4 @@ execute if score @s mgdr.health matches 1.. store result entity @s Health float 
 execute if score @s mgdr.health matches ..0 run kill @s
 function mgdr:damage/regional/anger_affection/main
 
-particle minecraft:block minecraft:yellow_wool ~ ~ ~ .15 .15 .15 1 20 force
+particle minecraft:block minecraft:yellow_wool ~ ~ ~ .15 .15 .15 1 20 force @a[scores={tgl_particle=0}]

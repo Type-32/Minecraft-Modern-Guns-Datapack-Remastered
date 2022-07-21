@@ -9,4 +9,4 @@ execute if score @s mgdr.health matches 1.. store result entity @s Health float 
 execute if score @s mgdr.health matches ..0 run kill @s
 execute if score @s mgdr.health matches 1.. run data modify entity @s AngryAt set from entity @p[tag=firingMarkerDetect,scores={mgdr.weaponUID=6}] UUID
 
-particle minecraft:block minecraft:crying_obsidian ~ ~ ~ .25 .3 .25 2 60 force
+particle minecraft:block minecraft:crying_obsidian ~ ~ ~ .25 .3 .25 2 60 force @a[scores={tgl_particle=0}]

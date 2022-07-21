@@ -10,5 +10,5 @@ execute if score @s mgdr.health matches 1.. store result entity @s Health float 
 execute if score @s mgdr.health matches ..0 run kill @s
 function mgdr:damage/regional/anger_affection/main
 
-particle minecraft:block minecraft:nether_wart_block ~ ~ ~ .25 .25 .25 2 50 force
-particle minecraft:block minecraft:bone_block ~ ~ ~ .25 .25 .25 2 20 force
+particle minecraft:block minecraft:nether_wart_block ~ ~ ~ .25 .25 .25 2 50 force @a[scores={tgl_particle=0}]
+particle minecraft:block minecraft:bone_block ~ ~ ~ .25 .25 .25 2 20 force @a[scores={tgl_particle=0}]

@@ -3,7 +3,7 @@ scoreboard players set @s[tag=!WitherenVest,tag=!CombatMasterVest] hp_dmg 12
 scoreboard players set @s[tag=WitherenVest] hp_dmg 11
 scoreboard players set @s[tag=CombatMasterVest] hp_dmg 10
 
-particle minecraft:block minecraft:redstone_block ~ ~ ~ .25 .3 .25 3 60 force
+particle minecraft:block minecraft:redstone_block ~ ~ ~ .25 .3 .25 3 60 force @a[scores={tgl_particle=0}]
 scoreboard players set @a[tag=firingMarkerDetect,scores={mgdr.weaponUID=10}] whiteHit 0
 
 playsound minecraft:ui.button.click voice @a[tag=firingMarkerDetect,scores={mgdr.weaponUID=10}] ~ ~1000 ~ 1000000000 2
