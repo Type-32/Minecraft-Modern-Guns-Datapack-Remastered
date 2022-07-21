@@ -2,6 +2,7 @@ function mgdr:det_tags/tag
 function mgdr:det_tags/untag
 
 #Gun/Item Tags
+scoreboard players set @a[tag=!holdingGun] mgdr.weaponUID 0
 scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["ak"]}}}] mgdr.weaponUID 1
 scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["asval"]}}}] mgdr.weaponUID 2
 scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["augpara"]}}}] mgdr.weaponUID 3
@@ -28,4 +29,3 @@ scoreboard players set @a[nbt={SelectedItem:{tag:{Tags:["combat_master_knife"]}}
 #function mgdr:det_tags/func_items
 function mgdr:det_tags/attachments
 #function mgdr:det_tags/vehicles
-scoreboard players set @a[tag=!holdingGun] mgdr.weaponUID 0

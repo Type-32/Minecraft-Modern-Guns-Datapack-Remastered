@@ -7,4 +7,4 @@ execute as @a[dx=0,gamemode=!creative,gamemode=!spectator,tag=!firing] positione
 execute positioned ^-.1 ^ ^1 unless block ~ ~ ~ #mgdr:penetrable run function mgdr:func/ray_hit
 execute positioned ^-.1 ^ ^1 run function mgdr:func/ray_reset
 scoreboard players add .dist shoot_dist 1
-execute if score .dist shoot_dist matches ..110 positioned ^-.1 ^ ^1 if block ~ ~ ~ #mgdr:penetrable run function mgdr:rays/vec9
+execute if score .dist shoot_dist matches ..110 positioned ^-.1 ^ ^1 if block ~ ~ ~ #mgdr:penetrable run function mgdr:action/recoil/spread/vec9/ray_right

@@ -9,8 +9,6 @@ scoreboard players set @s[scores={fireDelay=5..,grau.fm=2}] fireDelay 0
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 2
 #execute if predicate mgdr:half_chance run scoreboard players set @s fireDisplace 3
 
-
-
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/grau556
@@ -22,6 +20,5 @@ tag @s remove firingMarkerDetect
 execute anchored eyes positioned ^ ^ ^1 run function mgdr:action/gun_effects/grau556
 
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-1.4
-
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] grau.ammo 1
 execute if score @s grau.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

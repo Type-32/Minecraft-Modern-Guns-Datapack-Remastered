@@ -17,11 +17,8 @@ scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weapo
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
+execute anchored eyes positioned ^ ^ ^1 run function mgdr:action/gun_effects/m1911
 
-execute as @s[predicate=!mgdr:is_sneaking] anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle dust 1 1 1 3 ^-.3 ^-.15 ^1.1 0 6 0 0.18 0 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ water run particle bubble ^ ^-.15 ^1.1 0 0 0 .03 2 force @s[scores={tgl_particle=0}]
-execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[scores={tgl_particle=0}]
-playsound mgdr:m1911.fire voice @a[distance=..30] ~ ~ ~ 1000
 execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-3
 execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] m1911.ammo 1
 execute if score @s m1911.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

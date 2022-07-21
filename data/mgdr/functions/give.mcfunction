@@ -1,4 +1,5 @@
 give @s carrot_on_a_stick{Tags:["ak"]}
+give @s carrot_on_a_stick{Tags:["augpara"]}
 give @s carrot_on_a_stick{Tags:["asval"]}
 give @s carrot_on_a_stick{Tags:["cbr27"]}
 give @s carrot_on_a_stick{Tags:["cbr27a1"]}

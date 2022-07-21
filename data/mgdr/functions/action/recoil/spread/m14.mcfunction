@@ -1,4 +1,4 @@
-execute if score @s fireDisplace matches 0 positioned ^-.8 ^4 ^ run function mgdr:rays/m14
-execute if score @s fireDisplace matches 1 positioned ^-.8 ^-4 ^ run function mgdr:rays/m14
-execute if score @s fireDisplace matches 2 positioned ^.8 ^4 ^ run function mgdr:rays/m14
-execute if score @s fireDisplace matches 3 positioned ^.8 ^-4 ^ run function mgdr:rays/m14
+execute if score @s fireDisplace matches 0 run function mgdr:action/recoil/spread/m14/ray_up
+execute if score @s fireDisplace matches 1 run function mgdr:action/recoil/spread/m14/ray_down
+execute if score @s fireDisplace matches 2 run function mgdr:action/recoil/spread/m14/ray_left
+execute if score @s fireDisplace matches 3 run function mgdr:action/recoil/spread/m14/ray_right
