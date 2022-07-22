@@ -2,6 +2,7 @@ scoreboard players set .matchStarted arcadeRule 0
 tag @a remove DeadPlayer
 scoreboard players set @a deathTimer 0
 scoreboard players set @a arcade.plr_deaths 0
+function mgdr_arcade:match/record_stats_at_match_end
 team leave @a
 clear @a
 execute unless score .allegiancePoints arcadeRule matches 50.. if score .coalitionPoints arcadeRule matches 50.. run tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.end_match.team","color": "green"},{"translate": "mgdr_arcade.gamemode.message.end_match.coalition","color": "blue"},{"translate": "mgdr_arcade.gamemode.message.end_match.has_won_the_match","color": "green"}]

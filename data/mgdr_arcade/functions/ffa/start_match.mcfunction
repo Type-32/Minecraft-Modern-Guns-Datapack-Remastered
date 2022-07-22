@@ -18,3 +18,4 @@ title @a title {"translate": "mgdr_arcade.gamemode.message.ffa","color": "gold"}
 title @a subtitle {"translate": "mgdr_arcade.gamemode.message.ffa.desc","color": "yellow"}
 tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.ffa.abbv","color": "gold"},{"translate": "mgdr_arcade.gamemode.message.ffa.desc","color": "yellow"}]
 playsound minecraft:block.note_block.pling player @s ~ ~10000 ~ 100000 2
+advancement grant @a only mgdr:arcade/matches/trophies/the_rookie_trophy

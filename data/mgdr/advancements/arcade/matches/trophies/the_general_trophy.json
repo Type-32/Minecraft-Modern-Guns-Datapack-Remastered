@@ -1,15 +1,14 @@
 {
     "display": {
         "title": {
-            "translate": "mgdr.adv.1000_kill",
-            "color": "light_purple"
+            "translate": "mgdr_arcade.adv.trophies.general"
         },
         "description": {
-            "translate": "mgdr.adv.1000_kill.desc"
+            "translate": "mgdr_arcade.adv.trophies.general.desc"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:202106}"
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:311010}"
         },
         "frame": "challenge",
         "show_toast": true,
@@ -17,9 +16,9 @@
         "hidden": false
     },
     "criteria": {
-        "n": {
+        "tick": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "mgdr:kills"
+    "parent": "mgdr:arcade/matches/trophies/the_captain_trophy"
 }

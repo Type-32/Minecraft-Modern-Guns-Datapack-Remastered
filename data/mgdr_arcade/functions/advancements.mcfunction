@@ -1,0 +1,10 @@
+execute if score @s a_stats.matchWinStreak matches 1 run advancement grant @s only mgdr:arcade/matches/trophies/the_recruit_trophy
+execute if score @s a_stats.matchWinStreak matches 2 run advancement grant @s only mgdr:arcade/matches/trophies/the_beginner_trophy
+execute if score @s a_stats.matchWinStreak matches 3 run advancement grant @s only mgdr:arcade/matches/trophies/the_intermediate_trophy
+execute if score @s a_stats.matchWinStreak matches 4 run advancement grant @s only mgdr:arcade/matches/trophies/the_private_trophy
+execute if score @s a_stats.matchWinStreak matches 5 run advancement grant @s only mgdr:arcade/matches/trophies/the_specialist_trophy
+execute if score @s a_stats.matchWinStreak matches 6 run advancement grant @s only mgdr:arcade/matches/trophies/the_corporal_trophy
+execute if score @s a_stats.matchWinStreak matches 7 run advancement grant @s only mgdr:arcade/matches/trophies/the_sergeant_trophy
+execute if score @s a_stats.matchWinStreak matches 8 run advancement grant @s only mgdr:arcade/matches/trophies/the_lieutenant_trophy
+execute if score @s a_stats.matchWinStreak matches 9 run advancement grant @s only mgdr:arcade/matches/trophies/the_captain_trophy
+execute if score @s a_stats.matchWinStreak matches 10 run advancement grant @s only mgdr:arcade/matches/trophies/the_general_trophy

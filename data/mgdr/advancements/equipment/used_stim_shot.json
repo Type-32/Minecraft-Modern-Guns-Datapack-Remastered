@@ -1,15 +1,15 @@
 {
     "display": {
         "title": {
-            "translate": "mgdr.adv.achieve.sig75t",
+            "translate": "mgdr.adv.achieve.sig716",
             "color": "green"
         },
         "description": {
-            "translate": "mgdr.adv.achieve.sig75t.desc"
+            "translate": "mgdr.adv.achieve.sig716.desc"
         },
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:202116}"
+            "nbt": "{CustomModelData:202115}"
         },
         "frame": "goal",
         "show_toast": true,

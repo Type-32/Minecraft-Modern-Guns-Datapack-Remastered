@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "translate": "mgdr.adv.achieve.cbt97"
+            "translate": "mgdr_arcade.adv.trophies.lieutenant"
         },
         "description": {
-            "translate": "mgdr.adv.achieve.cbt97.desc"
+            "translate": "mgdr_arcade.adv.trophies.lieutenant.desc"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:202107}"
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:311008}"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,9 +16,9 @@
         "hidden": false
     },
     "criteria": {
-        "n": {
+        "tick": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "mgdr:recipe"
+    "parent": "mgdr:arcade/matches/trophies/the_sergeant_trophy"
 }

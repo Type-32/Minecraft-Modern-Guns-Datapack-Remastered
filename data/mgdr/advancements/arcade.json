@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "mgdr_arcade.adv.arcade",
+            "color": "yellow"
+        },
+        "description": {
+            "translate": "mgdr.null"
+        },
+        "icon": {
+            "item": "minecraft:armor_stand",
+            "nbt": "{CustomModelData:212005}"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "mgdr:root"
+}

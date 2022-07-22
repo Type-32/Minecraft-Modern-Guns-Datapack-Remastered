@@ -1,15 +1,14 @@
 {
     "display": {
         "title": {
-            "translate": "mgdr.adv.500_kill",
-            "color": "gold"
+            "translate": "mgdr_arcade.adv.trophies.recruit"
         },
         "description": {
-            "translate": "mgdr.adv.500_kill.desc"
+            "translate": "mgdr_arcade.adv.trophies.recruit.desc"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:202104}"
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:311001}"
         },
         "frame": "task",
         "show_toast": true,
@@ -17,9 +16,9 @@
         "hidden": false
     },
     "criteria": {
-        "n": {
+        "tick": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "mgdr:kills"
+    "parent": "mgdr:arcade/matches/trophies/the_rookie_trophy"
 }

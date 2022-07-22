@@ -2,6 +2,7 @@ scoreboard players set .matchStarted arcadeRule 0
 tag @a remove DeadPlayer
 scoreboard players set @a deathTimer 0
 scoreboard players set @a arcade.plr_deaths 0
+function mgdr_arcade:match/record_stats_at_match_end
 team leave @a
 clear @a
 team leave @a

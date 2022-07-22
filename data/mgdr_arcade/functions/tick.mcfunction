@@ -19,6 +19,10 @@ scoreboard players add @a vote_ffa 0
 scoreboard players add @a vote_cto 0
 scoreboard players add @a playerLeftGame 0
 
+scoreboard players add @a playerKillstreaks 0
+scoreboard players add @a a_stats.totalWonMatches 0
+scoreboard players add @a a_stats.matchWinStreak 0
+
 scoreboard players enable @a weaponLoadout
 scoreboard players enable @a equipmentLoadout
 scoreboard players enable @a chooseWeapon1
@@ -50,3 +54,5 @@ execute as @a[scores={vote_ffa=1..}] at @s run function mgdr_arcade:triggers/vot
 execute as @a[scores={vote_cto=1..}] at @s run function mgdr_arcade:triggers/vote/vote_to_cto
 
 execute if score #playerRule.autoHeal arcadeRule matches 1 run function mgdr_arcade:player_autoheal
+
+execute as @a run function mgdr_arcade:advancements

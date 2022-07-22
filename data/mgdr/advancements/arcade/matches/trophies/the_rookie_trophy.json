@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "translate": "mgdr.adv.achieve.cbr27"
+            "translate": "mgdr_arcade.adv.trophies.rookie"
         },
         "description": {
-            "translate": "mgdr.adv.achieve.cbr27.desc"
+            "translate": "mgdr_arcade.adv.trophies.rookie.desc"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:202102}"
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:311000}"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,9 +16,9 @@
         "hidden": false
     },
     "criteria": {
-        "n": {
+        "tick": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "mgdr:recipe"
+    "parent": "mgdr:arcade/matches/trophies"
 }

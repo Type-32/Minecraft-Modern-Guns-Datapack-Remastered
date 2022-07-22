@@ -31,3 +31,4 @@ title @s subtitle {"translate":"mgdr_arcade.gamemode.message.cto.desc","color": 
 tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.cto.abbv","color": "gold"},{"translate": "mgdr_arcade.gamemode.message.cto.desc","color": "yellow"}]
 playsound minecraft:block.note_block.pling player @s ~ ~10000 ~ 100000 2
 scoreboard players set @e[tag=ObjectivePoint,type=armor_stand] objectiveCaptureDelay 0
+advancement grant @a only mgdr:arcade/matches/trophies/the_rookie_trophy

@@ -1,16 +1,17 @@
 {
     "display": {
         "title": {
-            "translate": "mgdr.adv.recipe",
-            "color": "gold"
+            "translate": "mgdr_arcade.adv.trophies",
+            "color": "green"
         },
         "description": {
-            "translate": ""
+            "translate": "mgdr_arcade.adv.trophies.desc"
         },
         "icon": {
-            "item": "minecraft:book"
+            "item": "minecraft:clock",
+            "nbt": "{CustomModelData:311011}"
         },
-        "frame": "task",
+        "frame": "goal",
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false
@@ -20,5 +21,5 @@
             "trigger": "minecraft:tick"
         }
     },
-    "parent": "mgdr:root"
+    "parent": "mgdr:arcade/matches"
 }
