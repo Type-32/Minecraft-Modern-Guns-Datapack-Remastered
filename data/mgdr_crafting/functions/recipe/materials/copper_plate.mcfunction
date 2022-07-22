@@ -5,5 +5,18 @@
 #    -------------
 #    6  |  7  |  8
 
-execute as @e[tag=workbench] at @s if block ~ ~ ~ dropper{Items:[{Count:1b,Slot:0b,id:"minecraft:iron_ingot"},{Count:1b,Slot:1b,id:"minecraft:iron_ingot"},{Count:1b,Slot:2b,id:"minecraft:iron_ingot"},{Count:1b,Slot:3b,id:"minecraft:copper_ingot"},{Count:1b,Slot:4b,id:"minecraft:copper_ingot"},{Count:1b,Slot:5b,id:"minecraft:copper_ingot"},{Count:1b,Slot:6b,id:"minecraft:quartz"},{Count:1b,Slot:7b,id:"minecraft:quartz"},{Count:1b,Slot:8b,id:"minecraft:quartz"}]} run tag @s add copper_plate
-execute as @e[tag=workbench,tag=copper_plate] at @s run function mgdr_crafting:action/copper_plate
+scoreboard players set .succeedIndicator mgdrCrafting 1
+
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:0b,id:"minecraft:iron_ingot"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:1b,id:"minecraft:iron_ingot"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:2b,id:"minecraft:iron_ingot"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:3b,id:"minecraft:copper_ingot"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:4b,id:"minecraft:copper_ingot"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:5b,id:"minecraft:copper_ingot"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:6b,id:"minecraft:quartz"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:7b,id:"minecraft:quartz"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:8b,id:"minecraft:quartz"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
+
+#If Structure Found
+execute if score .succeedIndicator mgdrCrafting matches 1 run function mgdr_crafting:recipe/compute/multi_item_result
+execute if score .succeedIndicator mgdrCrafting matches 1 run function mgdr_crafting:action/copper_plate

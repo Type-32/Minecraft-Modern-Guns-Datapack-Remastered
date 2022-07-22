@@ -1,13 +1,15 @@
 scoreboard players set .matchStarted arcadeRule 0
 tag @a remove DeadPlayer
+scoreboard players set @a a_match.playerKills 0
+scoreboard players set @a a_match.playerKillStreak 0
 scoreboard players set @a deathTimer 0
 scoreboard players set @a arcade.plr_deaths 0
 function mgdr_arcade:match/record_stats_at_match_end
 team leave @a
 clear @a
 team leave @a
-tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.end_match.match_end_player","color": "green"},{"selector": "@s","color": "yellow"},{"translate": "mgdr_arcade.gamemode.message.end_match.won_match_final_scores","color": "green"},{"score":{"name": "@s","objective": "playerkills"},"color": "yellow"}]
-scoreboard players set @a playerkills 0
+tellraw @a ["",{"translate": "mgdr_arcade.gamemode.message.end_match.match_end_player","color": "green"},{"selector": "@s","color": "yellow"},{"translate": "mgdr_arcade.gamemode.message.end_match.won_match_final_scores","color": "green"},{"score":{"name": "@s","objective": "a_match.playerKills"},"color": "yellow"}]
+scoreboard players set @a a_match.playerKills 0
 tp @a[tag=!forfeitedMatch] @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1]
 effect clear @a
 effect give @a regeneration 1 255 true

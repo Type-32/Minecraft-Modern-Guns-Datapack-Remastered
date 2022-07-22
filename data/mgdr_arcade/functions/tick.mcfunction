@@ -11,7 +11,6 @@ scoreboard players add @a weaponChoice1 0
 scoreboard players add @a weaponChoice2 0
 scoreboard players add @a equipmentChoice1 0
 scoreboard players add @a equipmentChoice2 0
-scoreboard players add @a playerkills 0
 scoreboard players add @a tempHighScore 0
 scoreboard players add @a hitTime 0
 scoreboard players add @a vote_tdm 0
@@ -19,9 +18,10 @@ scoreboard players add @a vote_ffa 0
 scoreboard players add @a vote_cto 0
 scoreboard players add @a playerLeftGame 0
 
-scoreboard players add @a playerKillstreaks 0
 scoreboard players add @a a_stats.totalWonMatches 0
 scoreboard players add @a a_stats.matchWinStreak 0
+scoreboard players add @a a_match.playerKills 0
+scoreboard players add @a a_match.playerKillStreak 0
 
 scoreboard players enable @a weaponLoadout
 scoreboard players enable @a equipmentLoadout

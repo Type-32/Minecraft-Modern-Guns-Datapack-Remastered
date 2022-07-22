@@ -5,7 +5,7 @@ execute as @a[scores={deathTimer=0},tag=DeadPlayer,tag=!forfeitedMatch] at @s if
 execute if score .matchStarted arcadeRule matches 1.. if score .allegiancePoints arcadeRule matches 200.. unless score .coalitionPoints arcadeRule matches 200.. run function mgdr_arcade:cto/end_match
 execute if score .matchStarted arcadeRule matches 1.. unless score .allegiancePoints arcadeRule matches 200.. if score .coalitionPoints arcadeRule matches 200.. run function mgdr_arcade:cto/end_match
 execute if score .matchStarted arcadeRule matches 1.. if score .allegiancePoints arcadeRule > .coalitionPoints arcadeRule unless score .matchTime arcadeRule matches 1.. run function mgdr_arcade:cto/end_match
-execute if score .matchStarted arcadeRule matches 1.. unless score .allegiancePoints arcadeRule < .coalitionPoints arcadeRule unless score .matchTime arcadeRule matches 1.. run function mgdr_arcade:cto/end_match
+execute if score .matchStarted arcadeRule matches 1.. if score .allegiancePoints arcadeRule < .coalitionPoints arcadeRule unless score .matchTime arcadeRule matches 1.. run function mgdr_arcade:cto/end_match
 
 execute as @e[tag=ObjectivePoint,type=armor_stand] at @s run function mgdr_arcade:cto/objectives/obj_func
 

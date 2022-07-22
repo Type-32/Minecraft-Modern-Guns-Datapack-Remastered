@@ -18,13 +18,13 @@ scoreboard objectives add playerLeftGame minecraft.custom:minecraft.leave_game
 
 scoreboard objectives add a_stats.totalWonMatches dummy
 scoreboard objectives add a_stats.matchWinStreak dummy
+scoreboard objectives add a_match.playerKills dummy
+scoreboard objectives add a_match.playerKillStreak dummy
 
 scoreboard objectives add weaponChoice1 dummy
 scoreboard objectives add weaponChoice2 dummy
 scoreboard objectives add equipmentChoice1 dummy
 scoreboard objectives add equipmentChoice2 dummy
-scoreboard objectives add playerkills dummy
-scoreboard objectives add playerKillstreaks dummy
 scoreboard objectives add tempHighScore dummy
 scoreboard objectives add hitTime dummy
 scoreboard players add .enableArcadeFunctions gamerule 0

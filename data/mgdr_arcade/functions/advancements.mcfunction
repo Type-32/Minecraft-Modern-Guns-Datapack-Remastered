@@ -7,4 +7,4 @@ execute if score @s a_stats.matchWinStreak matches 6 run advancement grant @s on
 execute if score @s a_stats.matchWinStreak matches 7 run advancement grant @s only mgdr:arcade/matches/trophies/the_sergeant_trophy
 execute if score @s a_stats.matchWinStreak matches 8 run advancement grant @s only mgdr:arcade/matches/trophies/the_lieutenant_trophy
 execute if score @s a_stats.matchWinStreak matches 9 run advancement grant @s only mgdr:arcade/matches/trophies/the_captain_trophy
-execute if score @s a_stats.matchWinStreak matches 10 run advancement grant @s only mgdr:arcade/matches/trophies/the_general_trophy
+execute if score @s a_stats.matchWinStreak matches 10.. run advancement grant @s only mgdr:arcade/matches/trophies/the_general_trophy

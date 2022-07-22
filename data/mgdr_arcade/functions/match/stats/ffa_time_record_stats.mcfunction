@@ -1,5 +1,5 @@
 scoreboard players set @a tempHighScore 0
-execute as @a run scoreboard players operation @s tempHighScore = @s playerkills
+execute as @a run scoreboard players operation @s tempHighScore = @s a_match.playerKills
 scoreboard players set #highestScore arcadeRule 0
 scoreboard players operation #highestScore arcadeRule > @a tempHighScore
 scoreboard players operation @a tempHighScore -= #highestScore arcadeRule

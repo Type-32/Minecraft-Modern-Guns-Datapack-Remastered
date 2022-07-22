@@ -2,6 +2,7 @@
     "values":[
         "mgdr:tick",
         "cw_hp_control:main",
-        "mgdr_arcade:passing"
+        "mgdr_arcade:passing",
+        "mgdr_crafting:tick"
     ]
 }

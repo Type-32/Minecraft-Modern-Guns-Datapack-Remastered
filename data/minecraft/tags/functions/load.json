@@ -2,6 +2,7 @@
     "values":[
         "mgdr:load",
         "cw_hp_control:init",
-        "mgdr_arcade:load"
+        "mgdr_arcade:load",
+        "mgdr_crafting:load"
     ]
 }

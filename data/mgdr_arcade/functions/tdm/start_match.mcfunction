@@ -2,6 +2,8 @@ scoreboard players set .matchStarted arcadeRule 1
 scoreboard players set .coalitionPoints arcadeRule 0
 scoreboard players set .allegiancePoints arcadeRule 0
 tag @a remove DeadPlayer
+scoreboard players set @a a_match.playerKills 0
+scoreboard players set @a a_match.playerKillStreak 0
 scoreboard players set @a arcade.plr_deaths 0
 scoreboard players set @a playerLeftGame 0
 tag @a remove forfeitedMatch

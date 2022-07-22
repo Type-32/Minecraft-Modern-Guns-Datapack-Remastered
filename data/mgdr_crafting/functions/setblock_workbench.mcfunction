@@ -1,3 +1,3 @@
 setblock ~ ~ ~ dropper{CustomName:'{"text":"Workbench"}'}
-summon armor_stand ~.5 ~ ~.5 {HandItems:[{},{}],DisabledSlots:4144959,Small:1b,Tags:["workbench"],Invisible:1b,Invulnerable:1b}
+summon marker ~.5 ~ ~.5 {Tags:["workbench"],Invulnerable:1b}
 function mgdr_crafting:kill_material
