@@ -2,12 +2,14 @@ scoreboard players set .matchStarted arcadeRule 1
 scoreboard players set .coalitionPoints arcadeRule 0
 scoreboard players set .allegiancePoints arcadeRule 0
 tag @a remove DeadPlayer
+tag @a remove voluntary
 scoreboard players set @a a_match.playerKills 0
 scoreboard players set @a a_match.playerKillStreak 0
 scoreboard players set @a arcade.plr_deaths 0
 scoreboard players set @a playerLeftGame 0
 tag @a remove forfeitedMatch
 clear @a
+
 scoreboard players operation .expectedAllegiancePlayers arcadeRule = .totalPlayers arcadeRule
 scoreboard players operation .expectedCoalitionPlayers arcadeRule = .totalPlayers arcadeRule
 scoreboard players operation .expectedAllegiancePlayers arcadeRule /= .2 arcadeRule

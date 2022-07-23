@@ -1,5 +1,6 @@
 scoreboard players set .matchStarted arcadeRule 0
 tag @a remove DeadPlayer
+tag @a remove voluntary
 scoreboard players set @a a_match.playerKills 0
 scoreboard players set @a a_match.playerKillStreak 0
 scoreboard players set @a deathTimer 0

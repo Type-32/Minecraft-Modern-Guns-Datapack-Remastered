@@ -18,5 +18,5 @@ execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mg
 execute if score .succeedIndicator mgdrCrafting matches 1 unless data storage mgdr:temp data.Items[{Slot:8b,id:"minecraft:quartz"}] run scoreboard players set .succeedIndicator mgdrCrafting 0
 
 #If Structure Found
-execute if score .succeedIndicator mgdrCrafting matches 1 run function mgdr_crafting:recipe/compute/multi_item_result
+execute if score .succeedIndicator mgdrCrafting matches 1 run function mgdr_crafting:recipe/compute/multi_plate_result
 execute if score .succeedIndicator mgdrCrafting matches 1 run function mgdr_crafting:action/copper_plate

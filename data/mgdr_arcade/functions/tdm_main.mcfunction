@@ -12,6 +12,7 @@ execute store result bossbar mgdr_arcade:coalition_points value run scoreboard p
 
 execute if score .matchStarted arcadeRule matches 1.. if score .allegiancePlayers arcadeRule > .expectedAllegiancePlayers arcadeRule run function mgdr_arcade:teams/after_assign_allegiance_dfs
 execute if score .matchStarted arcadeRule matches 1.. if score .coalitionPlayers arcadeRule > .expectedCoalitionPlayers arcadeRule run function mgdr_arcade:teams/after_assign_coalition_dfs
+
 execute store result score .allegiancePlayers arcadeRule if entity @a[team=allegiance]
 execute store result score .coalitionPlayers arcadeRule if entity @a[team=coalition]
 execute if score .matchStarted arcadeRule matches 1.. if score .allegiancePlayers arcadeRule matches 0 run function mgdr_arcade:tdm/end_match
