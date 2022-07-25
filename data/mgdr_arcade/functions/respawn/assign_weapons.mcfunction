@@ -28,7 +28,9 @@ item replace entity @s[scores={weaponChoice1=11}] hotbar.0 with carrot_on_a_stic
 item replace entity @s[scores={weaponChoice1=12}] hotbar.0 with carrot_on_a_stick{Tags:["vec9"]}
 item replace entity @s[scores={weaponChoice1=13}] hotbar.0 with carrot_on_a_stick{Tags:["m14"]}
 item replace entity @s[scores={weaponChoice1=14}] hotbar.0 with carrot_on_a_stick{Tags:["cbs5"]}
+item replace entity @s[scores={weaponChoice1=15}] hotbar.0 with carrot_on_a_stick{Tags:["origin12"]}
 
+item replace entity @s[scores={weaponChoice2=8}] hotbar.1 with carrot_on_a_stick{Tags:["origin12"]}
 item replace entity @s[scores={weaponChoice2=1}] hotbar.1 with carrot_on_a_stick{Tags:["cbr27a1"]}
 item replace entity @s[scores={weaponChoice2=2}] hotbar.1 with carrot_on_a_stick{Tags:["cz117"]}
 item replace entity @s[scores={weaponChoice2=3}] hotbar.1 with carrot_on_a_stick{Tags:["mp7"]}
@@ -70,8 +72,10 @@ scoreboard players set @s cbs5.ammo 6
 scoreboard players set @s cbs5.load 0
 scoreboard players set @s m17.ammo 15
 scoreboard players set @s m1911.ammo 8
+scoreboard players set @s origin12.ammo 12
 
-item replace entity @s inventory.0 with clock{CustomModelData:212103,Tags:["full","9mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.009mm_mag","italic":false}'}} 64
-item replace entity @s inventory.1 with clock{CustomModelData:212105,Tags:["full","4.5mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.045mm_mag","italic":false}'}} 64
-item replace entity @s inventory.2 with clock{CustomModelData:212102,Tags:["full","5.56mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.556mm_mag","italic":false}'}} 64
-item replace entity @s inventory.3 with clock{CustomModelData:212101,Tags:["full","7.62mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.762mm_mag","italic":false}'}} 64
+item replace entity @s inventory.0 with clock{CustomModelData:212103,Tags:["full","9mm Mag","Magazine"],AmmoType:1b,display:{Name:'{"translate":"mgdr.mag.009mm_mag","italic":false}',Lore:['[{"translate":"mgdr.mag.bullet_type.desc.loaded_with","italic":false,"color": "dark_gray"},{"translate":"mgdr.mag.009mm_mag.bullet_type.standard.desc","italic":false,"color": "gray"}]']}} 64
+item replace entity @s inventory.1 with clock{CustomModelData:212105,Tags:["full","4.5mm Mag","Magazine"],AmmoType:1b,display:{Name:'{"translate":"mgdr.mag.045mm_mag","italic":false}',Lore:['[{"translate":"mgdr.mag.bullet_type.desc.loaded_with","italic":false,"color": "dark_gray"},{"translate":"mgdr.mag.045mm_mag.bullet_type.standard.desc","italic":false,"color": "gray"}]']}} 64
+item replace entity @s inventory.2 with clock{CustomModelData:212102,Tags:["full","5.56mm Mag","Magazine"],AmmoType:1b,display:{Name:'{"translate":"mgdr.mag.556mm_mag","italic":false}',Lore:['[{"translate":"mgdr.mag.bullet_type.desc.loaded_with","italic":false,"color": "dark_gray"},{"translate":"mgdr.mag.556mm_mag.bullet_type.standard.desc","italic":false,"color": "gray"}]']}} 64
+item replace entity @s inventory.3 with clock{CustomModelData:212101,Tags:["full","7.62mm Mag","Magazine"],AmmoType:1b,display:{Name:'{"translate":"mgdr.mag.762mm_mag","italic":false}',Lore:['[{"translate":"mgdr.mag.bullet_type.desc.loaded_with","italic":false,"color": "dark_gray"},{"translate":"mgdr.mag.762mm_mag.bullet_type.standard.desc","italic":false,"color": "gray"}]']}} 64
+item replace entity @s inventory.4 with clock{CustomModelData:212104,Tags:["full","12mm Guages Mag","Magazine"],AmmoType:1b,display:{Name:'{"translate":"mgdr.mag.12mmG_mag","italic":false}',Lore:['[{"translate":"mgdr.mag.bullet_type.desc.loaded_with","italic":false,"color": "dark_gray"},{"translate":"mgdr.mag.12mmG_mag.bullet_type.standard.desc","italic":false,"color": "gray"}]']}} 64

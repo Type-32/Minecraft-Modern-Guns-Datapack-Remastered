@@ -2,6 +2,7 @@ scoreboard players set .matchStarted arcadeRule 1
 scoreboard players set @a a_match.playerKills 0
 tag @a remove DeadPlayer
 tag @a remove voluntary
+scoreboard objectives setdisplay sidebar a_match.playerKills
 scoreboard players set @a a_match.playerKills 0
 scoreboard players set @a a_match.playerKillStreak 0
 scoreboard players set @a arcade.plr_deaths 0

@@ -1,7 +1,8 @@
 scoreboard players set .dist shoot_dist 10000
-scoreboard players set @s[tag=!WitherenVest,tag=!CombatMasterVest] hp_dmg 9
-scoreboard players set @s[tag=WitherenVest] hp_dmg 8
-scoreboard players set @s[tag=CombatMasterVest] hp_dmg 7
+scoreboard players set .weapon_damage_temp mgdr.gamerule 0
+scoreboard players operation .weapon_damage_temp mgdr.gamerule = weapon.damage.augpara mgdr.gamerule
+scoreboard players operation .weapon_damage_temp mgdr.gamerule -= @s mgdr.vestDef
+scoreboard players operation .weapon_damage_temp mgdr.gamerule += @s hp_dmg
 
 particle minecraft:block minecraft:redstone_block ~ ~ ~ .3 .3 .3 3 1 force @a[scores={tgl_particle=0}]
 scoreboard players set @a[tag=firingMarkerDetect,scores={mgdr.weaponUID=3}] whiteHit 0

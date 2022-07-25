@@ -19,8 +19,3 @@ give @s carrot_on_a_stick{Tags:["cbs5"]}
 
 #give @s minecraft:carrot_on_a_stick{Tags:["airstrike_marker"],CustomModelData:208101,display:{Name:'{"translate":"mgdr."}'}}
 
-give @s clock{CustomModelData:212103,Tags:["full","9mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.009mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212105,Tags:["full","4.5mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.045mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212102,Tags:["full","5.56mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.556mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212101,Tags:["full","7.62mm Mag"],display:{Name:'{"translate":"mgdr.mag.full.762mm_mag","italic":false}'}} 64
-give @s clock{CustomModelData:212104,Tags:["full","12mm Guages Mag"],display:{Name:'{"translate":"mgdr.mag.full.12mmG_mag","italic":false}'}} 64

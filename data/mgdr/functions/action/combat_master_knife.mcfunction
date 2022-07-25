@@ -3,8 +3,8 @@ scoreboard players set .dist shoot_dist 0
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/combat_master_knife
-scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
-scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
+scoreboard players operation /player.lastFiredUID mgdr.gamerule = @s mgdr.pid
+scoreboard players operation /player.lastFiredWeaponUID mgdr.gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 

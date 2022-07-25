@@ -1,8 +1,5 @@
 execute if entity @s[scores={mgdr.weaponUID=1}] run scoreboard players operation @s dyn.ammo = @s ak.ammo
-execute if entity @s[tag=holdingMP40] run scoreboard players operation @s dyn.ammo = @s mp40.ammo
-execute if entity @s[tag=holdingSTG44] run scoreboard players operation @s dyn.ammo = @s stg44.ammo
 execute if entity @s[scores={mgdr.weaponUID=17}] run scoreboard players operation @s dyn.ammo = @s sig716.ammo
-execute if entity @s[tag=holdingSIG75T] run scoreboard players operation @s dyn.ammo = @s sig75t.ammo
 execute if entity @s[scores={mgdr.weaponUID=2}] run scoreboard players operation @s dyn.ammo = @s asval.ammo
 execute if entity @s[scores={mgdr.weaponUID=4}] run scoreboard players operation @s dyn.ammo = @s cbr27.ammo
 execute if entity @s[scores={mgdr.weaponUID=5}] run scoreboard players operation @s dyn.ammo = @s cbr27a1.ammo
@@ -16,9 +13,6 @@ execute if entity @s[scores={mgdr.weaponUID=10}] run scoreboard players operatio
 execute if entity @s[scores={mgdr.weaponUID=12}] run scoreboard players operation @s dyn.ammo = @s m1911.ammo
 execute if entity @s[scores={mgdr.weaponUID=11}] run scoreboard players operation @s dyn.ammo = @s m17.ammo
 execute if entity @s[scores={mgdr.weaponUID=6}] run scoreboard players operation @s dyn.ammo = @s cbs5.ammo
-execute if entity @s[tag=holdingType2A] run scoreboard players operation @s dyn.ammo = @s type2a.ammo
 execute if entity @s[scores={mgdr.weaponUID=18}] run scoreboard players operation @s dyn.ammo = @s vec9.ammo
-execute if entity @s[tag=holdingVSG15] run scoreboard players operation @s dyn.ammo = @s vsg15.ammo
-execute if entity @s[tag=holdingVSG6T] run scoreboard players operation @s dyn.ammo = @s vsg6t.ammo
 execute if entity @s[scores={mgdr.weaponUID=3}] run scoreboard players operation @s dyn.ammo = @s augpara.ammo
 execute if entity @s[scores={mgdr.weaponUID=16}] run scoreboard players operation @s dyn.ammo = @s origin12.ammo

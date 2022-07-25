@@ -27,7 +27,7 @@ scoreboard objectives add equipmentChoice1 dummy
 scoreboard objectives add equipmentChoice2 dummy
 scoreboard objectives add tempHighScore dummy
 scoreboard objectives add hitTime dummy
-scoreboard players add .enableArcadeFunctions gamerule 0
+scoreboard players add .enableArcadeFunctions mgdr.gamerule 0
 scoreboard players add .matchStarted arcadeRule 0
 scoreboard players add .gamemode arcadeRule 0
 scoreboard players add .allegiancePlayers arcadeRule 0

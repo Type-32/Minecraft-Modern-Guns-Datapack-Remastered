@@ -1,1 +1,1 @@
-execute if score .enableArcadeFunctions gamerule matches 1.. run function mgdr_arcade:tick
+execute if score .enableArcadeFunctions mgdr.gamerule matches 1.. run function mgdr_arcade:tick

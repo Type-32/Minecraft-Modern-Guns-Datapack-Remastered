@@ -44,11 +44,11 @@ scoreboard objectives remove playerHealth
 scoreboard objectives remove redHit
 scoreboard objectives remove whiteHit
 
-scoreboard objectives remove 762.fullMag
-scoreboard objectives remove 556.fullMag
-scoreboard objectives remove 009.fullMag
-scoreboard objectives remove 045.fullMag
-scoreboard objectives remove 12mmG.fullMag
+scoreboard objectives remove 762mag.standard
+scoreboard objectives remove 556mag.standard
+scoreboard objectives remove 009mag.standard
+scoreboard objectives remove 045mag.standard
+scoreboard objectives remove 12mmGmag.standard
 
 scoreboard objectives remove grau.reload
 scoreboard objectives remove cbr27.reload
@@ -103,7 +103,7 @@ scoreboard objectives remove 12mm.gauge
 scoreboard objectives remove hands_in_inv
 scoreboard objectives remove shoot_dist
 
-scoreboard objectives remove gamerule
+scoreboard objectives remove mgdr.gamerule
 
 scoreboard objectives remove plr.player_kills
 scoreboard objectives remove plr.mob_kills

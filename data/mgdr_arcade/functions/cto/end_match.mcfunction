@@ -1,6 +1,7 @@
 scoreboard players set .matchStarted arcadeRule 0
 tag @a remove DeadPlayer
 tag @a remove voluntary
+scoreboard objectives setdisplay sidebar
 scoreboard players set @a a_match.playerKills 0
 scoreboard players set @a a_match.playerKillStreak 0
 scoreboard players set @a deathTimer 0
@@ -27,6 +28,5 @@ scoreboard players set .coalitionPoints arcadeRule 0
 scoreboard players set .allegiancePoints arcadeRule 0
 execute at @e[type=armor_stand,tag=ArcadeAsset,tag=LobbyPoint,limit=1] run spawnpoint @a
 scoreboard players set .matchTime arcadeRule 0
-tag @a remove voluntary
 tag @a remove forfeitedMatch
 scoreboard players set @e[tag=ObjectivePoint,type=armor_stand] objectiveCaptureDelay 0

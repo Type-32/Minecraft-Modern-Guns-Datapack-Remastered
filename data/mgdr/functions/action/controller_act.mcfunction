@@ -2,7 +2,7 @@ tag @s add firing
 tag @s add firingMarkerDetect
 execute if entity @s[scores={plane.fm=1}] anchored eyes positioned ^0.7 ^ ^1.8 positioned ~ ~-0.5 ~ run function mgdr:rays/plane_mg
 execute if entity @s[scores={plane.fm=0}] anchored eyes positioned ^-0.7 ^ ^1.8 positioned ~ ~-0.5 ~ run function mgdr:rays/plane_mg
-scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
+scoreboard players operation /player.lastFiredUID mgdr.gamerule = @s mgdr.pid
 tag @s remove firing
 tag @s remove firingMarkerDetect
 

@@ -53,7 +53,7 @@ execute if entity @s[scores={mgdr.weaponUID=3},tag=!gunDisabled] run function mg
 execute if entity @s[scores={mgdr.weaponUID=6}] run function mgdr:use/cbs5
 
 ##Using Combat Master Knife
-execute if entity @s[scores={mgdr.weaponUID=19,usedCarrotPol=1..}] run function mgdr:action/combat_master_knife
+execute if entity @s[scores={mgdr.weaponUID=19,usedCarrotPol=1..},tag=NonExistentTag] run function mgdr:action/combat_master_knife
 
 ##Using Stim Shot
 execute if entity @s[tag=holdingStimShot,scores={usedCarrotPol=1..}] run function mgdr:action/stim_shot
@@ -78,3 +78,7 @@ execute if entity @s[tag=holdingNODS,scores={usedCarrotPol=1..}] run function mg
 
 ##Muzzle Flash Light Removal
 execute if entity @s[tag=holdingGun,scores={flashDelay=1}] run function mgdr:muzzle_flash_light_remove
+
+execute if score @s killedPlayer matches 1.. if score @s mgdr.weaponUID matches 19 run scoreboard players add @s a_match.playerKills 1
+execute if score @s killedPlayer matches 1.. if score @s mgdr.weaponUID matches 19 run scoreboard players add @s a_match.playerKillStreak 1
+execute if score @s killedPlayer matches 1.. if score @s mgdr.weaponUID matches 19 run scoreboard players set @s killedPlayer 0

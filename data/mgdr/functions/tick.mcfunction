@@ -3,10 +3,10 @@
 #This part is for initializing and running all the actionable & necassary functions
 
 function mgdr:advancement_unlock
-function mgdr:reload/reload_func/reload_group
+execute as @a run function mgdr:reload/reload_func/reload_group
 #function mgdr:reload/reload_func/loop
 function mgdr:reload/reload_func/tagging
-execute if score datapackItemFunc gamerule matches ..0 run function mgdr:use
+execute if score datapackItemFunc mgdr.gamerule matches ..0 run function mgdr:use
 function mgdr:det_tags/generic
 #function mgdr:det_tags/guntag
 function mgdr:model_enf
@@ -18,14 +18,13 @@ function mgdr:action/effects/aiming_sfx
 
 function mgdr:init/scoreboards
 
-function mgdr:clot_func/count_ammo_number
+execute as @a run function mgdr:clot_func/count_ammo_number
 function mgdr:clot_func/attack_speed_modifier
-function mgdr:clot_func/hitmarkers
+execute as @a[tag=holdingGun] at @s run function mgdr:clot_func/hitmarkers
 function mgdr:clot_func/title_actions
 function mgdr:clot_func/throwables_result
 function mgdr:clot_func/deployable_result
-function mgdr:vehicles/loop
-function mgdr:criteria
+execute as @a run function mgdr:criteria
 
 scoreboard players set @a[tag=reloadGun] showhud 1
 scoreboard players set @a[tag=!reloadGun] showhud 0
@@ -33,6 +32,7 @@ execute as @a[tag=holdingGun] run function mgdr:dynammo_get
 execute as @a[tag=holdingGun] run function mgdr:dynfiremode_get
 execute as @a[tag=holdingGun] run function mgdr:dynindicator_get
 execute as @a[tag=holdingGun] run function mgdr:dynload_get
+execute as @a[tag=holdingGun] run function mgdr:dynat_get
 
 #title @a[tag=wearingNODS] subtitle {"text": "\uEff7","color": "green"}
 #execute as @a[tag=wearingNODS] if score @s whiteHit matches 11.. if score @s redHit matches 11.. run title @s title " "

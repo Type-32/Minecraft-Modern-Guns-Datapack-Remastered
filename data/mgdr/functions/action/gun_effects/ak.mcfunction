@@ -4,4 +4,4 @@ execute if block ~ ~ ~ air run particle flame ^ ^-.15 ^1 0 0 0 .02 1 force @s[sc
 
 playsound mgdr:ak.fire player @a[distance=..45] ~ ~ ~ 100000
 playsound mgdr:ak.fire.mech player @a[distance=..10] ~ ~ ~ 0.65
-playsound mgdr:ak.fire.bass player @a[distance=..40] ~ ~ ~ 1000
+playsound mgdr:ak.fire.bass player @a[distance=..40] ~ ~ ~ 0.8

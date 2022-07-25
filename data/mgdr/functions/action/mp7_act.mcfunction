@@ -19,8 +19,8 @@ tag @s remove firingMarkerDetect
 
 execute anchored eyes positioned ^ ^ ^1 run function mgdr:action/gun_effects/mp7
 
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-1.2
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-0.9
+execute if score noRecoil mgdr.gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-0.9
+execute if score noRecoil mgdr.gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-0.7
 #scoreboard players set @s[scores={fireDelay=4..}] fireDelay 0
-execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] mp7.ammo 1
+execute if score infiniteAmmo mgdr.gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] mp7.ammo 1
 execute if score @s mp7.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

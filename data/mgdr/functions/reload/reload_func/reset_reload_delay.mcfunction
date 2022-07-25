@@ -22,6 +22,49 @@ scoreboard players set @s[scores={vsg15.reload=5..}] vsg15.reload 0
 scoreboard players set @s[scores={vsg6t.reload=5..}] vsg6t.reload 0
 scoreboard players set @s[scores={augpara.reload=6..}] augpara.reload 0
 scoreboard players set @s[scores={origin12.reload=6..}] origin12.reload 0
-#function mgdr:reload/reload_func/cancel_reload
+
+scoreboard players set @s[predicate=mgdr:mag/009/mainhand_at1] mgdr.009mmAT 1
+scoreboard players set @s[predicate=mgdr:mag/045/mainhand_at1] mgdr.045mmAT 1
+scoreboard players set @s[predicate=mgdr:mag/762/mainhand_at1] mgdr.762mmAT 1
+scoreboard players set @s[predicate=mgdr:mag/556/mainhand_at1] mgdr.556mmAT 1
+scoreboard players set @s[predicate=mgdr:mag/12/mainhand_at1] mgdr.12mmGAT 1
+
+scoreboard players set @s[predicate=mgdr:mag/009/mainhand_at2] mgdr.009mmAT 2
+scoreboard players set @s[predicate=mgdr:mag/045/mainhand_at2] mgdr.045mmAT 2
+scoreboard players set @s[predicate=mgdr:mag/762/mainhand_at2] mgdr.762mmAT 2
+scoreboard players set @s[predicate=mgdr:mag/556/mainhand_at2] mgdr.556mmAT 2
+scoreboard players set @s[predicate=mgdr:mag/12/mainhand_at2] mgdr.12mmGAT 2
+
+scoreboard players set @s[predicate=mgdr:mag/009/mainhand_at3] mgdr.009mmAT 3
+scoreboard players set @s[predicate=mgdr:mag/045/mainhand_at3] mgdr.045mmAT 3
+scoreboard players set @s[predicate=mgdr:mag/762/mainhand_at3] mgdr.762mmAT 3
+scoreboard players set @s[predicate=mgdr:mag/556/mainhand_at3] mgdr.556mmAT 3
+scoreboard players set @s[predicate=mgdr:mag/12/mainhand_at3] mgdr.12mmGAT 3
+
+scoreboard players set @s[predicate=mgdr:mag/009/mainhand_at4] mgdr.009mmAT 4
+scoreboard players set @s[predicate=mgdr:mag/045/mainhand_at4] mgdr.045mmAT 4
+scoreboard players set @s[predicate=mgdr:mag/762/mainhand_at4] mgdr.762mmAT 4
+scoreboard players set @s[predicate=mgdr:mag/556/mainhand_at4] mgdr.556mmAT 4
+scoreboard players set @s[predicate=mgdr:mag/12/mainhand_at4] mgdr.12mmGAT 4
+
+scoreboard players set @s[predicate=mgdr:mag/009/mainhand_at5] mgdr.009mmAT 5
+scoreboard players set @s[predicate=mgdr:mag/045/mainhand_at5] mgdr.045mmAT 5
+scoreboard players set @s[predicate=mgdr:mag/762/mainhand_at5] mgdr.762mmAT 5
+scoreboard players set @s[predicate=mgdr:mag/556/mainhand_at5] mgdr.556mmAT 5
+scoreboard players set @s[predicate=mgdr:mag/12/mainhand_at5] mgdr.12mmGAT 5
+
+scoreboard players set @s[predicate=mgdr:mag/009/mainhand_at6] mgdr.009mmAT 6
+scoreboard players set @s[predicate=mgdr:mag/045/mainhand_at6] mgdr.045mmAT 6
+scoreboard players set @s[predicate=mgdr:mag/762/mainhand_at6] mgdr.762mmAT 6
+scoreboard players set @s[predicate=mgdr:mag/556/mainhand_at6] mgdr.556mmAT 6
+scoreboard players set @s[predicate=mgdr:mag/12/mainhand_at6] mgdr.12mmGAT 6
+
 function mgdr:reload/reload_func/gun_switch_offhand
-#tellraw @a "Error Here!"
+function mgdr:det_tags/generic
+function mgdr:reload/reload_func/check_ammotype
+tag @s remove Reloading
+
+
+
+#function mgdr:reload/reload_func/cancel_reload
+#tellraw @s "Error Here!"

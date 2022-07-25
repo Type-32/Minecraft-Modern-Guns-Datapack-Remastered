@@ -1,3 +1,6 @@
-tag @s add switchedMag
-give @s clock{CustomModelData:212102,Tags:["empty","5.56mm Mag"],display:{Name:'{"translate":"mgdr.mag.empty.556mm_mag","italic":false}'}} 1
-clear @s clock{Tags:["full","5.56mm Mag"]} 1
+execute if score @s mgdr.556mmAT matches 1 run function mgdr:reload/action/556/standard
+execute if score @s mgdr.556mmAT matches 2 run function mgdr:reload/action/556/ap
+execute if score @s mgdr.556mmAT matches 3 run function mgdr:reload/action/556/hp
+execute if score @s mgdr.556mmAT matches 4 run function mgdr:reload/action/556/fmj
+execute if score @s mgdr.556mmAT matches 5 run function mgdr:reload/action/556/nato
+execute if score @s mgdr.556mmAT matches 6 run function mgdr:reload/action/556/gzh

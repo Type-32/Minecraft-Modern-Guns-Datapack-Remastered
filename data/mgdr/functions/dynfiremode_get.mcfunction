@@ -1,8 +1,5 @@
 execute if entity @s[scores={mgdr.weaponUID=1}] run scoreboard players operation @s dyn.fm = @s ak.fm
-execute if entity @s[tag=holdingMP40] run scoreboard players operation @s dyn.fm = @s mp40.fm
-execute if entity @s[tag=holdingSTG44] run scoreboard players operation @s dyn.fm = @s stg44.fm
 execute if entity @s[scores={mgdr.weaponUID=17}] run scoreboard players operation @s dyn.fm = @s sig716.fm
-execute if entity @s[tag=holdingSIG75T] run scoreboard players operation @s dyn.fm = @s sig75t.fm
 execute if entity @s[scores={mgdr.weaponUID=2}] run scoreboard players operation @s dyn.fm = @s asval.fm
 execute if entity @s[scores={mgdr.weaponUID=4}] run scoreboard players operation @s dyn.fm = @s cbr27.fm
 execute if entity @s[scores={mgdr.weaponUID=5}] run scoreboard players operation @s dyn.fm = @s cbr27a1.fm
@@ -16,8 +13,5 @@ execute if entity @s[scores={mgdr.weaponUID=10}] run scoreboard players operatio
 execute if entity @s[scores={mgdr.weaponUID=12}] run scoreboard players operation @s dyn.fm = @s m1911.fm
 execute if entity @s[scores={mgdr.weaponUID=11}] run scoreboard players operation @s dyn.fm = @s m17.fm
 execute if entity @s[scores={mgdr.weaponUID=6}] run scoreboard players operation @s dyn.fm = @s cbs5.fm
-execute if entity @s[tag=holdingType2A] run scoreboard players operation @s dyn.fm = @s type2a.fm
 execute if entity @s[scores={mgdr.weaponUID=18}] run scoreboard players operation @s dyn.fm = @s vec9.fm
-execute if entity @s[tag=holdingVSG15] run scoreboard players operation @s dyn.fm = @s vsg15.fm
-execute if entity @s[tag=holdingVSG6T] run scoreboard players operation @s dyn.fm = @s vsg6t.fm
 execute if entity @s[scores={mgdr.weaponUID=3}] run scoreboard players operation @s dyn.fm = @s augpara.fm

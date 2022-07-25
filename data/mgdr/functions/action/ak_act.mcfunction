@@ -13,16 +13,16 @@ scoreboard players set @s[scores={fireDelay=3..}] fireDelay 0
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/ak
-scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
-scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
+scoreboard players operation /player.lastFiredUID mgdr.gamerule = @s mgdr.pid
+scoreboard players operation /player.lastFiredWeaponUID mgdr.gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
 execute anchored eyes positioned ^ ^ ^1 run function mgdr:action/gun_effects/ak
 
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-1.6
-execute if score noRecoil gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-0.9
+execute if score noRecoil mgdr.gamerule matches ..0 run tp @s[tag=!haveGrip] ~ ~ ~ ~ ~-1.6
+execute if score noRecoil mgdr.gamerule matches ..0 run tp @s[tag=haveGrip] ~ ~ ~ ~ ~-0.9
 
-execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] ak.ammo 1
+execute if score infiniteAmmo mgdr.gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] ak.ammo 1
 #tag @s[scores={fireDelay=6..}] remove firingGun
 execute if score @s ak.ammo matches ..0 at @s run playsound mgdr:others.empty player @s

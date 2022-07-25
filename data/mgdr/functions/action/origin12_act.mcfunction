@@ -6,8 +6,8 @@ scoreboard players set @s fireDelay 0
 tag @s add firing
 tag @s add firingMarkerDetect
 execute anchored eyes run function mgdr:rays/origin12
-scoreboard players operation /player.lastFiredUID gamerule = @s mgdr.pid
-scoreboard players operation /player.lastFiredWeaponUID gamerule = @s mgdr.weaponUID
+scoreboard players operation /player.lastFiredUID mgdr.gamerule = @s mgdr.pid
+scoreboard players operation /player.lastFiredWeaponUID mgdr.gamerule = @s mgdr.weaponUID
 tag @s remove firing
 tag @s remove firingMarkerDetect
 
@@ -18,6 +18,6 @@ execute anchored eyes positioned ^ ^ ^1 if block ~ ~ ~ air run particle flame ^ 
 
 playsound mgdr:origin12.fire voice @a[distance=..45] ~ ~ ~ 1000
 
-execute if score noRecoil gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2.85
+execute if score noRecoil mgdr.gamerule matches ..0 run tp @s ~ ~ ~ ~ ~-2.85
 
-execute if score infiniteAmmo gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] origin12.ammo 1
+execute if score infiniteAmmo mgdr.gamerule matches ..0 run scoreboard players remove @s[gamemode=!creative] origin12.ammo 1
