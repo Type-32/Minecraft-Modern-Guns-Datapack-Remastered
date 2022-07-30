@@ -1,10 +1,11 @@
 scoreboard players set .dist shoot_dist 10000
-scoreboard players set .weapon_damage_temp mgdr.gamerule 0
+scoreboard players add .weapon_damage_temp mgdr.gamerule 0
 scoreboard players operation .weapon_damage_temp mgdr.gamerule = weapon.damage.mp7 mgdr.gamerule
-scoreboard players operation .weapon_damage_temp mgdr.gamerule -= @s mgdr.vestDef
-scoreboard players operation .weapon_damage_temp mgdr.gamerule += @s hp_dmg
+function mgdr:damage/vest/vest_operation
+#scoreboard players operation .weapon_damage_temp mgdr.gamerule -= @s mgdr.vestDef
+scoreboard players operation @s hp_dmg += .weapon_damage_temp mgdr.gamerule
 
 particle minecraft:block minecraft:redstone_block ~ ~ ~ .25 .3 .25 3 1 force @a[scores={tgl_particle=0}]
-scoreboard players set @a[tag=firingMarkerDetect,scores={mgdr.weaponUID=15}] whiteHit 0
+scoreboard players set @a[tag=PlayerDamageSource,scores={mgdr.weaponUID=15}] whiteHit 0
 
-playsound minecraft:ui.button.click voice @a[tag=firingMarkerDetect,scores={mgdr.weaponUID=15}] ~ ~1000 ~ 1000000000 2
+playsound minecraft:ui.button.click voice @a[tag=PlayerDamageSource,scores={mgdr.weaponUID=15}] ~ ~1000 ~ 1000000000 2

@@ -1,6 +1,7 @@
 #Code Written by Type-32
 #This part is for starting up everything and initializing the datapack when the datapack has been loaded for the first time in a world.
 tellraw @a ["",{"text": "MGDR","color": "dark_gray","bold": true},{"text": ">> "},{"text":"Modern Guns Datapack Remastered Loaded! Author: ","color": "gray"},{"text": "Type-32 Official","bold": true,"underlined": true,"clickEvent": {"action": "open_url","value": "type-32.github.org"},"color": "blue"}]
+data modify storage mgdr:temp_weapon data.armorItem set value {}
 scoreboard objectives add reloadSec dummy
 scoreboard objectives add aimSec dummy
 scoreboard objectives add fireSec dummy
@@ -206,6 +207,9 @@ setblock 0 -63 0 bedrock
 
 function mgdr:tick
 
+scoreboard players set .1 mgdr.gamerule 1
+scoreboard players set .2 mgdr.gamerule 2
+
 scoreboard players add weapon.damage.cbr27 mgdr.gamerule 0
 scoreboard players add weapon.damage.cbt97 mgdr.gamerule 0
 scoreboard players add weapon.damage.ak40 mgdr.gamerule 0
@@ -225,6 +229,12 @@ scoreboard players add weapon.damage.origin12 mgdr.gamerule 0
 scoreboard players add weapon.damage.mp5t mgdr.gamerule 0
 scoreboard players add weapon.damage.CBMKnife mgdr.gamerule 0
 
+scoreboard players add bullet.damage.ap mgdr.gamerule 0
+scoreboard players add bullet.damage.hp mgdr.gamerule 0
+scoreboard players add bullet.damage.fmj mgdr.gamerule 0
+scoreboard players add bullet.damage.nato mgdr.gamerule 0
+scoreboard players add bullet.damage.gzh mgdr.gamerule 0
+
 execute if score weapon.damage.cbr27 mgdr.gamerule matches ..0 run scoreboard players set weapon.damage.cbr27 mgdr.gamerule 6
 execute if score weapon.damage.cbt97 mgdr.gamerule matches ..0 run scoreboard players set weapon.damage.cbt97 mgdr.gamerule 6
 execute if score weapon.damage.ak40 mgdr.gamerule matches ..0 run scoreboard players set weapon.damage.ak40 mgdr.gamerule 7
@@ -243,3 +253,10 @@ execute if score weapon.damage.vec9 mgdr.gamerule matches ..0 run scoreboard pla
 execute if score weapon.damage.origin12 mgdr.gamerule matches ..0 run scoreboard players set weapon.damage.origin12 mgdr.gamerule 5
 execute if score weapon.damage.mp5t mgdr.gamerule matches ..0 run scoreboard players set weapon.damage.mp5t mgdr.gamerule 5
 execute if score weapon.damage.CBMKnife mgdr.gamerule matches ..0 run scoreboard players set weapon.damage.CBMKnife mgdr.gamerule 20
+
+#AP and HP Rounds Decrease Armor Health
+execute if score bullet.damage.ap mgdr.gamerule matches ..0 run scoreboard players set bullet.damage.ap mgdr.gamerule 0
+execute if score bullet.damage.hp mgdr.gamerule matches ..0 run scoreboard players set bullet.damage.hp mgdr.gamerule 0
+execute if score bullet.damage.fmj mgdr.gamerule matches ..0 run scoreboard players set bullet.damage.fmj mgdr.gamerule 1
+execute if score bullet.damage.nato mgdr.gamerule matches ..0 run scoreboard players set bullet.damage.nato mgdr.gamerule 2
+execute if score bullet.damage.gzh mgdr.gamerule matches ..0 run scoreboard players set bullet.damage.gzh mgdr.gamerule 3

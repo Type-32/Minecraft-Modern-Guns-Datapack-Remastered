@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "nbt": "{Tags:[\"7.62mm Mag\",\"Magazine\"],AmmoType:1b}"
+        }
+      }
+    }
+  }
+  

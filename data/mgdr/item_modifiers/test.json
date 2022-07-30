@@ -1,0 +1,15 @@
+{
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "mgdr:temp_weapon"
+    },
+    "ops": [
+      {
+        "source": "SelectedItem.tag",
+        "target": "data.armorItem",
+        "op": "replace"
+      }
+    ]
+  }
+  

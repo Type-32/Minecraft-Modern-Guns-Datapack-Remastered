@@ -3,10 +3,10 @@ scoreboard objectives add mgdr.health dummy
 scoreboard players add @s mgdr.health 0
 execute store result score @s mgdr.health run data get entity @s Health
 scoreboard players operation @s[type=!armor_stand] mgdr.health -= weapon.damage. mgdr.gamerule
-execute if score @s mgdr.health matches 1.. run scoreboard players set @a[tag=firingMarkerDetect,tag=holdingGun] whiteHit 0
-execute if score @s mgdr.health matches ..0 run scoreboard players set @a[tag=firingMarkerDetect,tag=holdingGun] redHit 0
+execute if score @s mgdr.health matches 1.. run scoreboard players set @a[tag=PlayerDamageSource,tag=holdingGun] whiteHit 0
+execute if score @s mgdr.health matches ..0 run scoreboard players set @a[tag=PlayerDamageSource,tag=holdingGun] redHit 0
 execute if score @s mgdr.health matches 1.. store result entity @s Health float 1.005 run scoreboard players get @s mgdr.health
-#execute if score @s mgdr.health matches ..0 run advancement grant @a[tag=firingMarkerDetect,tag=holdingGun] only end/kill_dragon
+#execute if score @s mgdr.health matches ..0 run advancement grant @a[tag=PlayerDamageSource,tag=holdingGun] only end/kill_dragon
 execute if score @s mgdr.health matches ..0 run kill @s
 function mgdr:damage/regional/anger_affection/main
 
