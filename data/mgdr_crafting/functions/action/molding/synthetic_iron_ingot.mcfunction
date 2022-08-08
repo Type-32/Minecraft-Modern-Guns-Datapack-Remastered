@@ -1,4 +1,4 @@
-data modify storage mgdr:temp Item set value {id:"minecraft:clock",Count:1b,tag:{Tags:["synthetic_iron_ingot","molded_ingot"],display:{Name:'{"translate":"mgdr.item.synthetic_iron_ingot","italic":false}'},CustomModelData:215001}}
+data modify storage mgdr:temp Item set value {id:"minecraft:clock",Count:1b,tag:{Tags:["synthetic_iron_ingot","hammerable_material","molded_ingot"],display:{Name:'{"translate":"mgdr.item.synthetic_iron_ingot","italic":false}'},CustomModelData:215001}}
 execute store result score .originalOutputItemCount mgdrCrafting run data get storage mgdr:temp Item{}.Count
 scoreboard players operation .outputItemCount mgdrCrafting = .originalOutputItemCount mgdrCrafting
 scoreboard players operation .outputItemCount mgdrCrafting = .outputMultiplier mgdrCrafting

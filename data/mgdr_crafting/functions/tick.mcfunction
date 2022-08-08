@@ -1,0 +1,2 @@
+scoreboard players add @a mgdr.used_armor_stand 0
+execute as @a[scores={mgdr.used_armor_stand=1..}] run execute as @e[tag=workbenchPlacementTemp] at @s align xyz run function mgdr_crafting:setblock_workbench
