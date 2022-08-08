@@ -21,6 +21,9 @@ execute if score .succeedIndicator mgdrCrafting matches 0 run function mgdr_craf
 
 execute if score .succeedIndicator mgdrCrafting matches 0 if score .usedSlots mgdrCrafting matches 9 run function mgdr_crafting:recipe/materials/copper_plate
 execute if score .succeedIndicator mgdrCrafting matches 0 if score .usedSlots mgdrCrafting matches 9 run function mgdr_crafting:recipe/materials/iron_plate
+execute if score .succeedIndicator mgdrCrafting matches 0 if score .usedSlots mgdrCrafting matches 5 run function mgdr_crafting:recipe/materials/hammer
+execute if score .succeedIndicator mgdrCrafting matches 0 if score .usedSlots mgdrCrafting matches 2..3 run function mgdr_crafting:recipe/materials/synthetic_iron_plate
+#execute if score .succeedIndicator mgdrCrafting matches 0 if score .usedSlots mgdrCrafting matches 2..3 run function mgdr_crafting:recipe/materials/synthetic_copper_plate
 #execute if score .succeedIndicator mgdrCrafting matches 0 run function mgdr_crafting:recipe/materials/steel_grip
 #execute if score .succeedIndicator mgdrCrafting matches 0 run function mgdr_crafting:recipe/materials/steel_hull
 #execute if score .succeedIndicator mgdrCrafting matches 0 run function mgdr_crafting:recipe/materials/steel_stock
@@ -50,3 +53,4 @@ execute if score .succeedIndicator mgdrCrafting matches 1 run playsound block.an
 execute if score .succeedIndicator mgdrCrafting matches 2 run playsound block.grindstone.use block @a ~ ~ ~ 1
 execute if score .succeedIndicator mgdrCrafting matches 3 run playsound item.bucket.fill_lava block @a ~ ~ ~ 1
 execute if score .succeedIndicator mgdrCrafting matches 4 run playsound item.bucket.empty_lava block @a ~ ~ ~ 1 0
+execute if score .succeedIndicator mgdrCrafting matches 5 run playsound block.smithing_table.use block @a ~ ~ ~ 1
