@@ -9,7 +9,7 @@ give @s carrot_on_a_stick{Tags:["sig716"]}
 give @s carrot_on_a_stick{Tags:["cz117"]}
 give @s carrot_on_a_stick{Tags:["mp7"]}
 give @s carrot_on_a_stick{Tags:["mp5"]}
-give @s carrot_on_a_stick{Tags:["mp5t"]}
+#give @s carrot_on_a_stick{Tags:["mp5t"]}
 give @s carrot_on_a_stick{Tags:["vec9"]}
 give @s carrot_on_a_stick{Tags:["origin12"]}
 give @s carrot_on_a_stick{Tags:["m1911"]}
